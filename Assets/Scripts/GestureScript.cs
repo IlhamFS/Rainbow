@@ -9,9 +9,12 @@ using PDollarGestureRecognizer;
 
 public class GestureScript : MonoBehaviour {
 	//Our
-	private List<Sprite> randomGesture;
 	public SpriteRenderer[] gesturePlaces;
 	public Sprite[] gestureArr;
+
+	private List<Sprite> randomGesture;
+	private int[] colorArray = new int[3];
+	private string colorName = "";
 
 	//
 	private bool gestureErr = false;
@@ -49,13 +52,14 @@ public class GestureScript : MonoBehaviour {
 		drawArea = new Rect(0, 0, Screen.width, Screen.height);
 
 		TextAsset[] gesturesXml = Resources.LoadAll<TextAsset>("GestureSet");
-		foreach (TextAsset gestureXml in gesturesXml)
-			trainingSet.Add(GestureIO.ReadGestureFromXML(gestureXml.text));
+		foreach (TextAsset gestureXml in gesturesXml) {
+			trainingSet.Add (GestureIO.ReadGestureFromXML (gestureXml.text));
+		}
 
 		//Load user custom gestures
 		string[] filePaths = Directory.GetFiles(Application.persistentDataPath, "*.xml");
 		foreach (string filePath in filePaths){
-			trainingSet.Add(GestureIO.ReadGestureFromFile(filePath));
+			trainingSet.Add (GestureIO.ReadGestureFromFile (filePath));
 		}
 		RenderGesture ();
 
@@ -125,14 +129,22 @@ public class GestureScript : MonoBehaviour {
 		//Attack jika gesture benar dengan salah satu gesture yang terdapat pada pemain
 		if (checkResult == true) {
 			string player = "";
-			if (gestureResult.GestureClass == "yolo" && gestureResult.Score > 0.6) {
-	
-
-			}
-			if(randomGesture.Exists(element => element.name == gestureResult.GestureClass )){
-				Debug.Log (gestureResult.GestureClass);
+			if (gestureResult.GestureClass == randomGesture [0].name && gestureResult.Score > 0.6) {
+				colorArray [0] = 1;
+				gestureResult.GestureClass = "";
+				RenderGesture ();
+			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.6) {
+				colorArray [1] = 1;
+				gestureResult.GestureClass = "";
+				RenderGesture ();
+			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.6) {
+				colorArray [2] = 1;
+				gestureResult.GestureClass = "";
 				RenderGesture ();
 			}
+
+			colorName = GetColorName (colorArray);
+			message = colorName;
 		}
 
 	}
@@ -144,26 +156,55 @@ public class GestureScript : MonoBehaviour {
 		if(Input.GetMouseButtonDown(0)){
 			mouseStart= Input.mousePosition;
 		}
-		if (Input.GetMouseButtonUp(0)) {
+		if (Input.GetMouseButtonUp (0)) {
 
-			if(mouseStart == Input.mousePosition){
+			if (mouseStart == Input.mousePosition) {
 				gestureErr = true;
 				return;
 			}
 			gestureErr = false;
 			recognized = true;
 
-			candidate = new Gesture(points.ToArray());
-			gestureResult = PointCloudRecognizer.Classify(candidate, trainingSet.ToArray());
+			candidate = new Gesture (points.ToArray ());
+			gestureResult = PointCloudRecognizer.Classify (candidate, trainingSet.ToArray ());
 			checkResult = true;
-
 		}
-
 	}
 
+	public string GetColorName(int[] colors){
+		string color = "";
+		for(int i = 0; i < colors.Length ; i++){
+			color += colors [i];
+		}
+		if (color == "000") {
+			color = "white";
+		} 
+		else if(color == "100"){
+			color = "cyan";
+		} 
+		else if(color == "010"){
+			color = "magenta";
+		} 
+		else if(color == "001"){
+			color = "yellow";
+		} 
+		else if(color == "110"){
+			color = "blue";
+		} 
+		else if(color == "101"){
+			color = "green";
+		} 
+		else if(color == "011"){
+			color = "red";
+		} 
+		else if(color == "111"){
+			color = "black";
+		}
+		return color;
+	}
 
 	//membuat list random gesture
-	List<Sprite> getRandomGesture (){
+	List<Sprite> GetRandomGesture (){
 		List<Sprite> result = new List<Sprite>();
 		bool full = false;
 		int i = 0;
@@ -183,15 +224,30 @@ public class GestureScript : MonoBehaviour {
 		}
 		return result;
 	}
+
 	void RenderGesture(){
-		randomGesture = getRandomGesture ();
+		randomGesture = GetRandomGesture ();
 		int count = 0;
 		foreach (SpriteRenderer gest in gesturePlaces) {
 			gest.sprite = randomGesture [count];
 			count++;
 		}
-	
+		
 
+	}
+
+	public void PlayerAttack(){
+		Debug.Log("Attack");
+		//player attack
+		colorArray = new int[3];
+		colorName = "";
+	}
+
+	public void CancelAttack(){
+		Debug.Log("Attack Canceled");
+		//player attack canceled
+		colorArray = new int[3];
+		colorName = "";
 	}
 }
 
