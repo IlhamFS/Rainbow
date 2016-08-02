@@ -648,7 +648,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11421538, guid: b88aaee4548015b4fbf905ce95cde717, type: 2}
       propertyPath: speed
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 21299160, guid: b88aaee4548015b4fbf905ce95cde717, type: 2}
       propertyPath: m_Color.r

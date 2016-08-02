@@ -9,6 +9,7 @@ public class EnemyScript : MonoBehaviour {
 
 	SpriteRenderer sr;
 	Color col;
+	Camera cam;
 
 	// Use this for initialization
 	void Start () {
@@ -18,11 +19,11 @@ public class EnemyScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//game over
-		if (sr.isVisible)
-			Destroy (gameObject);
-
 		transform.position = transform.position + (Vector3.left * speed * Time.deltaTime);
+	}
+
+	void OnBecameInvisible() {
+		Debug.Log ("Game Over");
 	}
 
 	void setColor(SpriteRenderer sr) {
