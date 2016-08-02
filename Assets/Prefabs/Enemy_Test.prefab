@@ -9,7 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 412340}
   - 212: {fileID: 21269352}
-  m_Layer: 0
+  - 114: {fileID: 11472588}
+  - 58: {fileID: 5895134}
+  m_Layer: 8
   m_Name: Enemy_Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,6 +31,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!58 &5895134
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173840}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 10
+--- !u!114 &11472588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bfc75b46c60be648845da1cdad644f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorName: 
 --- !u!212 &21269352
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -54,7 +82,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c3b125d294090124e9ef99194fbf5955, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

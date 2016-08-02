@@ -14,11 +14,12 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void killEnemies(string color){
-		Collider2D[] enemies = Physics2D.OverlapBoxAll(transform.position, new Vector2(15,10), 1 << LayerMask.NameToLayer("Enemy"));
+		Collider2D[] enemies = Physics2D.OverlapAreaAll(new Vector2(-7, 5), new Vector2(7, -5), 1 << LayerMask.NameToLayer("Enemy"), -Mathf.Infinity, Mathf.Infinity);
 		foreach (Collider2D enemy in enemies) {
-			enemy.GetComponent<Blabla> ();
-			if (color == enemy.getColorName ()) {
-				enemy.destroyEnemy ();
+			Debug.Log ("yummy");
+			EnemyScript es = enemy.GetComponent<EnemyScript> ();
+			if (color == es.getColorName ()) {
+				es.destroyEnemy ();
 			}
 		}
 	}
