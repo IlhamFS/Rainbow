@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class EnemyScript : MonoBehaviour {
 	public float speed;
+	public GameObject gameOverText;
 
 	int color;
 	string colorName;
@@ -23,7 +25,10 @@ public class EnemyScript : MonoBehaviour {
 	}
 
 	void OnBecameInvisible() {
-		Debug.Log ("Game Over");
+		gameOverText.SetActive (true);
+
+		Text tx = gameOverText.GetComponent<Text> ();
+		tx.text = "Game Over !!! \n dikalahkan oleh musuh berwarna " + getColorName (); 
 	}
 
 	void setColor(SpriteRenderer sr) {
