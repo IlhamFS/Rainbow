@@ -11,10 +11,11 @@ public class GestureScript : MonoBehaviour {
 	//Our
 	public SpriteRenderer[] gesturePlaces;
 	public Sprite[] gestureArr;
+	public GameController gameController;
 
 	private List<Sprite> randomGesture;
 	private int[] colorArray = new int[3];
-	private string colorName = "";
+	private string colorName = "white";
 
 	//
 	private bool gestureErr = false;
@@ -238,16 +239,17 @@ public class GestureScript : MonoBehaviour {
 
 	public void PlayerAttack(){
 		Debug.Log("Attack");
+		gameController.killEnemies (colorName);
 		//player attack
 		colorArray = new int[3];
-		colorName = "";
+		colorName = "white";
 	}
 
 	public void CancelAttack(){
 		Debug.Log("Attack Canceled");
 		//player attack canceled
 		colorArray = new int[3];
-		colorName = "";
+		colorName = "white";
 	}
 }
 
