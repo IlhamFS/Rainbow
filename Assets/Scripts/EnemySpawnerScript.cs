@@ -40,7 +40,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 			if (enemyCount == 10) {
 				wave++;
 				enemyCount = 0;
-				wait = 5.0f;
+				wait = 10.0f;
 
 				waveText.text = "Wave " + wave;
 				waveText.CrossFadeAlpha (255, 1.0f, false);
