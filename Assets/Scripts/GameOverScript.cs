@@ -17,13 +17,12 @@ public class GameOverScript : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D coll) {
 		if (coll.gameObject.tag == "Enemy") {
-			/*EnemyScript es = coll.gameObject.GetComponent<EnemyScript> ();
+			EnemyScript es = coll.gameObject.GetComponent<EnemyScript> ();
 
 			gameOver.SetActive (true);
 			Text tx = gameOver.GetComponent<Text> ();
 			tx.text = "Game Over !!! \n dikalahkan oleh musuh berwarna " + es.getColorName();
-			Time.timeScale = 0.0f;*/
-			Destroy (coll.gameObject);
+			Time.timeScale = 0.0f;
 		}
 	}
 }
