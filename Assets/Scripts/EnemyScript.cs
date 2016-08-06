@@ -120,4 +120,8 @@ public class EnemyScript : MonoBehaviour {
 	public string getColorName() {
 		return colorName;
 	}
+
+	public void destroyEnemy() {
+		Destroy (gameObject);
+	}
 }
