@@ -7,6 +7,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 	GameObject en;
 	int enemyCount = 0;
 	int wave = 1;
+	int enemyLimit = 10;
 
 	bool firstWave = true;
 
@@ -37,8 +38,9 @@ public class EnemySpawnerScript : MonoBehaviour {
 			en.GetComponent<EnemyScript> ().wave = wave;
 			enemyCount++;
 
-			if (enemyCount == 10) {
+			if (enemyCount == enemyLimit) {
 				wave++;
+				enemyLimit = enemyLimit + (wave / 2);
 				enemyCount = 0;
 				wait = 10.0f;
 
