@@ -14,11 +14,11 @@ public class UIScript : MonoBehaviour {
 	}
 
 	public void Restart() {
-		SceneManager.LoadScene (0);
+		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 		Time.timeScale = 1.0f;
 	}
 
 	public void MainMenu() {
-		//load scene main menu
+		SceneManager.LoadScene (0);
 	}
 }
