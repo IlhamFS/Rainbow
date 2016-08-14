@@ -6,11 +6,11 @@ public class EnemySpawnerScript : MonoBehaviour {
 	public GameObject enemy;
 	GameObject en;
 	int enemyCount = 0;
-	int wave = 1;
 	int enemyLimit = 10;
 
 	bool firstWave = true;
 
+	public int wave = 1;
 	public Text waveText;
 
 	// Use this for initialization
