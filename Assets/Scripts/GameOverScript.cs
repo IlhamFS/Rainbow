@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class GameOverScript : MonoBehaviour {
 	public GameObject gameOver;
+	public GameObject gameoverText;
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +21,7 @@ public class GameOverScript : MonoBehaviour {
 			EnemyScript es = coll.gameObject.GetComponent<EnemyScript> ();
 
 			gameOver.SetActive (true);
-			Text tx = gameOver.GetComponent<Text> ();
+			Text tx = gameoverText.GetComponent<Text> ();
 			tx.text = "Game Over !!! \n dikalahkan oleh musuh berwarna " + es.getColorName();
 			Time.timeScale = 0.0f;
 		}
