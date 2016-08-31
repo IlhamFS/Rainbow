@@ -78,61 +78,32 @@ public class EnemyScript : MonoBehaviour {
 	}
 
 	void ConfigWave(int wave) {
-		float speedPlus;
-
 		switch (wave) {
 		case 1:
-			//color
 			colorLowerBound = 1;
 			colorUpperBound = 3;
 			break;
 		case 2:
-			//color
 			colorLowerBound = 1;
 			colorUpperBound = 6;
-
-			//speed
-			speedPlus = speed * 1.5f;
-			speed = Random.Range (speed, speedPlus);
 			break;
 		case 3:
-			//color
 			colorLowerBound = 1;
 			colorUpperBound = 8;
-
-			//speed
-			speedPlus = speed * 2;
-			speed = Random.Range (speed, speedPlus);
 			break;
 		case 4:
-			//color
 			colorLowerBound = 4;
 			colorUpperBound = 6;
-
-			//speed
-			speedPlus = speed * 2.5f;
-			speed = Random.Range (speed, speedPlus);
 			break;
 		case 5:
-			//color
 			colorLowerBound = 4;
 			colorUpperBound = 8;
-
-			//speed
-			speedPlus = speed * 3;
-			speed = Random.Range (speed, speedPlus);
 			break;
 		case 6:
-			//color
 			colorLowerBound = 7;
 			colorUpperBound = 8;
-
-			//speed
-			speedPlus = speed * 3.5f;
-			speed = Random.Range (speed, speedPlus);
 			break;
 		default:
-			//color
 			colorLowerBound = 1;
 			colorUpperBound = 8;
 			break;

@@ -6,11 +6,10 @@ public class EnemySpawnerScript : MonoBehaviour {
 	public GameObject enemy;
 	GameObject en;
 	int enemyCount = 0;
-	int enemyLimit = 10;
+	int wave = 1;
 
 	bool firstWave = true;
 
-	public int wave = 1;
 	public Text waveText;
 
 	// Use this for initialization
@@ -38,9 +37,8 @@ public class EnemySpawnerScript : MonoBehaviour {
 			en.GetComponent<EnemyScript> ().wave = wave;
 			enemyCount++;
 
-			if (enemyCount == enemyLimit) {
+			if (enemyCount == 10) {
 				wave++;
-				enemyLimit = enemyLimit + (wave / 2);
 				enemyCount = 0;
 				wait = 10.0f;
 
