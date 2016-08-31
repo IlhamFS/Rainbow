@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class GameController : MonoBehaviour {
-	public int score = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -21,8 +20,6 @@ public class GameController : MonoBehaviour {
 			EnemyScript es = enemy.GetComponent<EnemyScript> ();
 			if (color == es.getColorName ()) {
 				es.destroyEnemy ();
-
-				score += 10;
 			}
 		}
 	}
