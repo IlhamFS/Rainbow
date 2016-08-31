@@ -4,6 +4,11 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class UIScript : MonoBehaviour {
+	public Text scoreText;
+	int scoreInt;
+	public GameController gm;
+	public GameObject pauseScene;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -11,14 +16,30 @@ public class UIScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		UpdateScore ();
 	}
 
 	public void Restart() {
-		SceneManager.LoadScene (0);
+		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 		Time.timeScale = 1.0f;
 	}
 
 	public void MainMenu() {
-		//load scene main menu
+		SceneManager.LoadScene (0);
+	}
+
+	void UpdateScore() {
+		scoreInt = gm.score;
+		scoreText.text = "Score = " + scoreInt;
+	}
+
+	public void Pause(){
+		pauseScene.SetActive (true);
+		Time.timeScale = 0.0f;
+	}
+
+	public void Resume() {
+		pauseScene.SetActive (false);
+		Time.timeScale = 1.0f;
 	}
 }
