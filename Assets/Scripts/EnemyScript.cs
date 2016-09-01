@@ -84,12 +84,12 @@ public class EnemyScript : MonoBehaviour {
 		case 1:
 			//color
 			colorLowerBound = 1;
-			colorUpperBound = 3;
+			colorUpperBound = 4;
 			break;
 		case 2:
 			//color
-			colorLowerBound = 1;
-			colorUpperBound = 6;
+			colorLowerBound = 2;
+			colorUpperBound = 4;
 
 			//speed
 			speedPlus = speed * 1.5f;
@@ -97,8 +97,8 @@ public class EnemyScript : MonoBehaviour {
 			break;
 		case 3:
 			//color
-			colorLowerBound = 1;
-			colorUpperBound = 8;
+			colorLowerBound = 5;
+			colorUpperBound = 7;
 
 			//speed
 			speedPlus = speed * 2;
@@ -106,8 +106,8 @@ public class EnemyScript : MonoBehaviour {
 			break;
 		case 4:
 			//color
-			colorLowerBound = 4;
-			colorUpperBound = 6;
+			colorLowerBound = 5;
+			colorUpperBound = 8;
 
 			//speed
 			speedPlus = speed * 2.5f;
@@ -115,8 +115,8 @@ public class EnemyScript : MonoBehaviour {
 			break;
 		case 5:
 			//color
-			colorLowerBound = 4;
-			colorUpperBound = 8;
+			colorLowerBound = 1;
+			colorUpperBound = 7;
 
 			//speed
 			speedPlus = speed * 3;
@@ -124,8 +124,8 @@ public class EnemyScript : MonoBehaviour {
 			break;
 		case 6:
 			//color
-			colorLowerBound = 7;
-			colorUpperBound = 8;
+			colorLowerBound = 2;
+			colorUpperBound = 7;
 
 			//speed
 			speedPlus = speed * 3.5f;
