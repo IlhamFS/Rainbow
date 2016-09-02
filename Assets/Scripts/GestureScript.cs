@@ -16,7 +16,6 @@ public class GestureScript : MonoBehaviour {
 	private List<Sprite> randomGesture;
 	private int[] colorArray = new int[3];
 	private string colorName = "white";
-
 	//
 	private bool gestureErr = false;
 	private Vector3 mouseStart;
@@ -238,15 +237,21 @@ public class GestureScript : MonoBehaviour {
 	}
 
 	public void PlayerAttack(){
-		Debug.Log("Attack");
+		//player animation attak
 		gameController.killEnemies (colorName);
+
 		//player attack
 		colorArray = new int[3];
 		colorName = "white";
 	}
+	public void SpecialRainbowAttack(){
+		//player animation Special Rainbow
+		gameController.rainbowSpecial ();
 
+		colorArray = new int[3];
+		colorName = "white";
+	}
 	public void CancelAttack(){
-		Debug.Log("Attack Canceled");
 		//player attack canceled
 		colorArray = new int[3];
 		colorName = "white";
