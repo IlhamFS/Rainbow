@@ -251,6 +251,13 @@ public class GestureScript : MonoBehaviour {
 		colorArray = new int[3];
 		colorName = "white";
 	}
+	public void SpecialTimeAttack(){
+		//player animation Special Rainbow
+		gameController.timeSpecial ();
+
+		colorArray = new int[3];
+		colorName = "white";
+	}
 	public void CancelAttack(){
 		//player attack canceled
 		colorArray = new int[3];
