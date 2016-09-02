@@ -17,7 +17,6 @@ public class GameController : MonoBehaviour {
 	public void killEnemies(string color){
 		Collider2D[] enemies = Physics2D.OverlapAreaAll(new Vector2(-7, 5), new Vector2(7, -5), 1 << LayerMask.NameToLayer("Enemy"), -Mathf.Infinity, Mathf.Infinity);
 		foreach (Collider2D enemy in enemies) {
-			Debug.Log ("yummy");
 			EnemyScript es = enemy.GetComponent<EnemyScript> ();
 			if (color == es.getColorName ()) {
 				es.destroyEnemy ();
@@ -27,4 +26,12 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
+	public void rainbowSpecial(){
+		Collider2D[] enemies = Physics2D.OverlapAreaAll(new Vector2(-7, 5), new Vector2(7, -5), 1 << LayerMask.NameToLayer("Enemy"), -Mathf.Infinity, Mathf.Infinity);
+		foreach (Collider2D enemy in enemies) {
+			EnemyScript es = enemy.GetComponent<EnemyScript> ();
+			es.destroyEnemy ();
+			score += 10;
+		}
+	}
 }
