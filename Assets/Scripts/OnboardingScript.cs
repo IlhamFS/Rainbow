@@ -8,77 +8,81 @@ public class OnboardingScript : MonoBehaviour {
 	public GameController gc;
 	public GestureScript gs;
 
-	public Text swipeText;
-	public Text combineText;
-	public Text attackText;
+	public GameObject swipeText;
+	public GameObject combineText;
+	public GameObject attackText;
+	public GameObject endText;
 
-	bool swiped;
-	bool combined;
-	bool attacked;
-	bool enemydead;
-	bool end;
+	EnemyScript enemy;
+
+	bool paused;
+	int state = 1;
 
 	// Use this for initialization
 	void Start () {
-		oes.SpawnEnemy1 ();
-		swipeText.enabled = false;
-		combineText.enabled = false;
-		attackText.enabled = false;
+		enemy = oes.SpawnEnemy1 ();
+		swipeText.SetActive (false);
+		combineText.SetActive (false);
+		attackText.SetActive (false);
+		endText.SetActive (false);
 
-		swiped = false;
-		combined = false;
-		attacked = false;
-		enemydead = false;
-		end = false;
+		paused = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		checkDead ();
+		if (!paused)
+			return;
 
-		if (enemydead) {
-			oes.SpawnEnemy2 ();
-			enemydead = false;
-		} else if (swipeText.enabled) {
-			checkSwipe ();
+		if (swipeText.activeInHierarchy || combineText.activeInHierarchy) {
+			//phase 1, nunggu swipe
+			string enColor = enemy.getColorName ();
 
-			if (swiped) {
-				swipeText.enabled = false;
-				attackText.enabled = true;
+			if (gs.colorName == enColor) {
+				swipeText.SetActive (false);
+				combineText.SetActive (false);
+				attackText.SetActive (true);
+			} else {
+				gs.colorName = "white";
 			}
-		} else if (combineText.enabled) {
-		} else if (attackText.enabled) {
-			checkAttack ();
+		} else if (attackText.activeInHierarchy) {
+			//phase 2, nunggu klik attack
+			if (gc.killed) {
+				paused = false;
+				gc.killed = false;
+				attackText.SetActive (false);
 
-			if (attacked) {
-				attackText.enabled = false;
-				attacked = false;
-				Time.timeScale = 1.0f;
+				if (state == 1) {
+					enemy = oes.SpawnEnemy2 ();
+					state = 2;
+				} else if (state == 2) {
+					endText.SetActive (true);
+				}
 			}
+		} else if (endText.activeInHierarchy) {
+			//phase 3, kalo musuh udah abis
+			Invoke("Pause", 5);
 		}
+	}
+
+	void Pause() {
+		Time.timeScale = 0.0f;
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		if (coll.gameObject.tag == "Enemy") {
-			swipeText.enabled = true;
-			Time.timeScale = 0.0f;
+			EnemyScript ee = coll.gameObject.GetComponent<EnemyScript> ();
+
+			if (ee.wave == 2) {
+				swipeText.SetActive (true);
+				swipeText.GetComponent<Text>().text = "Please swipe " + ee.getColorName();
+			} else {
+				combineText.SetActive (true);
+				combineText.GetComponent<Text>().text = "Please combine colors to " + ee.getColorName ();
+			}
+
+			ee.speed = 0;
+			paused = true;
 		}
-	}
-
-	void checkDead() {
-		if (gc.score != 0) {
-			enemydead = true;
-			gc.score = 0;
-		}
-	}
-
-	void checkSwipe() {
-		if (gs.colorName != "white")
-			swiped = true;
-	}
-
-	void checkAttack() {
-		if (EventSystem.current.currentSelectedGameObject.name == "Attack")
-			attacked = true;
 	}
 }

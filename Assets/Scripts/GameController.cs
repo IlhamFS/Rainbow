@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameController : MonoBehaviour {
 	public int score = 0;
+	public bool killed = false;
 
 	// Use this for initialization
 	void Start () {
@@ -25,6 +26,8 @@ public class GameController : MonoBehaviour {
 				score += 10;
 			}
 		}
+
+		killed = true;
 	}
 
 }

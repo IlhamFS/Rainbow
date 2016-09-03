@@ -14,13 +14,17 @@ public class OnboardingEnemyScript : MonoBehaviour {
 	
 	}
 
-	public void SpawnEnemy1() {
+	public EnemyScript SpawnEnemy1() {
 		en = (GameObject) Instantiate (enemy,transform.position, Quaternion.Euler(new Vector3(0, 180)));
-		en.GetComponent<EnemyScript> ().wave = 1;
+		EnemyScript es = en.GetComponent<EnemyScript> ();
+		es.wave = 2;
+		return es;
 	}
 
-	public void SpawnEnemy2() {
+	public EnemyScript SpawnEnemy2() {
 		en = (GameObject) Instantiate (enemy,transform.position, Quaternion.Euler(new Vector3(0, 180)));
-		en.GetComponent<EnemyScript> ().wave = 3;
+		EnemyScript es = en.GetComponent<EnemyScript> ();
+		es.wave = 3;
+		return es;
 	}
 }
