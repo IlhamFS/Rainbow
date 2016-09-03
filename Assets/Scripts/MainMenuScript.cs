@@ -7,7 +7,6 @@ public class MainMenuScript : MonoBehaviour {
 	GameObject activeScene;
 	public GameObject optionScene;
 	public GameObject colorGuideScene;
-	public GameObject onboardingScene;
 	public GameObject creditsScene;
 	public GameObject quitScene;
 
@@ -36,8 +35,7 @@ public class MainMenuScript : MonoBehaviour {
 	}
 
 	public void Onboarding() {
-		onboardingScene.SetActive (true);
-		activeScene = onboardingScene;
+		SceneManager.LoadScene (2);
 	}
 
 	public void Credits() {
