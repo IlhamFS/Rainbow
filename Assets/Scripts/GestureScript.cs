@@ -238,15 +238,28 @@ public class GestureScript : MonoBehaviour {
 	}
 
 	public void PlayerAttack(){
-		Debug.Log("Attack");
+		//player animation attak
 		gameController.killEnemies (colorName);
+
 		//player attack
 		colorArray = new int[3];
 		colorName = "white";
 	}
+	public void SpecialRainbowAttack(){
+		//player animation Special Rainbow
+		gameController.rainbowSpecial ();
 
+		colorArray = new int[3];
+		colorName = "white";
+	}
+	public void SpecialTimeAttack(){
+		//player animation Special Rainbow
+		gameController.timeSpecial ();
+
+		colorArray = new int[3];
+		colorName = "white";
+	}
 	public void CancelAttack(){
-		Debug.Log("Attack Canceled");
 		//player attack canceled
 		colorArray = new int[3];
 		colorName = "white";
