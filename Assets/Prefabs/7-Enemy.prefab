@@ -13,7 +13,7 @@ GameObject:
   - 61: {fileID: 6167990}
   - 114: {fileID: 11421538}
   m_Layer: 8
-  m_Name: Enemy
+  m_Name: 7-Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,7 +103,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 98c7ca6ef0612d6469d77075bd4565e6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!1001 &100100000

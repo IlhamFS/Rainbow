@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class OnboardingEnemyScript : MonoBehaviour {
-	public GameObject enemy;
+	public GameObject[] enemy;
 	GameObject en;
 
 	// Use this for initialization
@@ -15,16 +15,18 @@ public class OnboardingEnemyScript : MonoBehaviour {
 	}
 
 	public EnemyScript SpawnEnemy1() {
-		en = (GameObject) Instantiate (enemy,transform.position, Quaternion.Euler(new Vector3(0, 180)));
+		int indEnemy = Random.Range (1, 3);
+		en = (GameObject) Instantiate (enemy[indEnemy],transform.position, Quaternion.Euler(new Vector3(0, 180)));
 		EnemyScript es = en.GetComponent<EnemyScript> ();
-		es.wave = 2;
+		es.speed= 1;
 		return es;
 	}
 
 	public EnemyScript SpawnEnemy2() {
-		en = (GameObject) Instantiate (enemy,transform.position, Quaternion.Euler(new Vector3(0, 180)));
+		int indEnemy = Random.Range (4, 6);
+		en = (GameObject) Instantiate (enemy[indEnemy],transform.position, Quaternion.Euler(new Vector3(0, 180)));
 		EnemyScript es = en.GetComponent<EnemyScript> ();
-		es.wave = 3;
+		es.speed = 1;
 		return es;
 	}
 }

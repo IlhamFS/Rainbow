@@ -35,7 +35,7 @@ public class OnboardingScript : MonoBehaviour {
 			EnemyScript ee = coll.gameObject.GetComponent<EnemyScript> ();
 			ee.speed = 0;
 
-			if (ee.wave == 2) {
+			if (state == 1) {
 				swipeText.SetActive (true);
 				swipeText.GetComponent<Text>().text = "Please swipe " + ee.getColorName() + ".\n Press cancel to reset color.";
 				StartCoroutine (Swiping());

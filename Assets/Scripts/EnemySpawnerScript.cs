@@ -3,15 +3,18 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class EnemySpawnerScript : MonoBehaviour {
-	public GameObject enemy;
+	public GameObject[] enemy;
 	GameObject en;
 	int enemyCount = 0;
 	int enemyLimit = 10;
 
 	bool firstWave = true;
-
 	public int wave = 1;
 	public Text waveText;
+
+	int colorLowerBound;
+	int colorUpperBound;
+	float speed = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -34,8 +37,11 @@ public class EnemySpawnerScript : MonoBehaviour {
 				waveText.CrossFadeAlpha (1, 1.0f, false);
 			}
 
-			en = (GameObject) Instantiate (enemy,transform.position, Quaternion.Euler(new Vector3(0, 180)));
-			en.GetComponent<EnemyScript> ().wave = wave;
+			configWave (wave);
+			int indEnemy = Random.Range (colorLowerBound, colorUpperBound);
+
+			en = (GameObject) Instantiate (enemy[indEnemy],transform.position, Quaternion.Euler(new Vector3(0, 180)));
+			en.GetComponent<EnemyScript> ().speed = speed;
 			enemyCount++;
 
 			if (enemyCount == enemyLimit) {
@@ -55,5 +61,75 @@ public class EnemySpawnerScript : MonoBehaviour {
 		}
 
 
+	}
+
+	void configWave(int wav) {
+		speed = 1;		
+		float speedPlus;
+
+		switch (wave) {
+		case 1:
+			//color
+			colorLowerBound = 0;
+			colorUpperBound = 3;
+			break;
+		case 2:
+			//color
+			colorLowerBound = 1;
+			colorUpperBound = 3;
+
+			//speed
+			speedPlus = speed * 1.5f;
+			speed = Random.Range (speed, speedPlus);
+			break;
+		case 3:
+			//color
+			colorLowerBound = 4;
+			colorUpperBound = 6;
+			break;
+		case 4:
+			//color
+			colorLowerBound = 4;
+			colorUpperBound = 7;
+
+			//speed
+			speedPlus = speed * 1.5f;
+			speed = Random.Range (speed, speedPlus);
+			break;
+		case 5:
+			//color
+			colorLowerBound = 0;
+			colorUpperBound = 6;
+
+			//speed
+			speedPlus = speed * 2f;
+			speed = Random.Range (speed, speedPlus);
+			break;
+		case 6:
+			//color
+			colorLowerBound = 1;
+			colorUpperBound = 7;
+
+			//speed
+			speedPlus = speed * 2.5f;
+			speed = Random.Range (speed, speedPlus);
+			break;
+		default:
+			//color
+			colorLowerBound = 0;
+			colorUpperBound = 7;
+			break;
+
+			//speed
+			speedPlus = speed * 2.5f;
+			speed = Random.Range (speed, speedPlus);
+			break;
+		}
+
+		/* PS: balancing ga cuma pake warna aja, yang kepikiran :
+		 * 1. ubah bobot kelompok warna, misal : di wave x, bobot warna gampang (1-3) 30%, warna susah (4-6) 70%
+		 * 2. ubah kecepatan enemy
+		 * 3. ubah jumlah enemy sampe wave berikutnya
+		*/
 	}
 }
