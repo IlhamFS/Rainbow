@@ -35,7 +35,9 @@ public class GameController : MonoBehaviour {
 		foreach (Collider2D enemy in enemies) {
 			EnemyScript es = enemy.GetComponent<EnemyScript> ();
 			es.destroyEnemy ();
-			score += 10;
+
+			float result = (enemy.transform.position.x + 7.5f) / horzExtent;
+			score += result;
 		}
 	}
 
