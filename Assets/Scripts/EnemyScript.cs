@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class EnemyScript : MonoBehaviour {
+	public GameObject item;
 	public float speed;
 	string colorName;
 
@@ -52,6 +53,10 @@ public class EnemyScript : MonoBehaviour {
 	}
 
 	public void destroyEnemy() {
+		float itemRand = Random.Range (0.0f, 1.0f);
 		Destroy (gameObject);
+
+		if (itemRand >= 0.5f)
+			Instantiate (item,transform.position,Quaternion.identity);
 	}
 }

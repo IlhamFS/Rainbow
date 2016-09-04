@@ -118,7 +118,6 @@ public class EnemySpawnerScript : MonoBehaviour {
 			//color
 			colorLowerBound = 0;
 			colorUpperBound = 7;
-			break;
 
 			//speed
 			speedPlus = speed * 2.5f;
