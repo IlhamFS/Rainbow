@@ -4,6 +4,7 @@ using System.Collections;
 public class GameController : MonoBehaviour {
 	public int score = 0;
 	public bool timeDur = false;
+	public bool killed = false;
 	public void killEnemies(string color){
 		Collider2D[] enemies = Physics2D.OverlapAreaAll(new Vector2(-7, 5), new Vector2(7, -5), 1 << LayerMask.NameToLayer("Enemy"), -Mathf.Infinity, Mathf.Infinity);
 		foreach (Collider2D enemy in enemies) {
@@ -14,6 +15,8 @@ public class GameController : MonoBehaviour {
 				score += 10;
 			}
 		}
+
+		killed = true;
 	}
 
 	public void rainbowSpecial(){

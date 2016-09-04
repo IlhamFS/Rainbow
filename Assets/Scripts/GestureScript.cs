@@ -15,7 +15,8 @@ public class GestureScript : MonoBehaviour {
 
 	private List<Sprite> randomGesture;
 	private int[] colorArray = new int[3];
-	private string colorName = "white";
+	public string colorName = "white";
+
 	//
 	private bool gestureErr = false;
 	private Vector3 mouseStart;

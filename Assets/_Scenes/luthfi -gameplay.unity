@@ -1546,7 +1546,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &933416348
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,15 +2754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20459f90495132041bf7055c10b657e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy:
-  - {fileID: 141826, guid: b88aaee4548015b4fbf905ce95cde717, type: 2}
-  - {fileID: 141826, guid: 9df1b18e851cdbb4d9cb8bba31e71991, type: 2}
-  - {fileID: 141826, guid: 9fb2dbb4b8f4df041a0c6be4a36c4164, type: 2}
-  - {fileID: 141826, guid: 5468081d53e8f74499b2500b297ef20b, type: 2}
-  - {fileID: 141826, guid: 6b70cc4889df00844bf550fc07895c18, type: 2}
-  - {fileID: 141826, guid: 0ab97892e17c177419631d1e86a5a251, type: 2}
-  - {fileID: 141826, guid: e6f702b2209604b4e966acbf02930c6f, type: 2}
-  - {fileID: 141826, guid: 238df1d23943c2c47ad5a824b6f22a90, type: 2}
+  enemy: {fileID: 141826, guid: b88aaee4548015b4fbf905ce95cde717, type: 2}
   wave: 1
   waveText: {fileID: 2016636296}
 --- !u!4 &2071821979
@@ -2772,7 +2764,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2071821977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.3, y: -3.11, z: 0}
+  m_LocalPosition: {x: 458, y: 22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []

@@ -13,7 +13,7 @@ GameObject:
   - 61: {fileID: 6167990}
   - 114: {fileID: 11421538}
   m_Layer: 8
-  m_Name: Enemy
+  m_Name: 0-Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f847066d27cc84480b232d9a5a1ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wave: 0
+  item: {fileID: 108224, guid: 7ac492fc646c16244b8d93606d15f59f, type: 2}
   speed: 1
 --- !u!212 &21299160
 SpriteRenderer:
