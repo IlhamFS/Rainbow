@@ -21,10 +21,18 @@ public class GameOverScript : MonoBehaviour {
 		if (coll.gameObject.tag == "Enemy") {
 			EnemyScript es = coll.gameObject.GetComponent<EnemyScript> ();
 
+			StoreHighScore ((int)(gm.score * 100.0f));
 			gameOver.SetActive (true);
 			Text tx = gameoverText.GetComponent<Text> ();
-			tx.text = "Game Over !!! \n dikalahkan oleh musuh berwarna " + es.getColorName() + "\n\n score = " + (int) (gm.score * 100.0f);
+			tx.text = "Game Over !!! \n dikalahkan oleh musuh berwarna " + es.getColorName () + "\n\n score = " + (int)(gm.score * 100.0f) + "\n\n High Score = " + PlayerPrefs.GetInt ("highscore",0);
 			Time.timeScale = 0.0f;
 		}
+	}
+
+	void StoreHighScore(int newHighScore){
+		int oldHighScore = PlayerPrefs.GetInt ("highscore", 0);
+
+		if (newHighScore > oldHighScore)
+			PlayerPrefs.SetInt ("highscore", newHighScore);
 	}
 }
