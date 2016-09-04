@@ -23,7 +23,7 @@ public class GameOverScript : MonoBehaviour {
 
 			gameOver.SetActive (true);
 			Text tx = gameoverText.GetComponent<Text> ();
-			tx.text = "Game Over !!! \n dikalahkan oleh musuh berwarna " + es.getColorName() + "\n\n score = " + gm.score;
+			tx.text = "Game Over !!! \n dikalahkan oleh musuh berwarna " + es.getColorName() + "\n\n score = " + (int) (gm.score * 100.0f);
 			Time.timeScale = 0.0f;
 		}
 	}

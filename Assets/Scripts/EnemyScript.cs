@@ -56,7 +56,7 @@ public class EnemyScript : MonoBehaviour {
 		float itemRand = Random.Range (0.0f, 1.0f);
 		Destroy (gameObject);
 
-		if (itemRand >= 0.5f)
+		if (itemRand >= 0.8f)
 			Instantiate (item,transform.position,Quaternion.identity);
 	}
 }

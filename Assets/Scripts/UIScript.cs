@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class UIScript : MonoBehaviour {
 	public Text scoreText;
-	int scoreInt;
 	public GameController gm;
 	public GameObject pauseScene;
 
@@ -30,8 +29,7 @@ public class UIScript : MonoBehaviour {
 	}
 
 	void UpdateScore() {
-		scoreInt = gm.score;
-		scoreText.text = "Score = " + scoreInt;
+		scoreText.text = "Score = " + (int) (gm.score * 100.0f);
 	}
 
 	public void Pause(){
