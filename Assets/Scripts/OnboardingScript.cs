@@ -11,19 +11,23 @@ public class OnboardingScript : MonoBehaviour {
 	public GameObject swipeText;
 	public GameObject combineText;
 	public GameObject attackText;
-	public GameObject endText;
 	public Text startText;
+	public Text phase1;
+	public Text phase2;
+
+	public Button attack;
+	public Button cancel;
 
 	EnemyScript enemy;
 	int state = 1;
 
 	// Use this for initialization
 	void Start () {
-		StartCoroutine (Begin());
+		StartCoroutine (Fading(startText));
+		enemy = oes.SpawnEnemy1 ();
 		swipeText.SetActive (false);
 		combineText.SetActive (false);
 		attackText.SetActive (false);
-		endText.SetActive (false);
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
@@ -33,41 +37,46 @@ public class OnboardingScript : MonoBehaviour {
 
 			if (ee.wave == 2) {
 				swipeText.SetActive (true);
-				swipeText.GetComponent<Text>().text = "Please swipe " + ee.getColorName();
+				swipeText.GetComponent<Text>().text = "Please swipe " + ee.getColorName() + ".\n Press cancel to reset color.";
 				StartCoroutine (Swiping());
 			} else {
 				combineText.SetActive (true);
-				combineText.GetComponent<Text>().text = "Please combine colors to " + ee.getColorName ();
+				combineText.GetComponent<Text>().text = "Combine colors to " + ee.getColorName () + ".\n Press cancel to reset color.";
 				StartCoroutine (Swiping());
 			}
 		}
 	}
 
-	IEnumerator Begin(){
-		startText.CrossFadeAlpha(255, 1.0f, false);
+	IEnumerator Fading(Text aText){
+		aText.CrossFadeAlpha(255, 1.0f, false);
 		yield return new WaitForSeconds (1);
-		startText.CrossFadeAlpha(1, 1.0f, false);
+		aText.CrossFadeAlpha(1, 1.0f, false);
 		yield return new WaitForSeconds (1);
-		enemy = oes.SpawnEnemy1 ();
 	}
 
 	IEnumerator Swiping() {
+		cancel.interactable = true;
+
 		yield return StartCoroutine (CheckSwipe());
 		swipeText.SetActive (false);
 		combineText.SetActive (false);
 		attackText.SetActive (true);
+		cancel.interactable = false;
+		attack.interactable = true;
 
 		yield return StartCoroutine (CheckAttack());
 		gc.killed = false;
 		attackText.SetActive (false);
+		attack.interactable = false;
 
 		if (state == 1) {
+			yield return StartCoroutine (Fading(phase1));
 			enemy = oes.SpawnEnemy2 ();
 			state = 2;
 			yield break;
 		} else if (state == 2) {
-			endText.SetActive (true);
-			yield return new WaitForSeconds (5);
+			yield return StartCoroutine (Fading(phase2));
+			yield break;
 		}
 	}
 
