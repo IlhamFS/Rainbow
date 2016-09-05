@@ -12,6 +12,9 @@ public class GestureScript : MonoBehaviour {
 	public SpriteRenderer[] gesturePlaces;
 	public Sprite[] gestureArr;
 	public GameController gameController;
+	public Animator batAnimator;
+	public Animator goatAnimator;
+	public Animator bearAnimator;
 
 	private List<Sprite> randomGesture;
 	private int[] colorArray = new int[3];
@@ -130,18 +133,21 @@ public class GestureScript : MonoBehaviour {
 		//Attack jika gesture benar dengan salah satu gesture yang terdapat pada pemain
 		if (checkResult == true) {
 			string player = "";
-			if (gestureResult.GestureClass == randomGesture [0].name && gestureResult.Score > 0.6) {
+			if (gestureResult.GestureClass == randomGesture [0].name && gestureResult.Score > 0.5) {
 				colorArray [0] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
-			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.6) {
+				batAnimator.SetTrigger ("Attack");
+			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.5) {
 				colorArray [1] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
-			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.6) {
+				goatAnimator.SetTrigger ("Attack");
+			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.5) {
 				colorArray [2] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
+				bearAnimator.SetTrigger ("Attack");
 			}
 
 			colorName = GetColorName (colorArray);
