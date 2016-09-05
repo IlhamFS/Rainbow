@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EnemyScript : MonoBehaviour {
 	public GameObject item;
 	public float speed;
-	string colorName;
+	public string colorName;
 
 	// Use this for initialization
 	void Start () {

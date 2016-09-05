@@ -40,7 +40,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 			configWave (wave);
 			int indEnemy = Random.Range (colorLowerBound, colorUpperBound);
 
-			en = (GameObject) Instantiate (enemy[indEnemy],transform.position, Quaternion.Euler(new Vector3(0, 180)));
+			en = (GameObject) Instantiate (enemy[indEnemy],transform.position, Quaternion.Euler(new Vector3(0, 0)));
 			en.GetComponent<EnemyScript> ().speed = speed;
 			enemyCount++;
 
