@@ -76,6 +76,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 108224, guid: 7ac492fc646c16244b8d93606d15f59f, type: 2}
   speed: 1
+  enemyClip:
+  - {fileID: 8300000, guid: 0d3def65994b84d04b8791e02beb2391, type: 3}
+  - {fileID: 8300000, guid: 3a20c1f2fd4d44c4d9a6fabbec93be20, type: 3}
+  - {fileID: 8300000, guid: d4aedaaa8b7044b028ce7da7409a8fab, type: 3}
+  - {fileID: 8300000, guid: f32d44a6bdb854aa5b10a83f60a507ab, type: 3}
+  - {fileID: 8300000, guid: 2a0632631fb04405fa85f4a5a5d01a4d, type: 3}
 --- !u!212 &21299160
 SpriteRenderer:
   m_ObjectHideFlags: 1

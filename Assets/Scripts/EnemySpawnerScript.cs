@@ -5,6 +5,8 @@ using UnityEngine.UI;
 public class EnemySpawnerScript : MonoBehaviour {
 	public GameObject[] enemy;
 	GameObject en;
+	int lastEnemyIndex = 0;
+	int enemyIndex = 0;
 	int enemyCount = 0;
 	int enemyLimit = 10;
 
@@ -12,8 +14,8 @@ public class EnemySpawnerScript : MonoBehaviour {
 	public int wave = 1;
 	public Text waveText;
 
-	int colorLowerBound;
-	int colorUpperBound;
+	float colorLowerBound;
+	float colorUpperBound;
 	float speed = 1;
 
 	// Use this for initialization
@@ -38,9 +40,12 @@ public class EnemySpawnerScript : MonoBehaviour {
 			}
 
 			configWave (wave);
-			int indEnemy = Random.Range (colorLowerBound, colorUpperBound);
+			while (enemyIndex == lastEnemyIndex) {
+				enemyIndex = (int) Random.Range (colorLowerBound, colorUpperBound);
+			}
+			lastEnemyIndex = enemyIndex;	
 
-			en = (GameObject) Instantiate (enemy[indEnemy],transform.position, Quaternion.Euler(new Vector3(0, 180)));
+			en = (GameObject) Instantiate (enemy[enemyIndex],transform.position, Quaternion.Euler(new Vector3(0, 180)));
 			en.GetComponent<EnemyScript> ().speed = speed;
 			enemyCount++;
 
@@ -52,6 +57,9 @@ public class EnemySpawnerScript : MonoBehaviour {
 
 				waveText.text = "Wave " + wave;
 				waveText.CrossFadeAlpha (255, 1.0f, false);
+
+				if(wave % 2 == 0)
+					SoundManagerScript.instance.increaseBGMPitch ();
 			}
 
 			if (firstWave) {
@@ -71,12 +79,12 @@ public class EnemySpawnerScript : MonoBehaviour {
 		case 1:
 			//color
 			colorLowerBound = 0;
-			colorUpperBound = 3;
+			colorUpperBound = 3.99f;
 			break;
 		case 2:
 			//color
 			colorLowerBound = 1;
-			colorUpperBound = 3;
+			colorUpperBound = 3.99f;
 
 			//speed
 			speedPlus = speed * 1.5f;
@@ -85,12 +93,12 @@ public class EnemySpawnerScript : MonoBehaviour {
 		case 3:
 			//color
 			colorLowerBound = 4;
-			colorUpperBound = 6;
+			colorUpperBound = 6.99f;
 			break;
 		case 4:
 			//color
 			colorLowerBound = 4;
-			colorUpperBound = 7;
+			colorUpperBound = 7.99f;
 
 			//speed
 			speedPlus = speed * 1.5f;
@@ -99,7 +107,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 		case 5:
 			//color
 			colorLowerBound = 0;
-			colorUpperBound = 6;
+			colorUpperBound = 6.99f;
 
 			//speed
 			speedPlus = speed * 2f;
@@ -108,7 +116,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 		case 6:
 			//color
 			colorLowerBound = 1;
-			colorUpperBound = 7;
+			colorUpperBound = 7.99f;
 
 			//speed
 			speedPlus = speed * 2.5f;
@@ -117,7 +125,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 		default:
 			//color
 			colorLowerBound = 0;
-			colorUpperBound = 7;
+			colorUpperBound = 7.99f;
 
 			//speed
 			speedPlus = speed * 2.5f;

@@ -43,4 +43,26 @@ public class SoundManagerScript : MonoBehaviour {
 
 		getSound ();
 	}
+
+	public void increaseBGMPitch(){
+		musicSource.pitch += 0.05f;
+	}
+
+	public void playSingle(AudioClip clip){
+		if (sfxSource.isPlaying)
+			sfxSource.Stop ();
+
+		sfxSource.clip = clip;
+		sfxSource.Play ();
+	}
+
+	public void playRandom(AudioClip[] clip){
+		if (!sfxSource.isPlaying) {
+			int clipIndex = Random.Range (0, clip.Length);
+			float pitch = Random.Range (0.95f, 1.05f);
+			sfxSource.clip = clip[clipIndex];
+			sfxSource.pitch = pitch;
+			sfxSource.Play ();
+		}
+	}
 }

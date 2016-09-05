@@ -7,11 +7,14 @@ public class EnemyScript : MonoBehaviour {
 	public GameObject item;
 	public float speed;
 	string colorName;
+	public AudioClip[] enemyClip;
 
 	// Use this for initialization
 	void Start () {
 		char[] nama = gameObject.name.ToCharArray ();
 		setColorName (nama[0]);
+
+		StartCoroutine (playSound(3.0f));
 	}
 	
 	// Update is called once per frame
@@ -58,5 +61,13 @@ public class EnemyScript : MonoBehaviour {
 
 		if (itemRand >= 0.8f)
 			Instantiate (item,transform.position,Quaternion.identity);
+	}
+
+	IEnumerator playSound(float wait) {
+		while (true) {
+			yield return new WaitForSeconds (Random.Range(wait / 2, wait));
+
+			SoundManagerScript.instance.playRandom (enemyClip);
+		}
 	}
 }

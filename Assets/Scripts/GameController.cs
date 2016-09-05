@@ -8,7 +8,6 @@ public class GameController : MonoBehaviour {
 
 	float vertExtent;
 	float horzExtent;
-	public Transform enemySpawnPos;
 
 	void Start(){
 		vertExtent = (int) Camera.main.orthographicSize;
