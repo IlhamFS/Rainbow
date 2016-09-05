@@ -22,7 +22,7 @@ public class MainMenuScript : MonoBehaviour {
 	}
 
 	public void Play() {
-		SceneManager.LoadScene (1);
+		AutoFade.LoadLevel(1 ,1,1,Color.black);
 	}
 
 	public void Option() {
@@ -37,7 +37,7 @@ public class MainMenuScript : MonoBehaviour {
 	}
 
 	public void Onboarding() {
-		SceneManager.LoadScene (2);
+		AutoFade.LoadLevel(2 ,1,1,Color.black);
 	}
 
 	public void Credits() {
