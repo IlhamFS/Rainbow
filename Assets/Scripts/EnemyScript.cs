@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class EnemyScript : MonoBehaviour {
-	public GameObject item;
+	public GameObject[] item;
 	public float speed;
 	string colorName;
 	public AudioClip[] enemyClip;
@@ -59,15 +59,17 @@ public class EnemyScript : MonoBehaviour {
 		float itemRand = Random.Range (0.0f, 1.0f);
 		Destroy (gameObject);
 
-		if (itemRand >= 0.8f)
-			Instantiate (item,transform.position,Quaternion.identity);
+		if (itemRand >= 0.95f)
+			Instantiate (item[0],transform.position,Quaternion.identity);
+		else if (itemRand >= 0.9f)
+			Instantiate (item[1],transform.position,Quaternion.identity);
 	}
 
 	IEnumerator playSound(float wait) {
 		while (true) {
 			yield return new WaitForSeconds (Random.Range(wait / 2, wait));
 
-			SoundManagerScript.instance.playRandom (enemyClip);
+			SoundManagerScript.instance.playRandom (1, enemyClip);
 		}
 	}
 }

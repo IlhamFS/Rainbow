@@ -23,7 +23,7 @@ public class GameOverScript : MonoBehaviour {
 			DestroyAllEnemy ();
 
 			SoundManagerScript.instance.musicSource.Stop ();
-			SoundManagerScript.instance.playSingle (gameOverClip);
+			SoundManagerScript.instance.playSingle (1, gameOverClip);
 			EnemyScript es = coll.gameObject.GetComponent<EnemyScript> ();
 
 			StoreHighScore ((int)(gm.score * 100.0f));

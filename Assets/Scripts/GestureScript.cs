@@ -47,6 +47,11 @@ public class GestureScript : MonoBehaviour {
 	private string message;
 	private bool recognized;
 
+	public AudioClip[] batClip;
+	public AudioClip[] bearClip;
+	public AudioClip[] sheepClip;
+	public AudioClip attackClip;
+
 	void Start () {
 
 		platform = Application.platform;
@@ -134,14 +139,17 @@ public class GestureScript : MonoBehaviour {
 				colorArray [0] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
+				SoundManagerScript.instance.playRandom (2, batClip);
 			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.6) {
 				colorArray [1] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
+				SoundManagerScript.instance.playRandom (2, bearClip);
 			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.6) {
 				colorArray [2] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
+				SoundManagerScript.instance.playRandom (2, sheepClip);
 			}
 
 			colorName = GetColorName (colorArray);
@@ -244,6 +252,8 @@ public class GestureScript : MonoBehaviour {
 		//player attack
 		colorArray = new int[3];
 		colorName = "white";
+
+		SoundManagerScript.instance.playSingle (2, attackClip);
 	}
 	public void SpecialRainbowAttack(){
 		//player animation Special Rainbow
