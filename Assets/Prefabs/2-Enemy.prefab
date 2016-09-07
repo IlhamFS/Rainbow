@@ -188,9 +188,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f847066d27cc84480b232d9a5a1ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 110420, guid: 1cc9d92a34759224c9aa09596a9287ff, type: 2}
+  item:
+  - {fileID: 110420, guid: 1cc9d92a34759224c9aa09596a9287ff, type: 2}
+  - {fileID: 136356, guid: b259c2be0b1bf724d9f476ed455ab459, type: 2}
   speed: 1
   colorName: 
+  enemyClip:
+  - {fileID: 8300000, guid: 0d3def65994b84d04b8791e02beb2391, type: 3}
+  - {fileID: 8300000, guid: 3a20c1f2fd4d44c4d9a6fabbec93be20, type: 3}
+  - {fileID: 8300000, guid: d4aedaaa8b7044b028ce7da7409a8fab, type: 3}
+  - {fileID: 8300000, guid: a7fdde9dbb81b4167a27a8aeb1e4ce58, type: 3}
+  - {fileID: 8300000, guid: 2a0632631fb04405fa85f4a5a5d01a4d, type: 3}
+  enemyAnimator: {fileID: 9555842}
 --- !u!212 &21235890
 SpriteRenderer:
   m_ObjectHideFlags: 1

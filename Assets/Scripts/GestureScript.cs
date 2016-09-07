@@ -149,13 +149,13 @@ public class GestureScript : MonoBehaviour {
 				gestureResult.GestureClass = "";
 				RenderGesture ();
 				goatAnimator.SetTrigger ("Attack");
-				SoundManagerScript.instance.playRandom (2, bearClip);
+				SoundManagerScript.instance.playRandom (2, sheepClip);
 			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.6) {
 				colorArray [2] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
 				bearAnimator.SetTrigger ("Attack");
-				SoundManagerScript.instance.playRandom (2, sheepClip);
+				SoundManagerScript.instance.playRandom (2, bearClip);
 			}
 
 			colorName = GetColorName (colorArray);
@@ -195,25 +195,25 @@ public class GestureScript : MonoBehaviour {
 			color = "white";
 		} 
 		else if(color == "100"){
-			color = "cyan";
+			color = "blue";
 		} 
 		else if(color == "010"){
-			color = "magenta";
+			color = "pink";
 		} 
 		else if(color == "001"){
 			color = "yellow";
 		} 
 		else if(color == "110"){
-			color = "blue";
+			color = "purple";
 		} 
 		else if(color == "101"){
 			color = "green";
 		} 
 		else if(color == "011"){
-			color = "red";
+			color = "orange";
 		} 
 		else if(color == "111"){
-			color = "black";
+			color = "brown";
 		}
 		return color;
 	}

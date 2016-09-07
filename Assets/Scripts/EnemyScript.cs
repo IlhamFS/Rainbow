@@ -8,6 +8,7 @@ public class EnemyScript : MonoBehaviour {
 	public float speed;
 	public string colorName;
 	public AudioClip[] enemyClip;
+	public Animator enemyAnimator;
 
 	// Use this for initialization
 	void Start () {
@@ -32,25 +33,25 @@ public class EnemyScript : MonoBehaviour {
 			colorName = "white";
 			break;
 		case '1':
-			colorName = "cyan";
+			colorName = "blue";
 			break;
 		case '2':
-			colorName = "magenta";
+			colorName = "pink";
 			break;
 		case '3':
 			colorName = "yellow";
 			break;
 		case '4':
-			colorName = "blue";
+			colorName = "purple";
 			break;
 		case '5':
 			colorName = "green";
 			break;
 		case '6':
-			colorName = "red";
+			colorName = "orange";
 			break;
 		case '7':
-			colorName = "black";
+			colorName = "brown";
 			break;
 		}
 	}
@@ -71,5 +72,10 @@ public class EnemyScript : MonoBehaviour {
 
 			SoundManagerScript.instance.playRandom (1, enemyClip);
 		}
+	}
+
+	public IEnumerator playAttack(){
+		enemyAnimator.SetTrigger ("Attack");
+		yield break;
 	}
 }

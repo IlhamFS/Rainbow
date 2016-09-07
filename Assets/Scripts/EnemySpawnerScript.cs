@@ -24,10 +24,6 @@ public class EnemySpawnerScript : MonoBehaviour {
 		waveText.text = "Wave " + wave;
 		waveText.CrossFadeAlpha (255, 1.0f, false);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	}
 
 	IEnumerator SpawnEnemy(float wait) {
 		while (true) {
@@ -45,7 +41,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 			}
 			lastEnemyIndex = enemyIndex;	
 
-			en = (GameObject) Instantiate (enemy[enemyIndex],transform.position, Quaternion.Euler(new Vector3(0, 180)));
+			en = (GameObject) Instantiate (enemy[enemyIndex],transform.position, Quaternion.identity);
 			en.GetComponent<EnemyScript> ().speed = speed;
 			enemyCount++;
 

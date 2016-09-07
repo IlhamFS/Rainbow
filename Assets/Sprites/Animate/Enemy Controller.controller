@@ -7,7 +7,6 @@ AnimatorController:
   m_PrefabInternal: {fileID: 0}
   m_Name: Enemy Controller
   serializedVersion: 5
-<<<<<<< HEAD
   m_AnimatorParameters:
   - m_Name: Attack
     m_Type: 9
@@ -15,9 +14,6 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-=======
-  m_AnimatorParameters: []
->>>>>>> 9146cf07f8580b6fcc6c9fad7e6a4945f9a6f4dd
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -31,24 +27,16 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
-<<<<<<< HEAD
 --- !u!1101 &110171404
-=======
---- !u!1101 &110136332
->>>>>>> 9146cf07f8580b6fcc6c9fad7e6a4945f9a6f4dd
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-<<<<<<< HEAD
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: Attack
     m_EventTreshold: 0
-=======
-  m_Conditions: []
->>>>>>> 9146cf07f8580b6fcc6c9fad7e6a4945f9a6f4dd
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 110212862}
   m_Solo: 0
@@ -58,7 +46,6 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.28571427
-<<<<<<< HEAD
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -80,8 +67,6 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.6381579
-=======
->>>>>>> 9146cf07f8580b6fcc6c9fad7e6a4945f9a6f4dd
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -119,12 +104,8 @@ AnimatorState:
   m_Name: enemy_yellow_attack
   m_Speed: 1
   m_CycleOffset: 0
-<<<<<<< HEAD
   m_Transitions:
   - {fileID: 110190776}
-=======
-  m_Transitions: []
->>>>>>> 9146cf07f8580b6fcc6c9fad7e6a4945f9a6f4dd
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -148,11 +129,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-<<<<<<< HEAD
   - {fileID: 110171404}
-=======
-  - {fileID: 110136332}
->>>>>>> 9146cf07f8580b6fcc6c9fad7e6a4945f9a6f4dd
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0

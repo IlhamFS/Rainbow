@@ -7,6 +7,7 @@ public class GameOverScript : MonoBehaviour {
 	public GameObject gameoverText;
 	public GameController gm;
 	public AudioClip gameOverClip;
+	public AudioClip heroDeathClip;
 
 	// Use this for initialization
 	void Start () {
@@ -20,18 +21,30 @@ public class GameOverScript : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D coll) {
 		if (coll.gameObject.tag == "Enemy") {
-			DestroyAllEnemy ();
-
-			SoundManagerScript.instance.musicSource.Stop ();
-			SoundManagerScript.instance.playSingle (1, gameOverClip);
 			EnemyScript es = coll.gameObject.GetComponent<EnemyScript> ();
-
-			StoreHighScore ((int)(gm.score * 100.0f));
-			gameOver.SetActive (true);
-			Text tx = gameoverText.GetComponent<Text> ();
-			tx.text = "Game Over !!! \n dikalahkan oleh musuh berwarna " + es.getColorName () + "\n\n score = " + (int)(gm.score * 100.0f) + "\n\n High Score = " + PlayerPrefs.GetInt ("highscore",0);
-			Time.timeScale = 0.0f;
+			StartCoroutine (GameOver(es));
 		}
+	}
+
+	IEnumerator GameOver(EnemyScript es) {
+		SoundManagerScript.instance.musicSource.Stop ();
+		SoundManagerScript.instance.heroSource.Stop ();
+		SoundManagerScript.instance.sfxSource.mute = true;
+		SoundManagerScript.instance.playSingle (2, heroDeathClip);
+
+		StopAllEnemy ();
+		yield return StartCoroutine (es.playAttack ());
+		yield return new WaitForSeconds (1.0f);
+
+		SoundManagerScript.instance.sfxSource.mute = false;
+		SoundManagerScript.instance.playSingle (1, gameOverClip);
+
+		StoreHighScore ((int)(gm.score * 100.0f));
+		gameOver.SetActive (true);
+		Text tx = gameoverText.GetComponent<Text> ();
+		tx.text = "Game Over !!! \n dikalahkan oleh musuh berwarna " + es.getColorName () + "\n\n score = " + (int)(gm.score * 100.0f) + "\n\n High Score = " + PlayerPrefs.GetInt ("highscore",0);
+		Time.timeScale = 0.0f;
+		yield break;
 	}
 
 	void StoreHighScore(int newHighScore){
@@ -41,11 +54,11 @@ public class GameOverScript : MonoBehaviour {
 			PlayerPrefs.SetInt ("highscore", newHighScore);
 	}
 
-	void DestroyAllEnemy() {
+	void StopAllEnemy() {
 		Collider2D[] enemies = Physics2D.OverlapAreaAll(new Vector2(-7, 5), new Vector2(7, -5), 1 << LayerMask.NameToLayer("Enemy"), -Mathf.Infinity, Mathf.Infinity);
 		foreach (Collider2D enemy in enemies) {
 			EnemyScript es = enemy.GetComponent<EnemyScript> ();
-			es.destroyEnemy ();
+			es.speed = 0;
 		}
 	}
 }
