@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21215842}
   - 114: {fileID: 11491766}
   - 58: {fileID: 5876386}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Time Special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
