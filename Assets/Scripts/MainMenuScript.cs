@@ -9,6 +9,7 @@ public class MainMenuScript : MonoBehaviour {
 	public GameObject colorGuideScene;
 	public GameObject creditsScene;
 	public GameObject quitScene;
+	public Text highScoreText;
 
 	// Use this for initialization
 	void Start () {
@@ -21,12 +22,13 @@ public class MainMenuScript : MonoBehaviour {
 	}
 
 	public void Play() {
-		SceneManager.LoadScene (1);
+		AutoFade.LoadLevel(1 ,1,1,Color.black);
 	}
 
 	public void Option() {
 		optionScene.SetActive (true);
 		activeScene = optionScene;
+		highScoreText.text = "High Score = " + PlayerPrefs.GetInt ("highscore",0);
 	}
 
 	public void ColorGuide() {
@@ -35,7 +37,7 @@ public class MainMenuScript : MonoBehaviour {
 	}
 
 	public void Onboarding() {
-		SceneManager.LoadScene (2);
+		AutoFade.LoadLevel(2 ,1,1,Color.black);
 	}
 
 	public void Credits() {
