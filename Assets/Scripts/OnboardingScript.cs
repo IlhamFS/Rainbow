@@ -40,8 +40,10 @@ public class OnboardingScript : MonoBehaviour {
 			ee.disableAnimation ();
 
 			if (state == 1) {
+				gs.colorName = "white";
 				StartCoroutine (Swiping());
 			} else {
+				gs.colorName = "white";
 				StartCoroutine (Combining());
 			}
 		}
