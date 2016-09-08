@@ -10,7 +10,7 @@ public class SoundManagerScript : MonoBehaviour {
 	public Toggle soundToggle;
 
 	// Use this for initialization
-	void Awake () {
+	void Start () {
 		if (instance == null)
 			instance = this;
 		else if (instance != this)
