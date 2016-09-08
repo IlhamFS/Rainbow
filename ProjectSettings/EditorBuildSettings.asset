@@ -8,6 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/luthfi - Main Menu.unity
   - enabled: 1
-    path: Assets/_Scenes/luthfi - Gameplay.unity
+    path: Assets/_Scenes/sound - Gameplay.unity
   - enabled: 1
     path: Assets/_Scenes/onboarding.unity

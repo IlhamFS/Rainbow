@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary; 
 using PDollarGestureRecognizer;
+using UnityEngine.SceneManagement;
 
 public class GestureScript : MonoBehaviour {
 	//Our
@@ -17,8 +18,10 @@ public class GestureScript : MonoBehaviour {
 	public Animator bearAnimator;
 
 	private List<Sprite> randomGesture;
+	public List<int> randomGestureIndex;
 	private int[] colorArray = new int[3];
 	public string colorName = "white";
+	public bool onboardingAction = false;
 
 	//
 	private bool gestureErr = false;
@@ -221,15 +224,18 @@ public class GestureScript : MonoBehaviour {
 	//membuat list random gesture
 	List<Sprite> GetRandomGesture (){
 		List<Sprite> result = new List<Sprite>();
+		randomGestureIndex = new List<int> ();
 		bool full = false;
 		int i = 0;
 
 
 		while (full == false) {
-			Sprite rand = gestureArr[UnityEngine.Random.Range(0,gestureArr.Length)];
+			int index = UnityEngine.Random.Range (0, gestureArr.Length);
+			Sprite rand = gestureArr[index];
 
 			if(!result.Exists(element => element == rand )){
 				result.Add(rand);
+				randomGestureIndex.Add (index);
 				i++;
 			}
 			if(i == 3){
@@ -252,6 +258,11 @@ public class GestureScript : MonoBehaviour {
 	}
 
 	public void PlayerAttack(){
+		if (SceneManager.GetActiveScene ().buildIndex == 2 && !onboardingAction) {
+			colorArray = new int[3];
+			colorName = "white";
+			return;
+		}
 		//player animation attak
 		gameController.killEnemies (colorName);
 
