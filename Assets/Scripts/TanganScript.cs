@@ -15,7 +15,8 @@ public class TanganScript : MonoBehaviour {
 	}
 
 	public void Reset() {
-		anim.SetBool (curBool, false);
+		if(curBool != "")
+			anim.SetBool (curBool, false);
 	}
 
 	public void S() {

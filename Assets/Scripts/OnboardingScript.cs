@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class OnboardingScript : MonoBehaviour {
 	public OnboardingEnemyScript oes;
@@ -15,6 +16,7 @@ public class OnboardingScript : MonoBehaviour {
 	public Text startText;
 	public Text phase1;
 	public Text phase2;
+	public Text wrongText;
 
 	public AudioClip nextPhaseClip;
 	public GameObject tangan;
@@ -38,12 +40,8 @@ public class OnboardingScript : MonoBehaviour {
 			ee.disableAnimation ();
 
 			if (state == 1) {
-				swipeText.SetActive (true);
-				swipeText.GetComponent<Text>().text = "Please swipe " + ee.getColorName() + ".\n\n\n\n\n\n\n\n\n\n Press chipmunk to attack and reset color.";
 				StartCoroutine (Swiping());
 			} else {
-				combineText.SetActive (true);
-				combineText.GetComponent<Text>().text = "Combine colors to " + ee.getColorName () + ".\n\n\n\n\n\n\n\n\n\n Press chipmunk to attack and reset color.";
 				StartCoroutine (Combining());
 			}
 		}
@@ -64,17 +62,21 @@ public class OnboardingScript : MonoBehaviour {
 	IEnumerator Combining(){
 		gs.onboardingAction = true;
 		string enColor = enemy.getColorName ();
+		combineText.SetActive (true);
 
 		switch (enColor) {
 		case "purple":
+			combineText.GetComponent<Text>().text = "Combine colors to " + enColor + " (blue + pink).";
 			yield return StartCoroutine (CheckSwipe("blue"));
 			yield return StartCoroutine (CheckSwipe("pink"));
 			break;
 		case "green":
+			combineText.GetComponent<Text>().text = "Combine colors to " + enColor + " (blue + yellow).";
 			yield return StartCoroutine (CheckSwipe("blue"));
 			yield return StartCoroutine (CheckSwipe("yellow"));
 			break;
 		case "orange":
+			combineText.GetComponent<Text>().text = "Combine colors to " + enColor + " (pink + yellow).";
 			yield return StartCoroutine (CheckSwipe("pink"));
 			yield return StartCoroutine (CheckSwipe("yellow"));
 			break;
@@ -91,6 +93,7 @@ public class OnboardingScript : MonoBehaviour {
 	IEnumerator Swiping() {
 		gs.onboardingAction = true;
 		string enColor = enemy.getColorName ();
+
 		yield return StartCoroutine (CheckSwipe(enColor));
 
 		SoundManagerScript.instance.playSingle (1, nextPhaseClip);
@@ -106,22 +109,43 @@ public class OnboardingScript : MonoBehaviour {
 		tangan.SetActive (true);
 		int index = 0;
 
-		while (gs.colorName != enColor) {
+		swipeText.SetActive (true);
+		swipeText.GetComponent<Text>().text = "Please swipe " + enColor + ".";
+
+		string actualColor = enColor;
+		if (state == 3)
+			actualColor = enemy.getColorName ();
+
+		while (gs.colorName != actualColor) {
+			if (state == 3) {
+				string[] combinedColors = { "purple", "green", "orange" };
+				if (ArrayUtility.IndexOf (combinedColors, gs.colorName) != -1) {
+					state = 2;
+					yield return StartCoroutine (Fading (wrongText));
+					yield return StartCoroutine (Combining ());
+				}
+			} else {
+				string[] combinedColors = { "blue", "pink", "yellow" };
+				if (ArrayUtility.IndexOf (combinedColors, gs.colorName) != -1) {
+					StartCoroutine (Fading (wrongText));
+				}
+			}
+
 			index = PickColor (enColor);
 			setTangan (index);
 			yield return null;
 		}
 			
-		if (state == 1) {
+		if (state == 1 || state == 3) {
 			TanganScript.instance.Reset ();
 			tangan.SetActive (false);
 			swipeText.SetActive (false);
 			combineText.SetActive (false);
 			attackText.SetActive (true);
-			yield return StartCoroutine (CheckAttack (enColor));
+			yield return StartCoroutine (CheckAttack (actualColor));
 		}
 		else if (state == 2) {
-			state = 1;
+			state = 3;
 		}
 
 		yield break;
@@ -135,10 +159,13 @@ public class OnboardingScript : MonoBehaviour {
 
 				if (state == 1) {
 					swipeText.SetActive (true);
+					yield return StartCoroutine (Fading(wrongText));
 					yield return StartCoroutine(CheckSwipe(enColor));
 				}
 				else {
 					combineText.SetActive (true);
+					state = 2;
+					yield return StartCoroutine (Fading(wrongText));
 					yield return StartCoroutine (Combining());
 				}
 			}
