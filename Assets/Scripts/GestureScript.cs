@@ -1,171 +1,3 @@
-﻿My Drive
-Details
-Activity
-TODAY
-
-Muhammad Luthfiuploaded an item
-2:40 PM
-Text
-GestureScript.cs
-
-Nayana Tuploaded 6 items
-2:27 PM
-Image
-Menu-23.png
-Image
-Menu-24.png
-Image
-Menu-25.png
-Image
-Menu-26.png
-Image
-Menu-22.png
-Image
-Menu-21.png
-
-Firda Dhea Sauzanuploaded 2 items
-11:53 AM
-Word
-Laporan.docx
-PDF
-Laporan Rancangan Kegiatan Ristek Fasilkom UI 1.0.pdf
-
-Nayana Tedited an item
-11:41 AM
-Google Docs
-Font Guide
-
-Nayana Tuploaded 8 items
-11:41 AM
-Image
-Menu-12.png
-Image
-Menu-20.png
-Image
-Menu-17.png
-Image
-Menu-18.png
-Image
-Menu-15.png
-Image
-Menu-16.png
-Show all...
-
-Riza Anjari Putrishared an item
-10:50 AM
-Google Sheets
-List Email Marketing
-T
-Can edit
-Timotius Kevin Levandi
-
-Riza Anjari Putriedited an item
-10:50 AM
-Google Sheets
-List Email Marketing
-
-Nayana Tedited an item
-10:36 AM
-Google Sheets
-Backlog
-
-Nayana Tuploaded an item
-10:31 AM
-Image
-Menu-13.png
-
-Nayana Tcreated an item
-10:30 AM
-Google Docs
-Font Guide
-
-Nayana Tuploaded 15 items
-10:29 AM
-Image
-Menu-11.png
-Unknown File
-NOVITONOVA-REGULAR.OTF
-Unknown File
-NOVITONOVA-THIN.OTF
-Unknown File
-RUNAWAY.OTF
-Image
-Menu back-01.png
-Image
-Menu-09.png
-Show all...
-
-Muhammad Firza Pratamaedited an item
-10:25 AM
-Google Docs
-Laporan
-
-Nayana Tcreated and shared an item in
-10:19 AM
-Google Drive Folder
-Assets
-Google Drive Folder
-menu
-
-Can edit
-Muhammad Azmi
-
-Can edit
-Muhammad Luthfi
-
-Can edit
-You
-
-Muhammad Firza Pratamaedited an item
-8:30 AM
-Google Docs
-Laporan
-YESTERDAY
-
-Muhammad Firza Pratamaedited an item
-Wed 7:55 PM
-Google Docs
-Laporan
-
-You and 3 otherscommented on an item
-Wed 6:17 PM
-Google Docs
-Laporan
-
-You and 3 othersedited an item
-Wed 6:14 PM
-Google Docs
-Laporan
-
-Muhammad Luthfiuploaded 2 items
-Wed 5:16 PM
-Binary File
-enemy_pink_attack.anim
-Binary File
-Enemy Controller.controller
-
-Muhammad Luthficreated and shared an item in
-Wed 5:16 PM
-Google Drive Folder
-[IGI Compfest] Muffin
-Google Drive Folder
-buat feti
-
-Can edit
-Muhammad Azmi
-
-Can edit
-You
-
-Can edit
-Nayana T
-
-Mohammad Awwaab Abdul Malik and Muhammad Firza Pratamaedited an item
-Wed 5:15 PM
-Google Docs
-Laporan
-
-
 ﻿using UnityEngine;
 using System;
 using UnityEngine.UI;
@@ -174,7 +6,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary; 
 using PDollarGestureRecognizer;
-using UnityEngine.SceneManagement;
 
 public class GestureScript : MonoBehaviour {
 	//Our
@@ -184,12 +15,14 @@ public class GestureScript : MonoBehaviour {
 	public Animator batAnimator;
 	public Animator goatAnimator;
 	public Animator bearAnimator;
+	public Animator stickAnimator;
+	public Animator chipmunkAnimator;
 
 	private List<Sprite> randomGesture;
-	public List<int> randomGestureIndex;
 	private int[] colorArray = new int[3];
+	private string animColor = "";
+
 	public string colorName = "white";
-	public bool onboardingAction = false;
 
 	//
 	private bool gestureErr = false;
@@ -315,13 +148,13 @@ public class GestureScript : MonoBehaviour {
 				RenderGesture ();
 				batAnimator.SetTrigger ("Attack");
 				SoundManagerScript.instance.playRandom (2, batClip);
-			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.6) {
+			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.5) {
 				colorArray [1] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
 				goatAnimator.SetTrigger ("Attack");
 				SoundManagerScript.instance.playRandom (2, sheepClip);
-			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.6) {
+			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.5) {
 				colorArray [2] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
@@ -330,11 +163,40 @@ public class GestureScript : MonoBehaviour {
 			}
 
 			colorName = GetColorName (colorArray);
+			changeAnim ();
 			message = colorName;
 		}
 
 	}
-
+	void changeAnim(){
+		if (animColor != colorName) {
+			animColor = colorName;
+			if (animColor == "white") {
+				stickAnimator.SetTrigger ("White");
+			}
+			else if(animColor == "blue"){
+				stickAnimator.SetTrigger ("Cyan");
+			}
+			else if(animColor == "pink"){
+				stickAnimator.SetTrigger ("Pink");
+			}
+			else if(animColor == "yellow"){
+				stickAnimator.SetTrigger ("Yellow");
+			}
+			else if(animColor == "purple"){
+				stickAnimator.SetTrigger ("Purple");
+			}
+			else if(animColor == "green"){
+				stickAnimator.SetTrigger ("Green");
+			}
+			else if(animColor == "orange"){
+				stickAnimator.SetTrigger ("Orange");
+			}
+			else if(animColor == "brown"){
+				stickAnimator.SetTrigger ("Brown");
+			}
+		}
+	}
 	void OnGUI() {
 
 		//GUI.Box(drawArea,"Draw Area");
@@ -392,18 +254,15 @@ public class GestureScript : MonoBehaviour {
 	//membuat list random gesture
 	List<Sprite> GetRandomGesture (){
 		List<Sprite> result = new List<Sprite>();
-		randomGestureIndex = new List<int> ();
 		bool full = false;
 		int i = 0;
 
 
 		while (full == false) {
-			int index = UnityEngine.Random.Range (0, gestureArr.Length);
-			Sprite rand = gestureArr[index];
+			Sprite rand = gestureArr[UnityEngine.Random.Range(0,gestureArr.Length)];
 
 			if(!result.Exists(element => element == rand )){
 				result.Add(rand);
-				randomGestureIndex.Add (index);
 				i++;
 			}
 			if(i == 3){
@@ -426,14 +285,10 @@ public class GestureScript : MonoBehaviour {
 	}
 
 	public void PlayerAttack(){
-		if (SceneManager.GetActiveScene ().buildIndex == 2 && !onboardingAction) {
-			colorArray = new int[3];
-			colorName = "white";
-			return;
-		}
 		//player animation attak
 		gameController.killEnemies (colorName);
-
+		stickAnimator.SetTrigger ("Attack");
+		chipmunkAnimator.SetTrigger ("Attack");
 		//player attack
 		colorArray = new int[3];
 		colorName = "white";
@@ -460,6 +315,3 @@ public class GestureScript : MonoBehaviour {
 		colorName = "white";
 	}
 }
-
-
-
