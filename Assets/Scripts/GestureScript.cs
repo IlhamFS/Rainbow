@@ -15,9 +15,12 @@ public class GestureScript : MonoBehaviour {
 	public Animator batAnimator;
 	public Animator goatAnimator;
 	public Animator bearAnimator;
+	public Animator stickAnimator;
 
 	private List<Sprite> randomGesture;
 	private int[] colorArray = new int[3];
+	private string animColor = "";
+
 	public string colorName = "white";
 
 	//
@@ -151,11 +154,40 @@ public class GestureScript : MonoBehaviour {
 			}
 
 			colorName = GetColorName (colorArray);
+			changeAnim ();
 			message = colorName;
 		}
 
 	}
-
+	void changeAnim(){
+		if (animColor != colorName) {
+			animColor = colorName;
+			if (animColor == "white") {
+				stickAnimator.SetTrigger ("White");
+			}
+			else if(animColor == "cyan"){
+				stickAnimator.SetTrigger ("Cyan");
+			}
+			else if(animColor == "magenta"){
+				stickAnimator.SetTrigger ("Pink");
+			}
+			else if(animColor == "yellow"){
+				stickAnimator.SetTrigger ("Yellow");
+			}
+			else if(animColor == "blue"){
+				stickAnimator.SetTrigger ("Purple");
+			}
+			else if(animColor == "green"){
+				stickAnimator.SetTrigger ("Green");
+			}
+			else if(animColor == "red"){
+				stickAnimator.SetTrigger ("Orange");
+			}
+			else if(animColor == "black"){
+				stickAnimator.SetTrigger ("Brown");
+			}
+		}
+	}
 	void OnGUI() {
 
 		//GUI.Box(drawArea,"Draw Area");
@@ -246,7 +278,7 @@ public class GestureScript : MonoBehaviour {
 	public void PlayerAttack(){
 		//player animation attak
 		gameController.killEnemies (colorName);
-
+		stickAnimator.SetTrigger ("Attack");
 		//player attack
 		colorArray = new int[3];
 		colorName = "white";
