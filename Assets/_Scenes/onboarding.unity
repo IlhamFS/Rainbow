@@ -1908,6 +1908,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11480896, guid: 608fe106b72401f4c9ea6c981fb2c779, type: 2}
+      propertyPath: smoke
+      value: 
+      objectReference: {fileID: 176386, guid: cf7bce57820004444a9eedce62fc80c1, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 608fe106b72401f4c9ea6c981fb2c779, type: 2}
   m_IsPrefabParent: 0
