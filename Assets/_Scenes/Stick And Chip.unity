@@ -833,6 +833,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16693cd4a27957849bb763064fee9dc8, type: 2}
   m_IsPrefabParent: 0
+--- !u!95 &453857649 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9505352, guid: 16693cd4a27957849bb763064fee9dc8,
+    type: 2}
+  m_PrefabInternal: {fileID: 453857648}
 --- !u!1 &463441835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,6 +1274,10 @@ Prefab:
       propertyPath: stickAnimator
       value: 
       objectReference: {fileID: 501094187}
+    - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: chipmunkAnimator
+      value: 
+      objectReference: {fileID: 453857649}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
   m_IsPrefabParent: 0

@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21246014}
   - 114: {fileID: 11485674}
   - 58: {fileID: 5817186}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rainbow Special
   m_TagString: Untagged
   m_Icon: {fileID: 0}

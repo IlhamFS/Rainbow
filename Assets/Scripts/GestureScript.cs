@@ -16,6 +16,7 @@ public class GestureScript : MonoBehaviour {
 	public Animator goatAnimator;
 	public Animator bearAnimator;
 	public Animator stickAnimator;
+	public Animator chipmunkAnimator;
 
 	private List<Sprite> randomGesture;
 	private int[] colorArray = new int[3];
@@ -279,6 +280,7 @@ public class GestureScript : MonoBehaviour {
 		//player animation attak
 		gameController.killEnemies (colorName);
 		stickAnimator.SetTrigger ("Attack");
+		chipmunkAnimator.SetTrigger ("Attack");
 		//player attack
 		colorArray = new int[3];
 		colorName = "white";
