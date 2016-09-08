@@ -16,10 +16,14 @@ public class GestureScript : MonoBehaviour {
 	public Animator batAnimator;
 	public Animator goatAnimator;
 	public Animator bearAnimator;
+	public Animator stickAnimator;
+	public Animator chipmunkAnimator;
 
 	private List<Sprite> randomGesture;
 	public List<int> randomGestureIndex;
 	private int[] colorArray = new int[3];
+	private string animColor = "";
+
 	public string colorName = "white";
 	public bool onboardingAction = false;
 
@@ -147,13 +151,13 @@ public class GestureScript : MonoBehaviour {
 				RenderGesture ();
 				batAnimator.SetTrigger ("Attack");
 				SoundManagerScript.instance.playRandom (2, batClip);
-			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.6) {
+			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.5) {
 				colorArray [1] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
 				goatAnimator.SetTrigger ("Attack");
 				SoundManagerScript.instance.playRandom (2, sheepClip);
-			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.6) {
+			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.5) {
 				colorArray [2] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
@@ -162,11 +166,40 @@ public class GestureScript : MonoBehaviour {
 			}
 
 			colorName = GetColorName (colorArray);
+			changeAnim ();
 			message = colorName;
 		}
 
 	}
-
+	void changeAnim(){
+		if (animColor != colorName) {
+			animColor = colorName;
+			if (animColor == "white") {
+				stickAnimator.SetTrigger ("White");
+			}
+			else if(animColor == "blue"){
+				stickAnimator.SetTrigger ("Cyan");
+			}
+			else if(animColor == "pink"){
+				stickAnimator.SetTrigger ("Pink");
+			}
+			else if(animColor == "yellow"){
+				stickAnimator.SetTrigger ("Yellow");
+			}
+			else if(animColor == "purple"){
+				stickAnimator.SetTrigger ("Purple");
+			}
+			else if(animColor == "green"){
+				stickAnimator.SetTrigger ("Green");
+			}
+			else if(animColor == "orange"){
+				stickAnimator.SetTrigger ("Orange");
+			}
+			else if(animColor == "brown"){
+				stickAnimator.SetTrigger ("Brown");
+			}
+		}
+	}
 	void OnGUI() {
 
 		//GUI.Box(drawArea,"Draw Area");
@@ -253,7 +286,7 @@ public class GestureScript : MonoBehaviour {
 			gest.sprite = randomGesture [count];
 			count++;
 		}
-		
+
 
 	}
 
@@ -269,10 +302,13 @@ public class GestureScript : MonoBehaviour {
 
 		//player animation attak
 		gameController.killEnemies (colorName);
-
+		stickAnimator.SetTrigger ("Attack");
+		chipmunkAnimator.SetTrigger ("Attack");
 		//player attack
 		colorArray = new int[3];
 		colorName = "white";
+
+		SoundManagerScript.instance.playSingle (2, attackClip);
 	}
 	public void SpecialRainbowAttack(){
 		//player animation Special Rainbow
@@ -294,7 +330,3 @@ public class GestureScript : MonoBehaviour {
 		colorName = "white";
 	}
 }
-
-
-
-
