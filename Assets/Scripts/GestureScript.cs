@@ -258,19 +258,21 @@ public class GestureScript : MonoBehaviour {
 	}
 
 	public void PlayerAttack(){
-		if (SceneManager.GetActiveScene ().buildIndex == 2 && !onboardingAction) {
+		if (!onboardingAction) {
 			colorArray = new int[3];
 			colorName = "white";
 			return;
 		}
+
+		if(SceneManager.GetActiveScene ().buildIndex != 2)
+			SoundManagerScript.instance.playSingle (2, attackClip);
+
 		//player animation attak
 		gameController.killEnemies (colorName);
 
 		//player attack
 		colorArray = new int[3];
 		colorName = "white";
-
-		SoundManagerScript.instance.playSingle (2, attackClip);
 	}
 	public void SpecialRainbowAttack(){
 		//player animation Special Rainbow

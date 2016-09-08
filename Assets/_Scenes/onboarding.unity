@@ -1467,6 +1467,7 @@ MonoBehaviour:
   phase2: {fileID: 752460544}
   wrongText: {fileID: 848607473}
   nextPhaseClip: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
+  wrongClip: {fileID: 8300000, guid: 0aa7479d18df04f4383781b53a27ab81, type: 3}
   tangan: {fileID: 1463063989}
 --- !u!1 &587223496
 GameObject:
@@ -2175,7 +2176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.003921569}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.003921569}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
