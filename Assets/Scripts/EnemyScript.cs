@@ -4,14 +4,18 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class EnemyScript : MonoBehaviour {
-	public GameObject item;
+	public GameObject[] item;
 	public float speed;
 	public string colorName;
+	public AudioClip[] enemyClip;
+	public Animator enemyAnimator;
 
 	// Use this for initialization
 	void Start () {
 		char[] nama = gameObject.name.ToCharArray ();
 		setColorName (nama[0]);
+
+		StartCoroutine (playSound(3.0f));
 	}
 	
 	// Update is called once per frame
@@ -29,25 +33,25 @@ public class EnemyScript : MonoBehaviour {
 			colorName = "white";
 			break;
 		case '1':
-			colorName = "cyan";
+			colorName = "blue";
 			break;
 		case '2':
-			colorName = "magenta";
+			colorName = "pink";
 			break;
 		case '3':
 			colorName = "yellow";
 			break;
 		case '4':
-			colorName = "blue";
+			colorName = "purple";
 			break;
 		case '5':
 			colorName = "green";
 			break;
 		case '6':
-			colorName = "red";
+			colorName = "orange";
 			break;
 		case '7':
-			colorName = "black";
+			colorName = "brown";
 			break;
 		}
 	}
@@ -56,7 +60,22 @@ public class EnemyScript : MonoBehaviour {
 		float itemRand = Random.Range (0.0f, 1.0f);
 		Destroy (gameObject);
 
-		if (itemRand >= 0.5f)
-			Instantiate (item,transform.position,Quaternion.identity);
+		if (itemRand >= 0.95f)
+			Instantiate (item[0],transform.position,Quaternion.identity);
+		else if (itemRand >= 0.9f)
+			Instantiate (item[1],transform.position,Quaternion.identity);
+	}
+
+	IEnumerator playSound(float wait) {
+		while (true) {
+			yield return new WaitForSeconds (Random.Range(wait / 2, wait));
+
+			SoundManagerScript.instance.playRandom (1, enemyClip);
+		}
+	}
+
+	public IEnumerator playAttack(){
+		enemyAnimator.SetTrigger ("Attack");
+		yield break;
 	}
 }

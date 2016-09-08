@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class UIScript : MonoBehaviour {
 	public Text scoreText;
-	int scoreInt;
 	public GameController gm;
 	public GameObject pauseScene;
 
@@ -20,27 +19,28 @@ public class UIScript : MonoBehaviour {
 	}
 
 	public void Restart() {
-		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 		Time.timeScale = 1.0f;
+		AutoFade.LoadLevel (SceneManager.GetActiveScene().buildIndex, 0.5f, 0.5f, Color.black);
 	}
 
 	public void MainMenu() {
-		SceneManager.LoadScene (0);
 		Time.timeScale = 1.0f;
+		AutoFade.LoadLevel (0, 0.5f, 0.5f, Color.black);
 	}
 
 	void UpdateScore() {
-		scoreInt = gm.score;
-		scoreText.text = "Score = " + scoreInt;
+		scoreText.text = "Score = " + (int) (gm.score * 100.0f);
 	}
 
 	public void Pause(){
 		pauseScene.SetActive (true);
 		Time.timeScale = 0.0f;
+		SoundManagerScript.instance.musicSource.mute = true;
 	}
 
 	public void Resume() {
 		pauseScene.SetActive (false);
 		Time.timeScale = 1.0f;
+		SoundManagerScript.instance.musicSource.mute = false;
 	}
 }
