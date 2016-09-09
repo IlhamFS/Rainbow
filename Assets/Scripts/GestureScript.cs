@@ -302,6 +302,7 @@ public class GestureScript : MonoBehaviour {
 			//player attack
 			colorArray = new int[3];
 			colorName = "white";
+			return;
 		}
 
 		SoundManagerScript.instance.playSingle (2, attackClip);

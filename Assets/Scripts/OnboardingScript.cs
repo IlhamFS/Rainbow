@@ -25,6 +25,9 @@ public class OnboardingScript : MonoBehaviour {
 	EnemyScript enemy;
 	int state = 1;
 
+	bool swiped = false;
+	bool combined = false;
+
 	// Use this for initialization
 	void Start () {
 		StartCoroutine (Fading(startText, 1.0f));
@@ -85,6 +88,9 @@ public class OnboardingScript : MonoBehaviour {
 			break;
 		}
 
+		if (!gs.onboardingAction)
+			yield break;
+
 		SoundManagerScript.instance.playSingle (2, nextPhaseClip);
 		yield return StartCoroutine (Fading(phase2, 1.0f));
 		yield return StartCoroutine (BackToMainMenu());
@@ -98,9 +104,12 @@ public class OnboardingScript : MonoBehaviour {
 		string enColor = enemy.getColorName ();
 
 		yield return StartCoroutine (CheckSwipe(enColor));
-
+		if (!gs.onboardingAction)
+			yield break;
+		
 		SoundManagerScript.instance.playSingle (2, nextPhaseClip);
-		yield return StartCoroutine (Fading(phase1, 1.0f));
+		yield return StartCoroutine (Fading (phase1, 1.0f));
+
 		enemy = oes.SpawnEnemy2 ();
 		state = 2;
 
@@ -116,6 +125,9 @@ public class OnboardingScript : MonoBehaviour {
 		while (gs.colorName != enColor) {
 			if (gs.colorName != "white")
 				yield return StartCoroutine (Salah());
+
+			if (!gs.onboardingAction)
+				yield break;
 
 			setTangan (enColor);
 			yield return null;
@@ -134,9 +146,12 @@ public class OnboardingScript : MonoBehaviour {
 		swipeText.SetActive (true);
 		swipeText.GetComponent<Text>().text = "Please swipe " + enColor + ".";
 
-		while (gs.colorName != enColor) {
+		while (gs.colorName != enColor) {			
 			if (gs.colorName != "white")
 				yield return StartCoroutine (Salah());
+
+			if (!gs.onboardingAction)
+				yield break;
 			
 			setTangan (enColor);
 			yield return null;
@@ -152,9 +167,12 @@ public class OnboardingScript : MonoBehaviour {
 
 		string actualColor = enemy.getColorName ();
 
-		while (gs.colorName != actualColor) {
+		while (gs.colorName != actualColor) {			
 			if (gs.colorName != oldColor)
 				yield return StartCoroutine (Salah());
+
+			if (!gs.onboardingAction)
+				yield break;
 
 			setTangan (newColor);
 			yield return null;
@@ -173,6 +191,9 @@ public class OnboardingScript : MonoBehaviour {
 			if (gs.colorName != enColor)
 				yield return StartCoroutine (Salah());
 
+			if (!gs.onboardingAction)
+				yield break;
+
 			yield return null;
 		}
 
@@ -183,6 +204,8 @@ public class OnboardingScript : MonoBehaviour {
 	IEnumerator Salah(){
 		if (!gs.onboardingAction)
 			yield break;
+
+		gs.onboardingAction = false;
 
 		SoundManagerScript.instance.playSingle (2, wrongClip);
 		tangan.SetActive (false);
