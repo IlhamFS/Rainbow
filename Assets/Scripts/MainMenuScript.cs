@@ -5,30 +5,24 @@ using UnityEngine.UI;
 
 public class MainMenuScript : MonoBehaviour {
 	GameObject activeScene;
-	public GameObject optionScene;
 	public GameObject colorGuideScene;
 	public GameObject creditsScene;
 	public GameObject quitScene;
 	public Text highScoreText;
 
-	// Use this for initialization
-	void Start () {
-	
+	void Start() {
+		highScoreText.text = "" + PlayerPrefs.GetInt ("highscore",0);
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-	
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			activeScene.SetActive (false);
+		}
 	}
 
 	public void Play() {
 		AutoFade.LoadLevel(1 ,1,1,Color.black);
-	}
-
-	public void Option() {
-		optionScene.SetActive (true);
-		activeScene = optionScene;
-		highScoreText.text = "" + PlayerPrefs.GetInt ("highscore",0);
 	}
 
 	public void ColorGuide() {
