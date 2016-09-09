@@ -16,7 +16,7 @@ public class OnboardingEnemyScript : MonoBehaviour {
 
 	public EnemyScript SpawnEnemy1() {
 		int indEnemy = Random.Range (1, 3);
-		en = (GameObject) Instantiate (enemy[indEnemy],transform.position, Quaternion.Euler(new Vector3(0, 180)));
+		en = (GameObject) Instantiate (enemy[indEnemy],transform.position, Quaternion.identity);
 		EnemyScript es = en.GetComponent<EnemyScript> ();
 		es.speed= 1;
 		return es;
@@ -24,7 +24,7 @@ public class OnboardingEnemyScript : MonoBehaviour {
 
 	public EnemyScript SpawnEnemy2() {
 		int indEnemy = Random.Range (4, 6);
-		en = (GameObject) Instantiate (enemy[indEnemy],transform.position, Quaternion.Euler(new Vector3(0, 180)));
+		en = (GameObject) Instantiate (enemy[indEnemy],transform.position, Quaternion.identity);
 		EnemyScript es = en.GetComponent<EnemyScript> ();
 		es.speed = 1;
 		return es;
