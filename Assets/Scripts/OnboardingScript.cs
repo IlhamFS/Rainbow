@@ -13,10 +13,18 @@ public class OnboardingScript : MonoBehaviour {
 	public GameObject swipeText;
 	public GameObject combineText;
 	public GameObject attackText;
+	public Image color;
 	public Text startText;
 	public Text phase1;
 	public Text phase2;
 	public Text wrongText;
+
+	public Sprite colorBlue;
+	public Sprite colorPink;
+	public Sprite colorYellow;
+	public Sprite colorPurple;
+	public Sprite colorOrange;
+	public Sprite colorGreen;
 
 	public AudioClip nextPhaseClip;
 	public AudioClip wrongClip;
@@ -24,9 +32,6 @@ public class OnboardingScript : MonoBehaviour {
 
 	EnemyScript enemy;
 	int state = 1;
-
-	bool swiped = false;
-	bool combined = false;
 
 	// Use this for initialization
 	void Start () {
@@ -119,8 +124,8 @@ public class OnboardingScript : MonoBehaviour {
 
 	IEnumerator CheckSwipe(string enColor) {
 		tangan.SetActive (true);
+		color.sprite = imageColor (enColor);
 		swipeText.SetActive (true);
-		swipeText.GetComponent<Text>().text = "Please swipe " + enColor + ".";
 
 		while (gs.colorName != enColor) {
 			if (gs.colorName != "white")
@@ -143,8 +148,8 @@ public class OnboardingScript : MonoBehaviour {
 
 	IEnumerator CheckSwipe2(string enColor){
 		tangan.SetActive (true);
+		color.sprite = imageColor (enColor);
 		swipeText.SetActive (true);
-		swipeText.GetComponent<Text>().text = "Please swipe " + enColor + ".";
 
 		while (gs.colorName != enColor) {			
 			if (gs.colorName != "white")
@@ -163,7 +168,7 @@ public class OnboardingScript : MonoBehaviour {
 	}
 
 	IEnumerator CheckSwipe3(string oldColor, string newColor){
-		swipeText.GetComponent<Text>().text = "Please swipe " + newColor + ".";
+		color.sprite = imageColor (newColor);
 
 		string actualColor = enemy.getColorName ();
 
@@ -184,6 +189,33 @@ public class OnboardingScript : MonoBehaviour {
 		combineText.SetActive (false);
 		attackText.SetActive (true);
 		yield return StartCoroutine (CheckAttack (actualColor));
+	}
+
+	Sprite imageColor(string color){
+		Sprite theColor = null;
+
+		switch(color){
+		case "blue":
+			theColor = colorBlue;
+			break;
+		case "pink":
+			theColor = colorPink;
+			break;
+		case "yellow":
+			theColor = colorYellow;
+			break;
+		case "purple":
+			theColor = colorPurple;
+			break;
+		case "orange":
+			theColor = colorOrange;
+			break;
+		case "green":
+			theColor = colorGreen;
+			break;
+		}
+
+		return theColor;
 	}
 
 	IEnumerator CheckAttack(string enColor) {

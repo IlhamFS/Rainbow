@@ -1,0 +1,530 @@
+fileFormatVersion: 2
+guid: c3c385e6cd5e3ce4db68888f2de31a2b
+timeCreated: 1473425034
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Menu-15_0
+    21300002: Menu-15_1
+    21300004: Menu-15_2
+    21300006: Menu-15_3
+    21300008: Menu-15_4
+    21300010: Menu-15_5
+    21300012: Menu-15_6
+    21300014: Menu-15_7
+    21300016: Menu-15_8
+    21300018: Menu-15_9
+    21300020: Menu-15_10
+    21300022: Menu-15_11
+    21300024: Menu-15_12
+    21300026: Menu-15_13
+    21300028: Menu-15_14
+    21300030: Menu-15_15
+    21300032: Menu-15_16
+    21300034: Menu-15_17
+    21300036: Menu-15_18
+    21300038: Menu-15_19
+    21300040: Menu-15_20
+    21300042: Menu-15_21
+    21300044: Menu-15_22
+    21300046: Menu-15_23
+    21300048: Menu-15_24
+    21300050: Menu-15_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Menu-15_0
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 706
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63.5, y: -46}
+        - {x: -48.5, y: -64}
+        - {x: 39.5, y: -64}
+        - {x: 63.5, y: -48}
+        - {x: 63.5, y: 28}
+        - {x: 52.5, y: 58}
+        - {x: 30.5, y: 64}
+        - {x: -31.5, y: 64}
+        - {x: -63.5, y: 42}
+    - name: Menu-15_1
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 726
+        width: 75
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: -39.5}
+        - {x: 28.5, y: -39.5}
+        - {x: 37.5, y: -34.5}
+        - {x: 37.5, y: 21.5}
+        - {x: 25.5, y: 39.5}
+        - {x: -9.5, y: 39.5}
+        - {x: -37.5, y: 21.5}
+        - {x: -37.5, y: -13.5}
+    - name: Menu-15_2
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 706
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.5, y: 64}
+        - {x: -56.5, y: 64}
+        - {x: -63.5, y: 37}
+        - {x: -63.5, y: -35}
+        - {x: -32.5, y: -64}
+        - {x: 59.5, y: -64}
+        - {x: 63.5, y: -46}
+        - {x: 63.5, y: 46}
+        - {x: 53.5, y: 54}
+    - name: Menu-15_3
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 771
+        width: 74
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Menu-15_4
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 687
+        width: 165
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.5, y: 83}
+        - {x: -32.5, y: 83}
+        - {x: -51.5, y: 80}
+        - {x: -82.5, y: 36}
+        - {x: -82.5, y: -40}
+        - {x: -61.5, y: -83}
+        - {x: 62.5, y: -83}
+        - {x: 82.5, y: -55}
+        - {x: 82.5, y: 36}
+        - {x: 64.5, y: 78}
+    - name: Menu-15_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 751
+        width: 73
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Menu-15_6
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 490
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.5, y: 63.5}
+        - {x: -63.5, y: 48.5}
+        - {x: -63.5, y: -50.5}
+        - {x: -58.5, y: -62.5}
+        - {x: -54.5, y: -63.5}
+        - {x: 39.5, y: -63.5}
+        - {x: 63.5, y: -39.5}
+        - {x: 63.5, y: 44.5}
+        - {x: 49.5, y: 63.5}
+    - name: Menu-15_7
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 509
+        width: 75
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 39.5}
+        - {x: -37.5, y: 11.5}
+        - {x: -37.5, y: -10.5}
+        - {x: -26.5, y: -39.5}
+        - {x: 26.5, y: -39.5}
+        - {x: 37.5, y: -32.5}
+        - {x: 37.5, y: 10.5}
+        - {x: 8.5, y: 39.5}
+    - name: Menu-15_8
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 490
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.5, y: 63.5}
+        - {x: -63.5, y: 43.5}
+        - {x: -63.5, y: -46.5}
+        - {x: -34.5, y: -63.5}
+        - {x: 48.5, y: -63.5}
+        - {x: 63.5, y: -45.5}
+        - {x: 63.5, y: 62.5}
+        - {x: 57.5, y: 63.5}
+    - name: Menu-15_9
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 554
+        width: 74
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Menu-15_10
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 471
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55.5, y: 81.5}
+        - {x: 50.5, y: 82.5}
+        - {x: -46.5, y: 82.5}
+        - {x: -82.5, y: 41.5}
+        - {x: -82.5, y: -40.5}
+        - {x: -78.5, y: -58.5}
+        - {x: -44.5, y: -82.5}
+        - {x: 43.5, y: -82.5}
+        - {x: 75.5, y: -66.5}
+        - {x: 82.5, y: -35.5}
+        - {x: 82.5, y: 41.5}
+    - name: Menu-15_11
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 534
+        width: 73
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Menu-15_12
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 273
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51.5, y: 63.5}
+        - {x: -48.5, y: 63.5}
+        - {x: -63.5, y: 58.5}
+        - {x: -63.5, y: -30.5}
+        - {x: -48.5, y: -63.5}
+        - {x: 52.5, y: -63.5}
+        - {x: 63.5, y: -44.5}
+        - {x: 63.5, y: 39.5}
+        - {x: 62.5, y: 48.5}
+    - name: Menu-15_13
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 293
+        width: 75
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: -39.5}
+        - {x: 28.5, y: -39.5}
+        - {x: 37.5, y: -34.5}
+        - {x: 37.5, y: 21.5}
+        - {x: 25.5, y: 39.5}
+        - {x: -9.5, y: 39.5}
+        - {x: -37.5, y: 21.5}
+        - {x: -37.5, y: -13.5}
+    - name: Menu-15_14
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 273
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40.5, y: 63.5}
+        - {x: -36.5, y: 63.5}
+        - {x: -63.5, y: 49.5}
+        - {x: -63.5, y: -53.5}
+        - {x: -36.5, y: -61.5}
+        - {x: -27.5, y: -63.5}
+        - {x: 29.5, y: -63.5}
+        - {x: 61.5, y: -38.5}
+        - {x: 63.5, y: -31.5}
+        - {x: 63.5, y: 30.5}
+    - name: Menu-15_15
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 338
+        width: 74
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Menu-15_16
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 254
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40.5, y: 82.5}
+        - {x: -38.5, y: 82.5}
+        - {x: -78.5, y: 51.5}
+        - {x: -82.5, y: 40.5}
+        - {x: -82.5, y: -42.5}
+        - {x: -79.5, y: -61.5}
+        - {x: -52.5, y: -82.5}
+        - {x: 41.5, y: -82.5}
+        - {x: 82.5, y: -65.5}
+        - {x: 82.5, y: 49.5}
+        - {x: 58.5, y: 78.5}
+    - name: Menu-15_17
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 318
+        width: 73
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Menu-15_18
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 56
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.5, y: 64}
+        - {x: -63.5, y: 52}
+        - {x: -63.5, y: -35}
+        - {x: -43.5, y: -64}
+        - {x: 52.5, y: -64}
+        - {x: 63.5, y: -62}
+        - {x: 63.5, y: 55}
+        - {x: 53.5, y: 64}
+    - name: Menu-15_19
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 76
+        width: 75
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: -39.5}
+        - {x: 28.5, y: -39.5}
+        - {x: 37.5, y: -34.5}
+        - {x: 37.5, y: 21.5}
+        - {x: 25.5, y: 39.5}
+        - {x: -9.5, y: 39.5}
+        - {x: -37.5, y: 21.5}
+        - {x: -37.5, y: -13.5}
+    - name: Menu-15_20
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 56
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63.5, y: -46}
+        - {x: -48.5, y: -64}
+        - {x: 39.5, y: -64}
+        - {x: 63.5, y: -48}
+        - {x: 63.5, y: 28}
+        - {x: 52.5, y: 58}
+        - {x: 30.5, y: 64}
+        - {x: -31.5, y: 64}
+        - {x: -63.5, y: 42}
+    - name: Menu-15_21
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 76
+        width: 75
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: -39.5}
+        - {x: 28.5, y: -39.5}
+        - {x: 37.5, y: -34.5}
+        - {x: 37.5, y: 21.5}
+        - {x: 25.5, y: 39.5}
+        - {x: -9.5, y: 39.5}
+        - {x: -37.5, y: 21.5}
+        - {x: -37.5, y: -13.5}
+    - name: Menu-15_22
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 56
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.5, y: 64}
+        - {x: -63.5, y: 44}
+        - {x: -63.5, y: -35}
+        - {x: -58.5, y: -47}
+        - {x: -23.5, y: -64}
+        - {x: 55.5, y: -64}
+        - {x: 63.5, y: -47}
+        - {x: 63.5, y: 49}
+        - {x: 34.5, y: 64}
+    - name: Menu-15_23
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 121
+        width: 74
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Menu-15_24
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 37
+        width: 165
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43.5, y: 83}
+        - {x: -60.5, y: 83}
+        - {x: -82.5, y: 56}
+        - {x: -82.5, y: -40}
+        - {x: -60.5, y: -83}
+        - {x: 35.5, y: -83}
+        - {x: 55.5, y: -70}
+        - {x: 82.5, y: -48}
+        - {x: 82.5, y: 54}
+    - name: Menu-15_25
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 101
+        width: 73
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
