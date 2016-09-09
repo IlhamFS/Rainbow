@@ -28,7 +28,7 @@ public class MainMenuScript : MonoBehaviour {
 	public void Option() {
 		optionScene.SetActive (true);
 		activeScene = optionScene;
-		highScoreText.text = "High Score = " + PlayerPrefs.GetInt ("highscore",0);
+		highScoreText.text = "" + PlayerPrefs.GetInt ("highscore",0);
 	}
 
 	public void ColorGuide() {
