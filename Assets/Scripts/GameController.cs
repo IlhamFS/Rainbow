@@ -4,7 +4,6 @@ using System.Collections;
 public class GameController : MonoBehaviour {
 	public float score = 0;
 	public bool timeDur = false;
-	public bool killed = false;
 	public GameObject smoke;
 	float vertExtent;
 	float horzExtent;
@@ -27,8 +26,6 @@ public class GameController : MonoBehaviour {
 				score += result;
 			}
 		}
-
-		killed = true;
 	}
 
 	public void rainbowSpecial(){

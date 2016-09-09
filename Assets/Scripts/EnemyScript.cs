@@ -60,6 +60,9 @@ public class EnemyScript : MonoBehaviour {
 		float itemRand = Random.Range (0.0f, 1.0f);
 		Destroy (gameObject);
 
+		if (SceneManager.GetActiveScene ().buildIndex == 2)
+			return;
+
 		if (itemRand >= 0.95f)
 			Instantiate (item[0],transform.position,Quaternion.identity);
 		else if (itemRand >= 0.9f)
@@ -77,5 +80,9 @@ public class EnemyScript : MonoBehaviour {
 	public IEnumerator playAttack(){
 		enemyAnimator.SetTrigger ("Attack");
 		yield break;
+	}
+
+	public void disableAnimation(){
+		enemyAnimator.Stop ();
 	}
 }
