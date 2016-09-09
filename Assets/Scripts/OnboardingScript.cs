@@ -14,6 +14,7 @@ public class OnboardingScript : MonoBehaviour {
 	public GameObject combinedColors;
 	public GameObject attackText;
 	public GameObject tutorialFinished;
+	public GameObject hintText;
 	public Image color;
 	public Image color1;
 	public Image color2;
@@ -47,6 +48,7 @@ public class OnboardingScript : MonoBehaviour {
 		tutorialFinished.SetActive (false);
 		tangan.SetActive (false);
 		tangan2.SetActive (false);
+		hintText.SetActive (false);
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
@@ -79,6 +81,7 @@ public class OnboardingScript : MonoBehaviour {
 	}
 
 	IEnumerator Combining(){
+		hintText.SetActive (true);
 		gs.onboardingAction = true;
 		string enColor = enemy.getColorName ();
 		combinedColors.SetActive (true);
@@ -113,6 +116,7 @@ public class OnboardingScript : MonoBehaviour {
 		if (!gs.onboardingAction)
 			yield break;
 
+		hintText.SetActive (false);
 		SoundManagerScript.instance.playSingle (2, nextPhaseClip);
 		yield return StartCoroutine (BackToMainMenu());
 
@@ -121,13 +125,15 @@ public class OnboardingScript : MonoBehaviour {
 	}
 
 	IEnumerator Swiping() {
+		hintText.SetActive (true);
 		gs.onboardingAction = true;
 		string enColor = enemy.getColorName ();
 
 		yield return StartCoroutine (CheckSwipe(enColor));
 		if (!gs.onboardingAction)
 			yield break;
-		
+
+		hintText.SetActive (false);
 		SoundManagerScript.instance.playSingle (2, nextPhaseClip);
 		yield return StartCoroutine (Fading (phase1, 1.0f));
 
