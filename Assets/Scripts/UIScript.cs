@@ -30,7 +30,7 @@ public class UIScript : MonoBehaviour {
 	}
 
 	void UpdateScore() {
-		scoreText.text = "SCORE = " + (int) (gm.score * 100.0f);
+		scoreText.text = "SCORE \n" + (int) (gm.score * 100.0f);
 	}
 
 	public void Pause(){
