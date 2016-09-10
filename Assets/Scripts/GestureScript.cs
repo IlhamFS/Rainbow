@@ -260,7 +260,14 @@ public class GestureScript : MonoBehaviour {
 
 
 		while (full == false) {
-			int index = UnityEngine.Random.Range (0, gestureArr.Length);
+			int index;
+
+			if (SceneManager.GetActiveScene ().buildIndex == 2) {
+				index = UnityEngine.Random.Range (0, 6);
+			} else {
+				index = UnityEngine.Random.Range (0, gestureArr.Length);
+			}
+
 			Sprite rand = gestureArr[index];
 
 			if(!result.Exists(element => element == rand )){
