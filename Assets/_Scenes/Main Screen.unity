@@ -131,7 +131,7 @@ MonoBehaviour:
   gm: {fileID: 672151459}
   gameOverClip: {fileID: 8300000, guid: 31c1d8dafd413ce4fab78f143a429ad7, type: 3}
   heroDeathClip: {fileID: 8300000, guid: 16ba71dae1f3bd645adbb2e39ca21736, type: 3}
-  highScoreText: {fileID: 0}
+  highScoreText: {fileID: 1195444151}
 --- !u!61 &20551052
 BoxCollider2D:
   m_ObjectHideFlags: 0
