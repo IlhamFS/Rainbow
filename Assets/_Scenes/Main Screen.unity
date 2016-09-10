@@ -2130,7 +2130,7 @@ MonoBehaviour:
   scoreText: {fileID: 598614452}
   gm: {fileID: 672151459}
   pauseScene: {fileID: 924723613}
-  highScoreText: {fileID: 0}
+  highScoreText: {fileID: 30418617}
 --- !u!1 &937964730
 GameObject:
   m_ObjectHideFlags: 0
