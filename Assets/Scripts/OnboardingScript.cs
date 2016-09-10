@@ -14,7 +14,6 @@ public class OnboardingScript : MonoBehaviour {
 	public GameObject combinedColors;
 	public GameObject attackText;
 	public GameObject tutorialFinished;
-	public GameObject hintText;
 	public Image color;
 	public Image color1;
 	public Image color2;
@@ -48,7 +47,6 @@ public class OnboardingScript : MonoBehaviour {
 		tutorialFinished.SetActive (false);
 		tangan.SetActive (false);
 		tangan2.SetActive (false);
-		hintText.SetActive (false);
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
@@ -58,10 +56,8 @@ public class OnboardingScript : MonoBehaviour {
 			ee.disableAnimation ();
 
 			if (state == 1) {
-				gs.colorName = "white";
 				StartCoroutine (Swiping());
 			} else {
-				gs.colorName = "white";
 				StartCoroutine (Combining());
 			}
 		}
@@ -81,7 +77,7 @@ public class OnboardingScript : MonoBehaviour {
 	}
 
 	IEnumerator Combining(){
-		hintText.SetActive (true);
+		gs.colorName = "white";
 		gs.onboardingAction = true;
 		string enColor = enemy.getColorName ();
 		combinedColors.SetActive (true);
@@ -116,7 +112,6 @@ public class OnboardingScript : MonoBehaviour {
 		if (!gs.onboardingAction)
 			yield break;
 
-		hintText.SetActive (false);
 		SoundManagerScript.instance.playSingle (2, nextPhaseClip);
 		yield return StartCoroutine (BackToMainMenu());
 
@@ -125,7 +120,7 @@ public class OnboardingScript : MonoBehaviour {
 	}
 
 	IEnumerator Swiping() {
-		hintText.SetActive (true);
+		gs.colorName = "white";
 		gs.onboardingAction = true;
 		string enColor = enemy.getColorName ();
 
@@ -133,7 +128,6 @@ public class OnboardingScript : MonoBehaviour {
 		if (!gs.onboardingAction)
 			yield break;
 
-		hintText.SetActive (false);
 		SoundManagerScript.instance.playSingle (2, nextPhaseClip);
 		yield return StartCoroutine (Fading (phase1, 1.0f));
 
@@ -170,9 +164,7 @@ public class OnboardingScript : MonoBehaviour {
 	}
 
 	IEnumerator CheckSwipe2(string enColor){
-		tangan.SetActive (true);
 		color.sprite = imageColor (enColor);
-		swipeText.SetActive (true);
 
 		while (gs.colorName != enColor) {			
 			if (gs.colorName != "white")
@@ -184,8 +176,7 @@ public class OnboardingScript : MonoBehaviour {
 			setTangan (enColor);
 			yield return null;
 		}
-
-		TanganScript.instance.Reset ();
+			
 		state = 3;
 		yield break;
 	}
@@ -207,8 +198,6 @@ public class OnboardingScript : MonoBehaviour {
 		}
 
 		TanganScript.instance.Reset ();
-		tangan.SetActive (false);
-		swipeText.SetActive (false);
 		combinedColors.SetActive (false);
 		attackText.SetActive (true);
 		tangan2.SetActive (true);
