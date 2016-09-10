@@ -143,7 +143,6 @@ public class GestureScript : MonoBehaviour {
 
 		//Attack jika gesture benar dengan salah satu gesture yang terdapat pada pemain
 		if (checkResult == true) {
-			string player = "";
 			if (gestureResult.GestureClass == randomGesture [0].name && gestureResult.Score > 0.5) {
 				colorArray [0] = 1;
 				gestureResult.GestureClass = "";

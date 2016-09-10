@@ -10,15 +10,11 @@ public class GameController : MonoBehaviour {
 
 	public bool timeDur = false;
 	public GameObject smoke;
-	float vertExtent;
-	float horzExtent;
 
 	public bool gameOver = false;
 
 	void Start(){
 		enemyLimit = 5 * multiplier;
-		vertExtent = (int) Camera.main.orthographicSize;
-		horzExtent = vertExtent * Screen.width / Screen.height;
 	}
 
 	public void killEnemies(string color){
