@@ -285,6 +285,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c32b887778221f64bb7ec136b5e74458, type: 3}
   - {fileID: 21300000, guid: b70382377cf23344d88ea54eb8b36a1a, type: 3}
   - {fileID: 21300000, guid: 70a584c7cad4252428d9e0f78c0580d4, type: 3}
+  - {fileID: 21300000, guid: 8bb6d2144dd1b7a41a3e129e53b72115, type: 3}
+  - {fileID: 21300000, guid: ec421b3941989a54f85333b0d3db2c4d, type: 3}
   gameController: {fileID: 0}
   batAnimator: {fileID: 0}
   goatAnimator: {fileID: 0}

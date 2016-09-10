@@ -808,6 +808,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: gestureArr.Array.size
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 411630, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -868,6 +872,20 @@ Prefab:
       propertyPath: hentakan
       value: 
       objectReference: {fileID: 106652, guid: bdb983b2213d94d438ef6d754960d735, type: 2}
+    - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: gestureArr.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bb6d2144dd1b7a41a3e129e53b72115,
+        type: 3}
+    - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: gestureArr.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: ec421b3941989a54f85333b0d3db2c4d,
+        type: 3}
+    - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: gestureArr.Array.data[8]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
   m_IsPrefabParent: 0
