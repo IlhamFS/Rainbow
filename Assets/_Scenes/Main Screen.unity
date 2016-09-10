@@ -501,7 +501,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 499374, guid: 1b59410d5084b474eaa6888d4088f3d3, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1b59410d5084b474eaa6888d4088f3d3, type: 2}
@@ -664,7 +664,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452290, guid: 16693cd4a27957849bb763064fee9dc8, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16693cd4a27957849bb763064fee9dc8, type: 2}
@@ -810,7 +810,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
       propertyPath: gestureArr.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 411630, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
       propertyPath: m_LocalPosition.x
@@ -869,23 +869,10 @@ Prefab:
       value: 
       objectReference: {fileID: 1646456559}
     - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
-      propertyPath: hentakan
-      value: 
-      objectReference: {fileID: 106652, guid: bdb983b2213d94d438ef6d754960d735, type: 2}
-    - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
-      propertyPath: gestureArr.Array.data[6]
-      value: 
-      objectReference: {fileID: 21300000, guid: 8bb6d2144dd1b7a41a3e129e53b72115,
-        type: 3}
-    - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
-      propertyPath: gestureArr.Array.data[7]
-      value: 
-      objectReference: {fileID: 21300000, guid: ec421b3941989a54f85333b0d3db2c4d,
-        type: 3}
-    - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
       propertyPath: gestureArr.Array.data[8]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 1ea80edcb60cf1345b765f1f8189090e,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
   m_IsPrefabParent: 0
@@ -1144,7 +1131,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 482338, guid: 608fe106b72401f4c9ea6c981fb2c779, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 11480896, guid: 608fe106b72401f4c9ea6c981fb2c779, type: 2}
       propertyPath: smoke
@@ -1581,7 +1568,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490558, guid: da80ae76c5f527840876e0fc6d48bbdc, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da80ae76c5f527840876e0fc6d48bbdc, type: 2}
@@ -1623,7 +1610,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 445508, guid: 4c6e8b3212cdc444496e0b9c5e94437b, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c6e8b3212cdc444496e0b9c5e94437b, type: 2}
@@ -1828,7 +1815,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 414594, guid: c8cb873726c53fe47b3380a0434e9154, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8cb873726c53fe47b3380a0434e9154, type: 2}
@@ -2008,7 +1995,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 417238, guid: 03de0cb76906e004eb2d1fb480a4e0ea, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8298458, guid: 03de0cb76906e004eb2d1fb480a4e0ea, type: 2}
       propertyPath: spreadCustomCurve.m_RotationOrder

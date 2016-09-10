@@ -11,6 +11,9 @@ public class TimeSpecial : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 	}
 
+	void Start(){
+		Destroy (gameObject, 3f);
+	}
 	// Update is called once per frame
 	void OnMouseDown () {
 		StartCoroutine (lancarkan());

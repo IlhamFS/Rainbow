@@ -11,7 +11,9 @@ public class RainbowSpecial : MonoBehaviour {
 		gest = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<GestureScript> ();
 		anim = GetComponent<Animator> ();
 	}
-	
+	void Stat(){
+		Destroy (gameObject, 3f);
+	}
 	// Update is called once per frame
 	void OnMouseDown () {
 		StartCoroutine (lancarkan());
