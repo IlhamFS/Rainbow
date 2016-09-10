@@ -4,6 +4,7 @@ using System.Collections;
 public class TimeSpecial : MonoBehaviour {
 	private GestureScript gest;
 	Animator anim;
+	public AudioClip attack;
 
 	void Awake () {
 		gest = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<GestureScript> ();
@@ -16,6 +17,7 @@ public class TimeSpecial : MonoBehaviour {
 	}
 
 	IEnumerator lancarkan(){
+		SoundManagerScript.instance.playSingle (2, attack);
 		anim.SetTrigger ("isClicked");
 		yield return new WaitForSeconds (0.5f);
 		gest.SpecialTimeAttack ();

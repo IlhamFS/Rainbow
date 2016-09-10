@@ -4,6 +4,7 @@ using System.Collections;
 public class RainbowSpecial : MonoBehaviour {
 	private GestureScript gest;
 	Animator anim;
+	public AudioClip attack;
 
 	// Use this for initialization
 	void Awake () {
@@ -17,6 +18,7 @@ public class RainbowSpecial : MonoBehaviour {
 	}
 
 	IEnumerator lancarkan(){
+		SoundManagerScript.instance.playSingle (2, attack);
 		anim.SetTrigger ("isClicked");
 		yield return new WaitForSeconds (0.5f);
 		gest.SpecialRainbowAttack ();

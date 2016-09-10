@@ -291,6 +291,7 @@ MonoBehaviour:
   bearAnimator: {fileID: 0}
   stickAnimator: {fileID: 0}
   chipmunkAnimator: {fileID: 0}
+  hentakan: {fileID: 106652, guid: bdb983b2213d94d438ef6d754960d735, type: 2}
   randomGestureIndex: 
   colorName: white
   onboardingAction: 0

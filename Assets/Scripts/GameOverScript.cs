@@ -8,16 +8,7 @@ public class GameOverScript : MonoBehaviour {
 	public GameController gm;
 	public AudioClip gameOverClip;
 	public AudioClip heroDeathClip;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	public GameObject highScoreText;
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		if (coll.gameObject.tag == "Enemy") {
@@ -44,7 +35,7 @@ public class GameOverScript : MonoBehaviour {
 		StoreHighScore ((int)(gm.score));
 		gameOver.SetActive (true);
 		Text tx = gameoverText.GetComponent<Text> ();
-		tx.text = "" + PlayerPrefs.GetInt ("highscore",0);
+		tx.text = "" + (int) gm.score;
 		Time.timeScale = 0.0f;
 		yield break;
 	}
@@ -52,8 +43,10 @@ public class GameOverScript : MonoBehaviour {
 	void StoreHighScore(int newHighScore){
 		int oldHighScore = PlayerPrefs.GetInt ("highscore", 0);
 
-		if (newHighScore > oldHighScore)
+		if (newHighScore > oldHighScore) {
 			PlayerPrefs.SetInt ("highscore", newHighScore);
+			highScoreText.SetActive (true);
+		}
 	}
 
 	void StopAllEnemy() {
