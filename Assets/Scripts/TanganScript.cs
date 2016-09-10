@@ -49,10 +49,10 @@ public class TanganScript : MonoBehaviour {
 		curBool = "Vertical";
 	}
 
-	public void Down() {
+	public void N() {
 		Reset ();
-		anim.SetBool ("Down", true);
-		curBool = "Down";
+		anim.SetBool ("N", true);
+		curBool = "N";
 	}
 
 	public void Up() {

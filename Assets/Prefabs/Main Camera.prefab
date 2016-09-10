@@ -61,6 +61,8 @@ GameObject:
   - 124: {fileID: 12462928}
   - 81: {fileID: 8130660}
   - 114: {fileID: 11443302}
+  - 114: {fileID: 11471222}
+  - 114: {fileID: 11495804}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -306,6 +308,31 @@ MonoBehaviour:
   - {fileID: 8300000, guid: db37386ac0b8d14479169d9b0992ffa0, type: 3}
   - {fileID: 8300000, guid: 9a2da102e1c26e540babe443f3f200b3, type: 3}
   attackClip: {fileID: 8300000, guid: 73f0fb1fb1aeb0f4aaaf2bd2ec5f471e, type: 3}
+--- !u!114 &11471222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1690312454, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &11495804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1577b4c978c63145aa9dd307d6f5653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!124 &12462928
 Behaviour:
   m_ObjectHideFlags: 1

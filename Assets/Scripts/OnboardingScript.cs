@@ -292,7 +292,7 @@ public class OnboardingScript : MonoBehaviour {
 			TanganScript.instance.Horizontal ();
 			break;
 		case 1:
-			TanganScript.instance.Down ();
+			TanganScript.instance.N ();
 			break;
 		case 2:
 			TanganScript.instance.Cinverse ();
