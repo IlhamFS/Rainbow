@@ -25,7 +25,13 @@ public class MainMenuScript : MonoBehaviour {
 	}
 
 	public void Play() {
-		AutoFade.LoadLevel(1 ,1,1,Color.black);
+		int udahMain = PlayerPrefs.GetInt ("udahMain", 0);
+
+		if (udahMain == 0) {
+			AutoFade.LoadLevel(2 ,1,1,Color.black);
+		}
+		else
+			AutoFade.LoadLevel(1 ,1,1,Color.black);
 	}
 
 	public void ColorGuide() {

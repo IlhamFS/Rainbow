@@ -21,7 +21,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		StartCoroutine (SpawnEnemy(2.0f));
-		waveText.text = "Wave " + wave;
+		waveText.text = "WAVE " + wave;
 		waveText.CrossFadeAlpha (255, 1.0f, false);
 	}
 
@@ -51,7 +51,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 				enemyCount = 0;
 				wait = 10.0f;
 
-				waveText.text = "Wave " + wave;
+				waveText.text = "WAVE " + wave;
 				waveText.CrossFadeAlpha (255, 1.0f, false);
 
 				if(wave % 2 == 0)

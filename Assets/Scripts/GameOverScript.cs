@@ -41,7 +41,7 @@ public class GameOverScript : MonoBehaviour {
 		SoundManagerScript.instance.sfxSource.mute = false;
 		SoundManagerScript.instance.playSingle (1, gameOverClip);
 
-		StoreHighScore ((int)(gm.score * 100.0f));
+		StoreHighScore ((int)(gm.score));
 		gameOver.SetActive (true);
 		Text tx = gameoverText.GetComponent<Text> ();
 		tx.text = "" + PlayerPrefs.GetInt ("highscore",0);
