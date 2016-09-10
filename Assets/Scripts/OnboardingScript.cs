@@ -71,8 +71,15 @@ public class OnboardingScript : MonoBehaviour {
 
 	IEnumerator BackToMainMenu(){
 		yield return new WaitForSeconds (2.0f);
-		tutorialFinished.SetActive (true);
-		Time.timeScale = 0.0f;
+		int udahMain = PlayerPrefs.GetInt ("udahMain",0);
+
+		if (udahMain == 0) {
+			AutoFade.LoadLevel(1 ,1,1,Color.black);
+			PlayerPrefs.SetInt ("udahMain", 1);
+		} else {
+			tutorialFinished.SetActive (true);
+			Time.timeScale = 0.0f;
+		}
 	}
 
 	IEnumerator Combining(){
