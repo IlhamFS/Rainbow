@@ -229,6 +229,7 @@ MonoBehaviour:
   gm: {fileID: 672151459}
   gameOverClip: {fileID: 8300000, guid: 31c1d8dafd413ce4fab78f143a429ad7, type: 3}
   heroDeathClip: {fileID: 8300000, guid: 16ba71dae1f3bd645adbb2e39ca21736, type: 3}
+  highScoreText: {fileID: 0}
 --- !u!61 &20551052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -872,7 +873,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 452290, guid: 16693cd4a27957849bb763064fee9dc8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.2
+      value: -4.94
       objectReference: {fileID: 0}
     - target: {fileID: 452290, guid: 16693cd4a27957849bb763064fee9dc8, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1801,7 +1802,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 490558, guid: da80ae76c5f527840876e0fc6d48bbdc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.63
+      value: -6.15
       objectReference: {fileID: 0}
     - target: {fileID: 490558, guid: da80ae76c5f527840876e0fc6d48bbdc, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2400,8 +2401,8 @@ RectTransform:
   m_RootOrder: 10
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -87.4, y: -91}
-  m_SizeDelta: {x: 56.051, y: 54.1}
+  m_AnchoredPosition: {x: -129, y: -82.7}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1402823208
 MonoBehaviour:
@@ -2882,7 +2883,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 445508, guid: 4c6e8b3212cdc444496e0b9c5e94437b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.21
+      value: -3.59
       objectReference: {fileID: 0}
     - target: {fileID: 445508, guid: 4c6e8b3212cdc444496e0b9c5e94437b, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3065,7 +3066,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 414594, guid: c8cb873726c53fe47b3380a0434e9154, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.88
+      value: -7.7
       objectReference: {fileID: 0}
     - target: {fileID: 414594, guid: c8cb873726c53fe47b3380a0434e9154, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3112,7 +3113,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 499374, guid: 1b59410d5084b474eaa6888d4088f3d3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.55
+      value: -6.28
       objectReference: {fileID: 0}
     - target: {fileID: 499374, guid: 1b59410d5084b474eaa6888d4088f3d3, type: 2}
       propertyPath: m_LocalPosition.y
