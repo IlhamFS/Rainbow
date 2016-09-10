@@ -303,6 +303,7 @@ public class GestureScript : MonoBehaviour {
 				chipmunkAnimator.SetTrigger ("Attack");
 			}
 
+			stickAnimator.SetTrigger ("Attack");
 			//player attack
 			colorArray = new int[3];
 			colorName = "white";

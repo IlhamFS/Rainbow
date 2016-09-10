@@ -13,6 +13,7 @@ public class OnboardingScript : MonoBehaviour {
 	public GameObject combinedColors;
 	public GameObject attackText;
 	public GameObject tutorialFinished;
+	public GameObject letsPLay;
 	public Image color;
 	public Image color1;
 	public Image color2;
@@ -46,6 +47,7 @@ public class OnboardingScript : MonoBehaviour {
 		tutorialFinished.SetActive (false);
 		tangan.SetActive (false);
 		tangan2.SetActive (false);
+		letsPLay.SetActive (false);
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
@@ -70,13 +72,15 @@ public class OnboardingScript : MonoBehaviour {
 	}
 
 	IEnumerator BackToMainMenu(){
-		yield return new WaitForSeconds (2.0f);
 		int udahMain = PlayerPrefs.GetInt ("udahMain",0);
 
 		if (udahMain == 0) {
+			letsPLay.SetActive (true);
+			yield return new WaitForSeconds (2.0f);
 			AutoFade.LoadLevel(1 ,1,1,Color.black);
 			PlayerPrefs.SetInt ("udahMain", 1);
 		} else {
+			yield return new WaitForSeconds (2.0f);
 			tutorialFinished.SetActive (true);
 			Time.timeScale = 0.0f;
 		}
@@ -179,7 +183,6 @@ public class OnboardingScript : MonoBehaviour {
 			if (!gs.onboardingAction)
 				yield break;
 			
-			setTangan (enColor);
 			yield return null;
 		}
 			
@@ -199,11 +202,9 @@ public class OnboardingScript : MonoBehaviour {
 			if (!gs.onboardingAction)
 				yield break;
 
-			setTangan (newColor);
 			yield return null;
 		}
-
-		TanganScript.instance.Reset ();
+			
 		combinedColors.SetActive (false);
 		attackText.SetActive (true);
 		tangan2.SetActive (true);
