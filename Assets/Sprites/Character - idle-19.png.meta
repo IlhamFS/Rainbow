@@ -1,0 +1,1343 @@
+fileFormatVersion: 2
+guid: 6049003d2f641c94e863d31f17716319
+timeCreated: 1473257686
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Character - idle-19_0
+    21300002: Character - idle-19_1
+    21300004: Character - idle-19_2
+    21300006: Character - idle-19_3
+    21300008: Character - idle-19_4
+    21300010: Character - idle-19_5
+    21300012: Character - idle-19_6
+    21300014: Character - idle-19_7
+    21300016: Character - idle-19_8
+    21300018: Character - idle-19_9
+    21300020: Character - idle-19_10
+    21300022: Character - idle-19_11
+    21300024: Character - idle-19_12
+    21300026: Character - idle-19_13
+    21300028: Character - idle-19_14
+    21300030: Character - idle-19_15
+    21300032: Character - idle-19_16
+    21300034: Character - idle-19_17
+    21300036: Character - idle-19_18
+    21300038: Character - idle-19_19
+    21300040: Character - idle-19_20
+    21300042: Character - idle-19_21
+    21300044: Character - idle-19_22
+    21300046: Character - idle-19_23
+    21300048: Character - idle-19_24
+    21300050: Character - idle-19_25
+    21300052: Character - idle-19_26
+    21300054: Character - idle-19_27
+    21300056: Character - idle-19_28
+    21300058: Character - idle-19_29
+    21300060: Character - idle-19_30
+    21300062: Character - idle-19_31
+    21300064: Character - idle-19_32
+    21300066: Character - idle-19_33
+    21300068: Character - idle-19_34
+    21300070: Character - idle-19_35
+    21300072: Character - idle-19_36
+    21300074: Character - idle-19_37
+    21300076: Character - idle-19_38
+    21300078: Character - idle-19_39
+    21300080: Character - idle-19_40
+    21300082: Character - idle-19_41
+    21300084: Character - idle-19_42
+    21300086: Character - idle-19_43
+    21300088: Character - idle-19_44
+    21300090: Character - idle-19_45
+    21300092: Character - idle-19_46
+    21300094: Character - idle-19_47
+    21300096: Character - idle-19_48
+    21300098: Character - idle-19_49
+    21300100: Character - idle-19_50
+    21300102: Character - idle-19_51
+    21300104: Character - idle-19_52
+    21300106: Character - idle-19_53
+    21300108: Character - idle-19_54
+    21300110: Character - idle-19_55
+    21300112: Character - idle-19_56
+    21300114: Character - idle-19_57
+    21300116: Character - idle-19_58
+    21300118: Character - idle-19_59
+    21300120: Character - idle-19_60
+    21300122: Character - idle-19_61
+    21300124: Character - idle-19_62
+    21300126: Character - idle-19_63
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Character - idle-19_0
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 5710
+        width: 163
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.51773, y: 77.52734}
+        - {x: -26.51773, y: -4.4726562}
+        - {x: -10.517731, y: -76.47266}
+        - {x: 9.482269, y: -76.47266}
+        - {x: 27.48227, y: 13.527344}
+        - {x: 27.48227, y: 77.52734}
+    - name: Character - idle-19_1
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 5707
+        width: 164
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.379547, y: 77.05347}
+        - {x: -13.620453, y: 77.05347}
+        - {x: -26.620453, y: 69.05347}
+        - {x: -26.620453, y: -20.946533}
+        - {x: -23.620453, y: -74.94653}
+        - {x: -19.620453, y: -75.94653}
+        - {x: -4.620453, y: -75.94653}
+        - {x: 0.37954712, y: -68.94653}
+        - {x: 27.379547, y: 34.053467}
+        - {x: 27.379547, y: 64.05347}
+    - name: Character - idle-19_2
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 5698
+        width: 209
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.8723755, y: 75.13196}
+        - {x: -22.872375, y: 56.131958}
+        - {x: -33.872375, y: -39.868042}
+        - {x: -33.872375, y: -73.86804}
+        - {x: -17.872375, y: -73.86804}
+        - {x: -14.8723755, y: -72.86804}
+        - {x: 35.127625, y: 26.131958}
+        - {x: 35.127625, y: 68.13196}
+        - {x: 24.127625, y: 75.13196}
+    - name: Character - idle-19_3
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 5707
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.640137, y: 77.05347}
+        - {x: -21.359863, y: 77.05347}
+        - {x: -26.359863, y: 75.05347}
+        - {x: -26.359863, y: -41.946533}
+        - {x: -23.359863, y: -75.94653}
+        - {x: -5.3598633, y: -75.94653}
+        - {x: -1.3598633, y: -67.94653}
+        - {x: 27.640137, y: 32.053467}
+        - {x: 27.640137, y: 65.05347}
+    - name: Character - idle-19_4
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 5710
+        width: 163
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.342285, y: 77.52734}
+        - {x: -26.342285, y: -27.472656}
+        - {x: -20.342285, y: -76.47266}
+        - {x: 6.657715, y: -76.47266}
+        - {x: 27.657715, y: -13.472656}
+        - {x: 27.657715, y: 69.52734}
+        - {x: 21.657715, y: 77.52734}
+    - name: Character - idle-19_5
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 5707
+        width: 164
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.37677, y: 77.05347}
+        - {x: -26.62323, y: 77.05347}
+        - {x: -26.62323, y: -0.9465332}
+        - {x: -13.62323, y: -75.94653}
+        - {x: 22.37677, y: -75.94653}
+        - {x: 23.37677, y: -74.94653}
+        - {x: 27.37677, y: -40.946533}
+        - {x: 27.37677, y: 70.05347}
+    - name: Character - idle-19_6
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 5694
+        width: 203
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.906982, y: 75.333496}
+        - {x: -32.906982, y: 74.333496}
+        - {x: -32.906982, y: 32.333496}
+        - {x: 18.093018, y: -71.666504}
+        - {x: 20.093018, y: -74.666504}
+        - {x: 31.093018, y: -74.666504}
+        - {x: 34.093018, y: -73.666504}
+        - {x: 34.093018, y: 34.333496}
+        - {x: 21.093018, y: 75.333496}
+    - name: Character - idle-19_7
+      rect:
+        serializedVersion: 2
+        x: 4151
+        y: 5707
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.540771, y: 77.05347}
+        - {x: -26.540771, y: 68.05347}
+        - {x: -26.540771, y: 5.053467}
+        - {x: 4.4592285, y: -75.94653}
+        - {x: 22.459229, y: -75.94653}
+        - {x: 25.459229, y: -74.94653}
+        - {x: 27.459229, y: -55.946533}
+        - {x: 27.459229, y: 66.05347}
+        - {x: 21.459229, y: 77.05347}
+    - name: Character - idle-19_8
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 4890
+        width: 163
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.51773, y: 76.84656}
+        - {x: -26.51773, y: 64.84656}
+        - {x: -26.51773, y: 6.8465576}
+        - {x: -9.517731, y: -74.15344}
+        - {x: -7.5177307, y: -76.15344}
+        - {x: 9.482269, y: -76.15344}
+        - {x: 27.48227, y: 3.8465576}
+        - {x: 27.48227, y: 69.84656}
+        - {x: 19.48227, y: 76.84656}
+    - name: Character - idle-19_9
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 4884
+        width: 164
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.620453, y: 77.3988}
+        - {x: -26.620453, y: 66.3988}
+        - {x: -26.620453, y: -62.601196}
+        - {x: -22.620453, y: -76.6012}
+        - {x: -1.6204529, y: -76.6012}
+        - {x: -0.6204529, y: -75.6012}
+        - {x: 27.379547, y: 35.398804}
+        - {x: 27.379547, y: 67.3988}
+        - {x: 14.379547, y: 77.3988}
+    - name: Character - idle-19_10
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 4875
+        width: 209
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.8723755, y: 74.97742}
+        - {x: -29.872375, y: 57.977417}
+        - {x: -33.872375, y: -1.022583}
+        - {x: -33.872375, y: -72.02258}
+        - {x: -30.872375, y: -74.02258}
+        - {x: 17.127625, y: -74.02258}
+        - {x: 35.127625, y: 2.977417}
+        - {x: 35.127625, y: 74.97742}
+    - name: Character - idle-19_11
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 4884
+        width: 163
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.359863, y: 77.3988}
+        - {x: -26.359863, y: -26.601196}
+        - {x: -23.359863, y: -75.6012}
+        - {x: -21.359863, y: -76.6012}
+        - {x: -3.3598633, y: -76.6012}
+        - {x: 24.640137, y: 16.398804}
+        - {x: 27.640137, y: 27.398804}
+        - {x: 27.640137, y: 77.3988}
+    - name: Character - idle-19_12
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 4890
+        width: 163
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.342285, y: 76.84656}
+        - {x: -26.342285, y: 72.84656}
+        - {x: -26.342285, y: -21.153442}
+        - {x: -17.342285, y: -76.15344}
+        - {x: 8.657715, y: -76.15344}
+        - {x: 27.657715, y: 32.846558}
+        - {x: 27.657715, y: 65.84656}
+        - {x: 15.657715, y: 76.84656}
+    - name: Character - idle-19_13
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 4884
+        width: 164
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.37677, y: 77.3988}
+        - {x: -13.62323, y: 77.3988}
+        - {x: -26.62323, y: 70.3988}
+        - {x: -26.62323, y: 22.398804}
+        - {x: 5.37677, y: -76.6012}
+        - {x: 27.37677, y: -76.6012}
+        - {x: 27.37677, y: 72.3988}
+    - name: Character - idle-19_14
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 4875
+        width: 203
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.906982, y: 74.97742}
+        - {x: -32.906982, y: 70.97742}
+        - {x: -32.906982, y: 31.977417}
+        - {x: -17.906982, y: 7.977417}
+        - {x: 20.093018, y: -74.02258}
+        - {x: 34.093018, y: -74.02258}
+        - {x: 34.093018, y: 40.977417}
+        - {x: 24.093018, y: 74.97742}
+    - name: Character - idle-19_15
+      rect:
+        serializedVersion: 2
+        x: 4151
+        y: 4884
+        width: 163
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.540771, y: 77.3988}
+        - {x: -26.540771, y: -33.601196}
+        - {x: 2.4592285, y: -76.6012}
+        - {x: 20.459229, y: -76.6012}
+        - {x: 24.459229, y: -74.6012}
+        - {x: 27.459229, y: -37.601196}
+        - {x: 27.459229, y: 69.3988}
+        - {x: 16.459229, y: 77.3988}
+    - name: Character - idle-19_16
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 3972
+        width: 163
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.48227, y: 76.85388}
+        - {x: -17.51773, y: 76.85388}
+        - {x: -26.51773, y: 68.85388}
+        - {x: -26.51773, y: -7.146118}
+        - {x: -18.51773, y: -76.14612}
+        - {x: 4.4822693, y: -76.14612}
+        - {x: 6.4822693, y: -74.14612}
+        - {x: 27.48227, y: -13.146118}
+        - {x: 27.48227, y: 68.85388}
+    - name: Character - idle-19_17
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 3966
+        width: 164
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.620453, y: 76.90625}
+        - {x: -26.620453, y: 65.90625}
+        - {x: -26.620453, y: -3.09375}
+        - {x: -23.620453, y: -47.09375}
+        - {x: -20.620453, y: -76.09375}
+        - {x: -3.620453, y: -76.09375}
+        - {x: 27.379547, y: 35.90625}
+        - {x: 27.379547, y: 68.90625}
+        - {x: 16.379547, y: 76.90625}
+    - name: Character - idle-19_18
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 3957
+        width: 209
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.872375, y: 74.98474}
+        - {x: -33.872375, y: 19.984741}
+        - {x: -33.872375, y: -74.01526}
+        - {x: -16.872375, y: -74.01526}
+        - {x: 35.127625, y: 25.984741}
+        - {x: 35.127625, y: 62.98474}
+        - {x: 22.127625, y: 74.98474}
+    - name: Character - idle-19_19
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 3966
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.359863, y: 76.90625}
+        - {x: -26.359863, y: 69.90625}
+        - {x: -26.359863, y: -50.09375}
+        - {x: -22.359863, y: -74.09375}
+        - {x: -20.359863, y: -76.09375}
+        - {x: 4.6401367, y: -76.09375}
+        - {x: 27.640137, y: 13.90625}
+        - {x: 27.640137, y: 70.90625}
+        - {x: 19.640137, y: 76.90625}
+    - name: Character - idle-19_20
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 3972
+        width: 163
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.342285, y: 76.85388}
+        - {x: -26.342285, y: 71.85388}
+        - {x: -26.342285, y: 23.853882}
+        - {x: -10.342285, y: -75.14612}
+        - {x: -8.342285, y: -76.14612}
+        - {x: 13.657715, y: -76.14612}
+        - {x: 27.657715, y: -31.146118}
+        - {x: 27.657715, y: 71.85388}
+        - {x: 23.657715, y: 76.85388}
+    - name: Character - idle-19_21
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 3966
+        width: 164
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.62323, y: 76.90625}
+        - {x: -26.62323, y: -41.09375}
+        - {x: 1.37677, y: -76.09375}
+        - {x: 27.37677, y: -76.09375}
+        - {x: 27.37677, y: 76.90625}
+    - name: Character - idle-19_22
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 3954
+        width: 203
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.906982, y: 8.510864}
+        - {x: 18.093018, y: -74.489136}
+        - {x: 33.093018, y: -74.489136}
+        - {x: 34.093018, y: -73.489136}
+        - {x: 34.093018, y: 43.510864}
+        - {x: 25.093018, y: 75.510864}
+        - {x: -31.906982, y: 75.510864}
+        - {x: -32.906982, y: 73.510864}
+    - name: Character - idle-19_23
+      rect:
+        serializedVersion: 2
+        x: 4151
+        y: 3966
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.540771, y: 76.90625}
+        - {x: -26.540771, y: -8.09375}
+        - {x: -8.5407715, y: -76.09375}
+        - {x: 27.459229, y: -76.09375}
+        - {x: 27.459229, y: 76.90625}
+    - name: Character - idle-19_24
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 3205
+        width: 163
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.51773, y: 77.37744}
+        - {x: -26.51773, y: -38.62256}
+        - {x: -21.51773, y: -76.62256}
+        - {x: 7.4822693, y: -76.62256}
+        - {x: 27.48227, y: -0.6225586}
+        - {x: 27.48227, y: 76.37744}
+        - {x: 25.48227, y: 77.37744}
+    - name: Character - idle-19_25
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 3202
+        width: 164
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.620453, y: 76.903564}
+        - {x: -26.620453, y: 73.903564}
+        - {x: -26.620453, y: -50.096436}
+        - {x: -24.620453, y: -76.096436}
+        - {x: 9.379547, y: -76.096436}
+        - {x: 27.379547, y: 9.903564}
+        - {x: 27.379547, y: 76.903564}
+    - name: Character - idle-19_26
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 3193
+        width: 209
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.127625, y: 74.982056}
+        - {x: -8.8723755, y: 74.982056}
+        - {x: -24.872375, y: 68.982056}
+        - {x: -33.872375, y: -47.017944}
+        - {x: -33.872375, y: -73.017944}
+        - {x: -30.872375, y: -74.017944}
+        - {x: -19.872375, y: -74.017944}
+        - {x: 23.127625, y: 6.9820557}
+        - {x: 35.127625, y: 32.982056}
+        - {x: 35.127625, y: 66.982056}
+    - name: Character - idle-19_27
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 3202
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.359863, y: 76.903564}
+        - {x: -26.359863, y: 63.903564}
+        - {x: -26.359863, y: 32.903564}
+        - {x: -21.359863, y: 5.9035645}
+        - {x: -23.359863, y: -75.096436}
+        - {x: -21.359863, y: -76.096436}
+        - {x: -0.35986328, y: -76.096436}
+        - {x: 27.640137, y: 31.903564}
+        - {x: 27.640137, y: 66.903564}
+        - {x: 14.640137, y: 76.903564}
+    - name: Character - idle-19_28
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 3205
+        width: 163
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.342285, y: 77.37744}
+        - {x: -26.342285, y: -35.62256}
+        - {x: -9.342285, y: -76.62256}
+        - {x: 6.657715, y: -76.62256}
+        - {x: 9.657715, y: -74.62256}
+        - {x: 27.657715, y: -9.622559}
+        - {x: 27.657715, y: 63.37744}
+        - {x: 18.657715, y: 77.37744}
+    - name: Character - idle-19_29
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 3202
+        width: 164
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.62323, y: 76.903564}
+        - {x: -26.62323, y: 7.9035645}
+        - {x: -1.62323, y: -75.096436}
+        - {x: 1.37677, y: -76.096436}
+        - {x: 23.37677, y: -76.096436}
+        - {x: 27.37677, y: -30.096436}
+        - {x: 27.37677, y: 72.903564}
+        - {x: 18.37677, y: 76.903564}
+    - name: Character - idle-19_30
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 3190
+        width: 203
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.906982, y: 75.5083}
+        - {x: -32.906982, y: 68.5083}
+        - {x: -32.906982, y: 9.508301}
+        - {x: 20.093018, y: -74.4917}
+        - {x: 32.093018, y: -74.4917}
+        - {x: 34.093018, y: -73.4917}
+        - {x: 34.093018, y: -12.491699}
+        - {x: 30.093018, y: 59.5083}
+        - {x: 9.093018, y: 75.5083}
+    - name: Character - idle-19_31
+      rect:
+        serializedVersion: 2
+        x: 4151
+        y: 3202
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.540771, y: 76.903564}
+        - {x: -26.540771, y: 75.903564}
+        - {x: -26.540771, y: 19.903564}
+        - {x: -1.5407715, y: -76.096436}
+        - {x: 23.459229, y: -76.096436}
+        - {x: 27.459229, y: -54.096436}
+        - {x: 27.459229, y: 68.903564}
+        - {x: 21.459229, y: 76.903564}
+    - name: Character - idle-19_32
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 2386
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.51773, y: 77.02124}
+        - {x: -26.51773, y: 67.02124}
+        - {x: -26.51773, y: -16.97876}
+        - {x: -10.517731, y: -74.97876}
+        - {x: -8.517731, y: -75.97876}
+        - {x: 10.482269, y: -75.97876}
+        - {x: 27.48227, y: 3.0212402}
+        - {x: 27.48227, y: 74.02124}
+        - {x: 22.48227, y: 77.02124}
+    - name: Character - idle-19_33
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 2380
+        width: 164
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.620453, y: 77.07355}
+        - {x: -26.620453, y: 75.07355}
+        - {x: -26.620453, y: -25.926453}
+        - {x: -21.620453, y: -73.92645}
+        - {x: -17.620453, y: -75.92645}
+        - {x: 6.379547, y: -75.92645}
+        - {x: 27.379547, y: 16.073547}
+        - {x: 27.379547, y: 74.07355}
+        - {x: 24.379547, y: 77.07355}
+    - name: Character - idle-19_34
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 2371
+        width: 209
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.872375, y: 75.15204}
+        - {x: -33.872375, y: 68.15204}
+        - {x: -33.872375, y: -73.84796}
+        - {x: -18.872375, y: -73.84796}
+        - {x: 35.127625, y: 23.152039}
+        - {x: 35.127625, y: 64.15204}
+        - {x: 32.127625, y: 75.15204}
+    - name: Character - idle-19_35
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 2380
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.359863, y: 77.07355}
+        - {x: -26.359863, y: 66.07355}
+        - {x: -26.359863, y: -25.926453}
+        - {x: -20.359863, y: -75.92645}
+        - {x: 3.6401367, y: -75.92645}
+        - {x: 27.640137, y: 18.073547}
+        - {x: 27.640137, y: 71.07355}
+        - {x: 17.640137, y: 77.07355}
+    - name: Character - idle-19_36
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 2386
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.342285, y: 77.02124}
+        - {x: -26.342285, y: 73.02124}
+        - {x: -26.342285, y: 14.02124}
+        - {x: -11.342285, y: -75.97876}
+        - {x: 9.657715, y: -75.97876}
+        - {x: 27.657715, y: -54.97876}
+        - {x: 27.657715, y: 77.02124}
+    - name: Character - idle-19_37
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 2380
+        width: 164
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.62323, y: 77.07355}
+        - {x: -26.62323, y: 16.073547}
+        - {x: 4.37677, y: -75.92645}
+        - {x: 27.37677, y: -75.92645}
+        - {x: 27.37677, y: 77.07355}
+    - name: Character - idle-19_38
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 2371
+        width: 203
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.0930176, y: 75.65204}
+        - {x: -28.906982, y: 75.65204}
+        - {x: -32.906982, y: 63.65204}
+        - {x: -32.906982, y: 16.652039}
+        - {x: 21.093018, y: -74.34796}
+        - {x: 34.093018, y: -74.34796}
+        - {x: 34.093018, y: -34.34796}
+        - {x: 27.093018, y: 58.65204}
+    - name: Character - idle-19_39
+      rect:
+        serializedVersion: 2
+        x: 4151
+        y: 2380
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.459229, y: 70.07355}
+        - {x: 19.459229, y: 77.07355}
+        - {x: -12.5407715, y: 77.07355}
+        - {x: -26.540771, y: 72.07355}
+        - {x: -26.540771, y: 36.073547}
+        - {x: -15.5407715, y: 10.073547}
+        - {x: 4.4592285, y: -73.92645}
+        - {x: 7.4592285, y: -75.92645}
+        - {x: 19.459229, y: -75.92645}
+        - {x: 23.459229, y: -72.92645}
+        - {x: 27.459229, y: -26.926453}
+    - name: Character - idle-19_40
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1659
+        width: 163
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.482269, y: 77.529236}
+        - {x: -22.51773, y: 77.529236}
+        - {x: -26.51773, y: 64.529236}
+        - {x: -26.51773, y: 1.5292358}
+        - {x: -10.517731, y: -74.470764}
+        - {x: -7.5177307, y: -76.470764}
+        - {x: 6.4822693, y: -76.470764}
+        - {x: 12.482269, y: -42.470764}
+        - {x: 27.48227, y: 16.529236}
+        - {x: 27.48227, y: 65.529236}
+    - name: Character - idle-19_41
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1656
+        width: 164
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.620453, y: 77.05536}
+        - {x: -26.620453, y: 71.05536}
+        - {x: -26.620453, y: -20.944641}
+        - {x: -22.620453, y: -73.94464}
+        - {x: -18.620453, y: -75.94464}
+        - {x: -2.620453, y: -75.94464}
+        - {x: 27.379547, y: 22.055359}
+        - {x: 27.379547, y: 76.05536}
+        - {x: 22.379547, y: 77.05536}
+    - name: Character - idle-19_42
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1647
+        width: 209
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.8723755, y: 75.13391}
+        - {x: -27.872375, y: 57.13391}
+        - {x: -33.872375, y: -23.866089}
+        - {x: -33.872375, y: -73.86609}
+        - {x: -18.872375, y: -73.86609}
+        - {x: 35.127625, y: 34.13391}
+        - {x: 35.127625, y: 71.13391}
+        - {x: 23.127625, y: 75.13391}
+    - name: Character - idle-19_43
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1656
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.359863, y: 77.05536}
+        - {x: -26.359863, y: 71.05536}
+        - {x: -26.359863, y: -55.94464}
+        - {x: -23.359863, y: -75.94464}
+        - {x: 0.6401367, y: -75.94464}
+        - {x: 27.640137, y: 18.055359}
+        - {x: 27.640137, y: 76.05536}
+        - {x: 26.640137, y: 77.05536}
+    - name: Character - idle-19_44
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 1659
+        width: 163
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.657715, y: 70.529236}
+        - {x: 26.657715, y: 76.529236}
+        - {x: 24.657715, y: 77.529236}
+        - {x: -12.342285, y: 77.529236}
+        - {x: -26.342285, y: 71.529236}
+        - {x: -26.342285, y: -26.470764}
+        - {x: -18.342285, y: -76.470764}
+        - {x: 5.657715, y: -76.470764}
+        - {x: 6.657715, y: -73.470764}
+        - {x: 7.657715, y: -51.470764}
+        - {x: 27.657715, y: 13.529236}
+    - name: Character - idle-19_45
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 1656
+        width: 164
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.37677, y: 77.05536}
+        - {x: -26.62323, y: 77.05536}
+        - {x: -26.62323, y: -42.94464}
+        - {x: 1.37677, y: -73.94464}
+        - {x: 6.37677, y: -75.94464}
+        - {x: 20.37677, y: -75.94464}
+        - {x: 22.37677, y: -73.94464}
+        - {x: 27.37677, y: -32.94464}
+        - {x: 27.37677, y: 72.05536}
+    - name: Character - idle-19_46
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 1644
+        width: 203
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.906982, y: 75.660034}
+        - {x: -32.906982, y: 63.660034}
+        - {x: -32.906982, y: 27.660034}
+        - {x: -13.906982, y: 3.6600342}
+        - {x: 14.093018, y: -74.339966}
+        - {x: 34.093018, y: -74.339966}
+        - {x: 34.093018, y: 64.660034}
+        - {x: 18.093018, y: 75.660034}
+    - name: Character - idle-19_47
+      rect:
+        serializedVersion: 2
+        x: 4151
+        y: 1656
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.540771, y: 77.05536}
+        - {x: -26.540771, y: 74.05536}
+        - {x: -26.540771, y: 11.055359}
+        - {x: 4.4592285, y: -75.94464}
+        - {x: 27.459229, y: -75.94464}
+        - {x: 27.459229, y: 77.05536}
+    - name: Character - idle-19_48
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 953
+        width: 164
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.659168, y: 76.854034}
+        - {x: -16.659168, y: 75.854034}
+        - {x: -26.659168, y: 68.854034}
+        - {x: -26.659168, y: 5.8540344}
+        - {x: -13.659168, y: -76.145966}
+        - {x: 9.340832, y: -76.145966}
+        - {x: 27.340832, y: -15.145966}
+        - {x: 27.340832, y: 65.854034}
+        - {x: 19.340832, y: 76.854034}
+    - name: Character - idle-19_49
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 947
+        width: 163
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.43727112, y: -76.09363}
+        - {x: 27.562729, y: -4.093628}
+        - {x: 27.562729, y: 74.90637}
+        - {x: 23.562729, y: 76.90637}
+        - {x: -26.437271, y: 76.90637}
+        - {x: -26.437271, y: -76.09363}
+    - name: Character - idle-19_50
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 938
+        width: 210
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.013824, y: 74.98486}
+        - {x: -34.013824, y: -5.0151367}
+        - {x: -34.013824, y: -74.01514}
+        - {x: -18.013824, y: -74.01514}
+        - {x: 34.986176, y: 18.984863}
+        - {x: 34.986176, y: 66.98486}
+        - {x: 31.986176, y: 74.98486}
+    - name: Character - idle-19_51
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 947
+        width: 163
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.501282, y: 76.90637}
+        - {x: -26.501282, y: 63.906372}
+        - {x: -26.501282, y: -22.093628}
+        - {x: -21.501282, y: -76.09363}
+        - {x: -2.5012817, y: -76.09363}
+        - {x: 27.498718, y: -8.093628}
+        - {x: 27.498718, y: 65.90637}
+        - {x: 15.498718, y: 76.90637}
+    - name: Character - idle-19_52
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 953
+        width: 166
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.983765, y: 76.854034}
+        - {x: -26.983765, y: -21.145966}
+        - {x: -14.983765, y: -76.145966}
+        - {x: 7.0162354, y: -76.145966}
+        - {x: 28.016235, y: 8.854034}
+        - {x: 28.016235, y: 71.854034}
+        - {x: 19.016235, y: 76.854034}
+    - name: Character - idle-19_53
+      rect:
+        serializedVersion: 2
+        x: 2993
+        y: 947
+        width: 166
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.940063, y: 76.90637}
+        - {x: -26.940063, y: 66.90637}
+        - {x: -26.940063, y: 30.906372}
+        - {x: 4.0599365, y: -73.09363}
+        - {x: 6.0599365, y: -76.09363}
+        - {x: 28.059937, y: -76.09363}
+        - {x: 28.059937, y: 76.90637}
+    - name: Character - idle-19_54
+      rect:
+        serializedVersion: 2
+        x: 3467
+        y: 938
+        width: 203
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.074585, y: 74.98486}
+        - {x: -33.074585, y: 70.98486}
+        - {x: -33.074585, y: 17.984863}
+        - {x: 18.925415, y: -73.01514}
+        - {x: 19.925415, y: -74.01514}
+        - {x: 33.925415, y: -74.01514}
+        - {x: 33.925415, y: 38.984863}
+        - {x: 22.925415, y: 74.98486}
+    - name: Character - idle-19_55
+      rect:
+        serializedVersion: 2
+        x: 4130
+        y: 947
+        width: 163
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.357666, y: 76.90637}
+        - {x: -26.357666, y: 62.906372}
+        - {x: -26.357666, y: 10.906372}
+        - {x: 2.642334, y: -75.09363}
+        - {x: 3.642334, y: -76.09363}
+        - {x: 22.642334, y: -76.09363}
+        - {x: 27.642334, y: -36.093628}
+        - {x: 27.642334, y: 69.90637}
+        - {x: 16.642334, y: 76.90637}
+    - name: Character - idle-19_56
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 236
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.48227, y: 77.10813}
+        - {x: -22.51773, y: 77.10813}
+        - {x: -26.51773, y: 71.10813}
+        - {x: -26.51773, y: 22.108131}
+        - {x: -9.517731, y: -75.89187}
+        - {x: 6.4822693, y: -75.89187}
+        - {x: 11.482269, y: -42.89187}
+        - {x: 27.48227, y: 10.108131}
+        - {x: 27.48227, y: 75.10813}
+    - name: Character - idle-19_57
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 230
+        width: 164
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.620453, y: 66.16047}
+        - {x: -26.620453, y: -18.83953}
+        - {x: -21.620453, y: -73.83953}
+        - {x: -20.620453, y: -75.83953}
+        - {x: -2.620453, y: -75.83953}
+        - {x: 27.379547, y: -10.839531}
+        - {x: 27.379547, y: 73.16047}
+        - {x: 23.379547, y: 77.16047}
+        - {x: -16.620453, y: 77.16047}
+        - {x: -17.620453, y: 76.16047}
+    - name: Character - idle-19_58
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 220
+        width: 209
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.872375, y: -34.08564}
+        - {x: -33.872375, y: -74.08564}
+        - {x: -19.872375, y: -74.08564}
+        - {x: 35.127625, y: 8.91436}
+        - {x: 35.127625, y: 74.91436}
+        - {x: -9.8723755, y: 74.91436}
+        - {x: -24.872375, y: 55.91436}
+    - name: Character - idle-19_59
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 230
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.640137, y: 77.16047}
+        - {x: -16.359863, y: 77.16047}
+        - {x: -26.359863, y: 69.16047}
+        - {x: -26.359863, y: -75.83953}
+        - {x: -4.3598633, y: -75.83953}
+        - {x: 21.640137, y: 10.160469}
+        - {x: 27.640137, y: 35.16047}
+        - {x: 27.640137, y: 66.16047}
+    - name: Character - idle-19_60
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 236
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.342285, y: 77.10813}
+        - {x: -26.342285, y: 69.10813}
+        - {x: -26.342285, y: -12.891869}
+        - {x: -9.342285, y: -75.89187}
+        - {x: 10.657715, y: -75.89187}
+        - {x: 27.657715, y: -60.89187}
+        - {x: 27.657715, y: 77.10813}
+    - name: Character - idle-19_61
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 230
+        width: 164
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.62323, y: 77.16047}
+        - {x: -26.62323, y: 2.160469}
+        - {x: -12.62323, y: -75.83953}
+        - {x: 23.37677, y: -75.83953}
+        - {x: 27.37677, y: -30.83953}
+        - {x: 27.37677, y: 77.16047}
+    - name: Character - idle-19_62
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 220
+        width: 203
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.093018, y: 75.41436}
+        - {x: -20.906982, y: 75.41436}
+        - {x: -32.906982, y: 68.41436}
+        - {x: -32.906982, y: 24.41436}
+        - {x: -31.906982, y: 20.41436}
+        - {x: 20.093018, y: -74.58564}
+        - {x: 32.093018, y: -74.58564}
+        - {x: 34.093018, y: -73.58564}
+        - {x: 34.093018, y: -48.58564}
+        - {x: 27.093018, y: 58.41436}
+    - name: Character - idle-19_63
+      rect:
+        serializedVersion: 2
+        x: 4151
+        y: 230
+        width: 163
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.540771, y: 77.16047}
+        - {x: -26.540771, y: -6.839531}
+        - {x: -13.5407715, y: -75.83953}
+        - {x: 23.459229, y: -75.83953}
+        - {x: 27.459229, y: 6.160469}
+        - {x: 27.459229, y: 65.16047}
+        - {x: 23.459229, y: 77.16047}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
