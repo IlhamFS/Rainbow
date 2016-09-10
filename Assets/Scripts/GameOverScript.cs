@@ -27,6 +27,7 @@ public class GameOverScript : MonoBehaviour {
 	}
 
 	IEnumerator GameOver(EnemyScript es) {
+		gm.gameOver = true;
 		SoundManagerScript.instance.musicSource.Stop ();
 		SoundManagerScript.instance.heroSource.Stop ();
 		SoundManagerScript.instance.sfxSource.mute = true;

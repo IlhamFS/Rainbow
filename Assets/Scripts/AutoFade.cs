@@ -45,13 +45,21 @@ public class AutoFade : MonoBehaviour
 				string path = System.IO.Path.Combine(resDir.FullName, "Plane_No_zTest.shader");
 				Debug.Log("Shader missing, create asset: " + path);
 				System.IO.File.WriteAllText(path, shaderText);
-				UnityEditor.AssetDatabase.Refresh(UnityEditor.ImportAssetOptions.ForceSynchronousImport);
-				UnityEditor.AssetDatabase.LoadAssetAtPath<Shader>("Resources/Plane_No_zTest.shader");
+
+				#if UNITY_EDITOR
+					UnityEditor.AssetDatabase.Refresh(UnityEditor.ImportAssetOptions.ForceSynchronousImport);
+					UnityEditor.AssetDatabase.LoadAssetAtPath<Shader>("Resources/Plane_No_zTest.shader");
+				#endif
+
 				s = Shader.Find("Plane/No zTest");
 			}
 			var mat = new Material(s);
 			mat.name = "Plane_No_zTest";
-			UnityEditor.AssetDatabase.CreateAsset(mat, "Assets/Resources/Plane_No_zTest.mat");
+
+			#if UNITY_EDITOR
+				UnityEditor.AssetDatabase.CreateAsset(mat, "Assets/Resources/Plane_No_zTest.mat");
+			#endif
+
 			m_Material = mat;
 
 		}

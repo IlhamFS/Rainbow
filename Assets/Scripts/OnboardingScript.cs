@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using UnityEditor;
 
 public class OnboardingScript : MonoBehaviour {
 	public OnboardingEnemyScript oes;
