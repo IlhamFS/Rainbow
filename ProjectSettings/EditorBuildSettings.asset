@@ -6,10 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/luthfi - Main Menu.unity
+    path: Assets/_Scenes/Main Menu v.1.unity
   - enabled: 1
     path: Assets/_Scenes/Main Screen.unity
-  - enabled: 0
-    path: Assets/_Scenes/sound - Gameplay.unity
   - enabled: 1
     path: Assets/_Scenes/onboarding.unity

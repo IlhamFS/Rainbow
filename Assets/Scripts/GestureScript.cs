@@ -54,7 +54,6 @@ public class GestureScript : MonoBehaviour {
 	private List<LineRenderer> gestureLinesRenderer = new List<LineRenderer>();
 	private LineRenderer currentGestureLineRenderer;
 
-	private string message;
 	private bool recognized;
 
 	public AudioClip[] batClip;
@@ -167,7 +166,6 @@ public class GestureScript : MonoBehaviour {
 
 			colorName = GetColorName (colorArray);
 			changeAnim ();
-			message = colorName;
 		}
 
 	}
@@ -203,7 +201,6 @@ public class GestureScript : MonoBehaviour {
 	void OnGUI() {
 
 		//GUI.Box(drawArea,"Draw Area");
-		GUI.Label(new Rect(10, Screen.height - 40, 500, 50), "<color=red>"+message+"</color>");
 		if(Input.GetMouseButtonDown(0)){
 			mouseStart= Input.mousePosition;
 		}

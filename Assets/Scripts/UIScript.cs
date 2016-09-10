@@ -7,10 +7,11 @@ public class UIScript : MonoBehaviour {
 	public Text scoreText;
 	public GameController gm;
 	public GameObject pauseScene;
+	public Text highScoreText;
 
 	// Use this for initialization
 	void Start () {
-	
+		highScoreText.text = "" + PlayerPrefs.GetInt ("highscore",0);
 	}
 	
 	// Update is called once per frame
@@ -29,7 +30,7 @@ public class UIScript : MonoBehaviour {
 	}
 
 	void UpdateScore() {
-		scoreText.text = "Score = " + (int) (gm.score * 100.0f);
+		scoreText.text = "SCORE \n" + (int) (gm.score * 100.0f);
 	}
 
 	public void Pause(){
