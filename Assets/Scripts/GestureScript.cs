@@ -317,6 +317,7 @@ public class GestureScript : MonoBehaviour {
 	public void SpecialRainbowAttack(){
 		//player animation Special Rainbow
 		gameController.rainbowSpecial ();
+		stickAnimator.SetTrigger ("Rainbow");
 
 		colorArray = new int[3];
 		colorName = "white";
@@ -324,6 +325,7 @@ public class GestureScript : MonoBehaviour {
 	public void SpecialTimeAttack(){
 		//player animation Special Rainbow
 		gameController.timeSpecial ();
+		stickAnimator.SetTrigger ("Time");
 
 		colorArray = new int[3];
 		colorName = "white";
