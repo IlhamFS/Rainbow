@@ -947,6 +947,38 @@ Prefab:
       propertyPath: chipmunkAnimator
       value: 
       objectReference: {fileID: 1646456559}
+    - target: {fileID: 425218, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 425218, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 438732, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 438732, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 483334, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 483334, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 425218, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 483334, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
   m_IsPrefabParent: 0
