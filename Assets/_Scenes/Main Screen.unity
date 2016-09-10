@@ -787,6 +787,10 @@ Prefab:
       propertyPath: chipmunkAnimator
       value: 
       objectReference: {fileID: 1646456559}
+    - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
+      propertyPath: hentakan
+      value: 
+      objectReference: {fileID: 106652, guid: bdb983b2213d94d438ef6d754960d735, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
   m_IsPrefabParent: 0

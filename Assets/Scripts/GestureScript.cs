@@ -18,7 +18,7 @@ public class GestureScript : MonoBehaviour {
 	public Animator bearAnimator;
 	public Animator stickAnimator;
 	public Animator chipmunkAnimator;
-
+	public GameObject hentakan;
 	private List<Sprite> randomGesture;
 	public List<int> randomGestureIndex;
 	private int[] colorArray = new int[3];
@@ -288,6 +288,7 @@ public class GestureScript : MonoBehaviour {
 	}
 
 	public void PlayerAttack(){
+		Instantiate (hentakan, new Vector3(-3.6f, -3.8f, 0), Quaternion.identity);
 		if (SceneManager.GetActiveScene ().buildIndex == 2) {
 			if (onboardingAction) {
 				//player animation attak
@@ -316,6 +317,7 @@ public class GestureScript : MonoBehaviour {
 	}
 	public void SpecialRainbowAttack(){
 		//player animation Special Rainbow
+		Instantiate (hentakan, new Vector3(-3.6f, -3.8f, 0), Quaternion.identity);
 		gameController.rainbowSpecial ();
 		stickAnimator.SetTrigger ("Rainbow");
 
@@ -324,6 +326,7 @@ public class GestureScript : MonoBehaviour {
 	}
 	public void SpecialTimeAttack(){
 		//player animation Special Rainbow
+		Instantiate (hentakan, new Vector3(-3.6f, -3.8f, 0), Quaternion.identity);
 		gameController.timeSpecial ();
 		stickAnimator.SetTrigger ("Time");
 

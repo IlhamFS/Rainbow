@@ -1,9 +1,14 @@
 fileFormatVersion: 2
 guid: c7858913f33c30b4c8f669e1f4a89022
-timeCreated: 1473479169
+timeCreated: 1473515733
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Character - Tongkat-25_0
+    21300002: Character - Tongkat-25_1
+    21300004: Character - Tongkat-25_2
+    21300006: Character - Tongkat-25_3
+    21300008: Character - Tongkat-25_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +35,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +43,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +54,141 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Character - Tongkat-25_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 98
+        width: 91
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.5, y: 6.5}
+        - {x: 0.5, y: 35.5}
+        - {x: -15.5, y: 35.5}
+        - {x: -16.5, y: 34.5}
+        - {x: -21.5, y: 20.5}
+        - {x: -18.5, y: 3.5}
+        - {x: -19.5, y: 5.5}
+        - {x: -24.5, y: 9.5}
+        - {x: -36.5, y: 18.5}
+        - {x: -45.5, y: 16.5}
+        - {x: -45.5, y: -18.5}
+        - {x: -32.5, y: -35.5}
+        - {x: 34.5, y: -35.5}
+        - {x: 45.5, y: -22.5}
+        - {x: 45.5, y: 19.5}
+        - {x: 35.5, y: 18.5}
+    - name: Character - Tongkat-25_1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 84
+        width: 149
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.5, y: 47}
+        - {x: -74.5, y: 30}
+        - {x: -74.5, y: -34}
+        - {x: -56.5, y: -47}
+        - {x: 48.5, y: -47}
+        - {x: 73.5, y: -45}
+        - {x: 74.5, y: -40}
+        - {x: 74.5, y: 24}
+        - {x: 67.5, y: 47}
+    - name: Character - Tongkat-25_2
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 72
+        width: 207
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92.5, y: 3}
+        - {x: -103.5, y: -14}
+        - {x: -103.5, y: -50}
+        - {x: -81.5, y: -71}
+        - {x: 84.5, y: -71}
+        - {x: 103.5, y: -69}
+        - {x: 103.5, y: -1}
+        - {x: 84.5, y: 3}
+      - - {x: 58.5, y: 43}
+        - {x: 51.5, y: 37}
+        - {x: 51.5, y: 24}
+        - {x: 57.5, y: 21}
+        - {x: 69.5, y: 21}
+        - {x: 71.5, y: 25}
+        - {x: 71.5, y: 41}
+        - {x: 68.5, y: 43}
+      - - {x: -75.5, y: 49}
+        - {x: -80.5, y: 46}
+        - {x: -80.5, y: 39}
+        - {x: -79.5, y: 31}
+        - {x: -76.5, y: 26}
+        - {x: -65.5, y: 26}
+        - {x: -59.5, y: 30}
+        - {x: -59.5, y: 42}
+        - {x: -70.5, y: 49}
+      - - {x: -1.5, y: 71}
+        - {x: -4.5, y: 67}
+        - {x: -4.5, y: 50}
+        - {x: -1.5, y: 43}
+        - {x: 11.5, y: 43}
+        - {x: 14.5, y: 44}
+        - {x: 17.5, y: 47}
+        - {x: 17.5, y: 65}
+        - {x: 15.5, y: 71}
+    - name: Character - Tongkat-25_3
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 59
+        width: 272
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 47}
+        - {x: -136, y: 39}
+        - {x: -136, y: -47}
+        - {x: 136, y: -47}
+        - {x: 136, y: 26}
+        - {x: 92, y: 47}
+      - - {x: -75, y: 17}
+        - {x: 65, y: 20}
+        - {x: 93, y: 2}
+        - {x: 16, y: -19}
+    - name: Character - Tongkat-25_4
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 50
+        width: 330
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -165, y: 56}
+        - {x: -165, y: -45}
+        - {x: -132, y: -56}
+        - {x: 137, y: -56}
+        - {x: 165, y: -39}
+        - {x: 165, y: 56}
+      - - {x: -64, y: -41}
+        - {x: -152, y: 7}
+        - {x: -36, y: 43}
+        - {x: 103, y: -33}
     outline: []
   spritePackingTag: 
   userData: 
