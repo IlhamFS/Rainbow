@@ -1119,6 +1119,12 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 414594, guid: c8cb873726c53fe47b3380a0434e9154, type: 2}
   m_PrefabInternal: {fileID: 1357962938}
+--- !u!114 &764890227 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11434558, guid: f42aba2a73cbd9f4a943789c0fbf5b9a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1429741267}
+  m_Script: {fileID: 2109663825, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &846282944
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,7 +1777,7 @@ Prefab:
     - target: {fileID: 11469046, guid: 03de0cb76906e004eb2d1fb480a4e0ea, type: 2}
       propertyPath: soundToggle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 764890227}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03de0cb76906e004eb2d1fb480a4e0ea, type: 2}
   m_IsPrefabParent: 0

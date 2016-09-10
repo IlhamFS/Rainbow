@@ -85,4 +85,11 @@ public class EnemyScript : MonoBehaviour {
 	public void disableAnimation(){
 		enemyAnimator.Stop ();
 	}
+
+	public void destroyMata() {
+		foreach (Transform child in transform) {
+			if(child.gameObject.tag != "Shadow")
+				GameObject.Destroy(child.gameObject);
+		}
+	}
 }

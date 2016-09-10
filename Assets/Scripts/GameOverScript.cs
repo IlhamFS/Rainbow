@@ -33,6 +33,7 @@ public class GameOverScript : MonoBehaviour {
 		SoundManagerScript.instance.sfxSource.mute = true;
 		SoundManagerScript.instance.playSingle (2, heroDeathClip);
 
+		es.destroyMata ();
 		StopAllEnemy ();
 		yield return StartCoroutine (es.playAttack ());
 		yield return new WaitForSeconds (1.0f);
