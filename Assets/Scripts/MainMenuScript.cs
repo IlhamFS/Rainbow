@@ -17,7 +17,10 @@ public class MainMenuScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
-			activeScene.SetActive (false);
+			if (activeScene == null)
+				Quit ();
+			else
+				activeScene.SetActive (false);
 		}
 	}
 

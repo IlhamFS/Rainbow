@@ -26,6 +26,15 @@ public class UIScript : MonoBehaviour {
 			highScoreText.text = "" + PlayerPrefs.GetInt ("highscore",0);
 	}
 
+	void Update() {
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			if (pauseScene.activeSelf)
+				Resume ();
+			else
+				Pause ();
+		}
+	}
+
 	public void Restart() {
 		Time.timeScale = 1.0f;
 		AutoFade.LoadLevel (SceneManager.GetActiveScene().buildIndex, 0.5f, 0.5f, Color.black);
