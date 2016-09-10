@@ -64,7 +64,7 @@ public class GestureScript : MonoBehaviour {
 	void Start () {
 
 		platform = Application.platform;
-		drawArea = new Rect(0, 0, Screen.width, Screen.height);
+		drawArea = new Rect(300, 0, Screen.width-300, Screen.height);
 
 		TextAsset[] gesturesXml = Resources.LoadAll<TextAsset>("GestureSet");
 		foreach (TextAsset gestureXml in gesturesXml) {
