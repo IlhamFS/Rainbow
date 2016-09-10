@@ -88,12 +88,12 @@ public class EnemySpawnerScript : MonoBehaviour {
 			break;
 		case 3:
 			//color
-			colorLowerBound = 4;
+			colorLowerBound = 0;
 			colorUpperBound = 6.99f;
 			break;
 		case 4:
 			//color
-			colorLowerBound = 4;
+			colorLowerBound = 1;
 			colorUpperBound = 7.99f;
 
 			//speed
@@ -102,7 +102,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 			break;
 		case 5:
 			//color
-			colorLowerBound = 0;
+			colorLowerBound = 4;
 			colorUpperBound = 6.99f;
 
 			//speed
@@ -111,7 +111,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 			break;
 		case 6:
 			//color
-			colorLowerBound = 1;
+			colorLowerBound = 4;
 			colorUpperBound = 7.99f;
 
 			//speed
