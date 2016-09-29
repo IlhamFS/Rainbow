@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Gesture Name = "cinverse">
+	<Stroke>
+		<Point X = "144.5625" Y = "-182.4082" T = "0" Pressure = "0" />
+		<Point X = "144.5625" Y = "-182.4082" T = "0" Pressure = "0" />
+		<Point X = "144.367" Y = "-182.8963" T = "0" Pressure = "0" />
+		<Point X = "144" Y = "-183.36" T = "0" Pressure = "0" />
+		<Point X = "144" Y = "-183.36" T = "0" Pressure = "0" />
+		<Point X = "144" Y = "-183.715" T = "0" Pressure = "0" />
+		<Point X = "144.3506" Y = "-184.3256" T = "0" Pressure = "0" />
+		<Point X = "144.3506" Y = "-184.3256" T = "0" Pressure = "0" />
+		<Point X = "145.8096" Y = "-185.5566" T = "0" Pressure = "0" />
+		<Point X = "153.6959" Y = "-191.4917" T = "0" Pressure = "0" />
+		<Point X = "153.6959" Y = "-191.4917" T = "0" Pressure = "0" />
+		<Point X = "167.4136" Y = "-199.4881" T = "0" Pressure = "0" />
+		<Point X = "167.4136" Y = "-199.4881" T = "0" Pressure = "0" />
+		<Point X = "175.6561" Y = "-202.7431" T = "0" Pressure = "0" />
+		<Point X = "184.1922" Y = "-205.8263" T = "0" Pressure = "0" />
+		<Point X = "197.9036" Y = "-207.3252" T = "0" Pressure = "0" />
+		<Point X = "197.9036" Y = "-207.3252" T = "0" Pressure = "0" />
+		<Point X = "209.656" Y = "-197.2229" T = "0" Pressure = "0" />
+		<Point X = "209.656" Y = "-197.2229" T = "0" Pressure = "0" />
+		<Point X = "214.1016" Y = "-184.0298" T = "0" Pressure = "0" />
+		<Point X = "214.1016" Y = "-184.0298" T = "0" Pressure = "0" />
+		<Point X = "211.9658" Y = "-166.9092" T = "0" Pressure = "0" />
+		<Point X = "206.8812" Y = "-151.4295" T = "0" Pressure = "0" />
+		<Point X = "199.4318" Y = "-134.8177" T = "0" Pressure = "0" />
+		<Point X = "188.4669" Y = "-118.2271" T = "0" Pressure = "0" />
+		<Point X = "176.3013" Y = "-107.0973" T = "0" Pressure = "0" />
+		<Point X = "165.3893" Y = "-98.66833" T = "0" Pressure = "0" />
+		<Point X = "157.8638" Y = "-97.21194" T = "0" Pressure = "0" />
+		<Point X = "149.701" Y = "-96.15955" T = "0" Pressure = "0" />
+	</Stroke>
+</Gesture>

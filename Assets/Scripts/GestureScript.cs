@@ -146,19 +146,16 @@ public class GestureScript : MonoBehaviour {
 			if (gestureResult.GestureClass == randomGesture [0].name && gestureResult.Score > 0.7) {
 				colorArray [0] = 1;
 				gestureResult.GestureClass = "";
-				RenderGesture ();
 				batAnimator.SetTrigger ("Attack");
 				SoundManagerScript.instance.playRandom (2, batClip);
 			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.7) {
 				colorArray [1] = 1;
 				gestureResult.GestureClass = "";
-				RenderGesture ();
 				goatAnimator.SetTrigger ("Attack");
 				SoundManagerScript.instance.playRandom (2, sheepClip);
 			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.7) {
 				colorArray [2] = 1;
 				gestureResult.GestureClass = "";
-				RenderGesture ();
 				bearAnimator.SetTrigger ("Attack");
 				SoundManagerScript.instance.playRandom (2, bearClip);
 			}
@@ -295,6 +292,7 @@ public class GestureScript : MonoBehaviour {
 
 	public void PlayerAttack(){
 		Instantiate (hentakan, new Vector3(-3.6f, -3.8f, 0), Quaternion.identity);
+		RenderGesture ();
 		if (SceneManager.GetActiveScene ().buildIndex == 2) {
 			if (onboardingAction) {
 				//player animation attak
