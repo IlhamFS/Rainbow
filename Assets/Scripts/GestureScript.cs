@@ -143,17 +143,17 @@ public class GestureScript : MonoBehaviour {
 
 		//Attack jika gesture benar dengan salah satu gesture yang terdapat pada pemain
 		if (checkResult == true) {
-			if (gestureResult.GestureClass == randomGesture [0].name && gestureResult.Score > 0.7) {
+			if (gestureResult.GestureClass == randomGesture [0].name && gestureResult.Score > 0.85) {
 				colorArray [0] = 1;
 				gestureResult.GestureClass = "";
 				batAnimator.SetTrigger ("Attack");
 				SoundManagerScript.instance.playRandom (2, batClip);
-			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.7) {
+			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.85) {
 				colorArray [1] = 1;
 				gestureResult.GestureClass = "";
 				goatAnimator.SetTrigger ("Attack");
 				SoundManagerScript.instance.playRandom (2, sheepClip);
-			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.7) {
+			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.85) {
 				colorArray [2] = 1;
 				gestureResult.GestureClass = "";
 				bearAnimator.SetTrigger ("Attack");
