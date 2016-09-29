@@ -143,19 +143,19 @@ public class GestureScript : MonoBehaviour {
 
 		//Attack jika gesture benar dengan salah satu gesture yang terdapat pada pemain
 		if (checkResult == true) {
-			if (gestureResult.GestureClass == randomGesture [0].name && gestureResult.Score > 0.5) {
+			if (gestureResult.GestureClass == randomGesture [0].name && gestureResult.Score > 0.7) {
 				colorArray [0] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
 				batAnimator.SetTrigger ("Attack");
 				SoundManagerScript.instance.playRandom (2, batClip);
-			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.5) {
+			} else if (gestureResult.GestureClass == randomGesture [1].name && gestureResult.Score > 0.7) {
 				colorArray [1] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
 				goatAnimator.SetTrigger ("Attack");
 				SoundManagerScript.instance.playRandom (2, sheepClip);
-			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.5) {
+			} else if (gestureResult.GestureClass == randomGesture [2].name && gestureResult.Score > 0.7) {
 				colorArray [2] = 1;
 				gestureResult.GestureClass = "";
 				RenderGesture ();
