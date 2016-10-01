@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class EnemySpawnerScript : MonoBehaviour {
 	public GameObject[] enemy;
-	GameObject en;
+	private GameObject en;
 	int lastEnemyIndex = 0;
 	int enemyIndex = 0;
 	int enemyCount = 0;
