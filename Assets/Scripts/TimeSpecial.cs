@@ -20,10 +20,10 @@ public class TimeSpecial : MonoBehaviour {
 	}
 
 	IEnumerator lancarkan(){
+		gest.SpecialTimeAttack ();
 		SoundManagerScript.instance.playSingle (2, attack);
 		anim.SetTrigger ("isClicked");
 		yield return new WaitForSeconds (0.5f);
-		gest.SpecialTimeAttack ();
 
 		//effek special
 		Destroy (gameObject);

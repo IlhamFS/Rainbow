@@ -20,10 +20,10 @@ public class RainbowSpecial : MonoBehaviour {
 	}
 
 	IEnumerator lancarkan(){
+		gest.SpecialRainbowAttack ();
 		SoundManagerScript.instance.playSingle (2, attack);
 		anim.SetTrigger ("isClicked");
 		yield return new WaitForSeconds (0.5f);
-		gest.SpecialRainbowAttack ();
 
 		//effek special
 		Destroy (gameObject);

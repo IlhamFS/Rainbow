@@ -46,10 +46,12 @@ public class EnemySpawnerScript : MonoBehaviour {
 			enemyCount++;
 
 			if (enemyCount == enemyLimit) {
+				yield return StartCoroutine (checkEnemy());
+
 				wave++;
 				enemyLimit = enemyLimit + (wave / 2);
 				enemyCount = 0;
-				wait = 10.0f;
+				wait = 5.0f;
 
 				waveText.text = "WAVE " + wave;
 				waveText.CrossFadeAlpha (255, 1.0f, false);
@@ -65,6 +67,17 @@ public class EnemySpawnerScript : MonoBehaviour {
 		}
 
 
+	}
+
+	IEnumerator checkEnemy(){
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag ("Enemy"); 
+
+		while (enemies.Length > 0) {
+			enemies = GameObject.FindGameObjectsWithTag ("Enemy");
+			yield return null;
+		}
+
+		yield break;
 	}
 
 	void configWave(int wav) {
