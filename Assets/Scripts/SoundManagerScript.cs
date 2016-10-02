@@ -30,9 +30,15 @@ public class SoundManagerScript : MonoBehaviour {
 		if (soundToggle.isOn) {
 			musicSource.Play ();
 			sfxSource.Play ();
+			musicSource.mute = false;
+			heroSource.mute = false;
+			sfxSource.mute = false;
 		} else {
 			musicSource.Stop ();
 			sfxSource.Stop ();
+			musicSource.mute = true;
+			heroSource.mute = true;
+			sfxSource.mute = true;
 		}
 	}
 
