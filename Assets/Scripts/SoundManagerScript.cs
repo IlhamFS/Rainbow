@@ -6,6 +6,12 @@ public class SoundManagerScript : MonoBehaviour {
 	public AudioSource musicSource;
 	public AudioSource sfxSource;
 	public AudioSource heroSource;
+	public AudioSource batSource;
+	public AudioSource sheepSource;
+	public AudioSource bearSource;
+
+	private int curAudioSource;
+
 	public static SoundManagerScript instance = null; 
 	public Toggle soundToggle;
 
@@ -55,6 +61,14 @@ public class SoundManagerScript : MonoBehaviour {
 		musicSource.pitch += 0.05f;
 	}
 
+	public void increaseVolume(float value){
+		heroSource.volume += value;
+	}
+
+	public void decreaseVolume(float value){
+		heroSource.volume -= value;
+	}
+
 	public void playSingle(int source, AudioClip clip){
 		if (source == 1) {
 			if (sfxSource.isPlaying)
@@ -89,6 +103,30 @@ public class SoundManagerScript : MonoBehaviour {
 				heroSource.clip = clip[clipIndex];
 				heroSource.pitch = pitch;
 				heroSource.Play ();
+			}
+		} else if (source == 3) {
+			if (!batSource.isPlaying) {
+				int clipIndex = Random.Range (0, clip.Length);
+				float pitch = Random.Range (0.95f, 1.05f);
+				batSource.clip = clip[clipIndex];
+				batSource.pitch = pitch;
+				batSource.Play ();
+			}
+		} else if (source == 4) {
+			if (!sheepSource.isPlaying) {
+				int clipIndex = Random.Range (0, clip.Length);
+				float pitch = Random.Range (0.95f, 1.05f);
+				sheepSource.clip = clip[clipIndex];
+				sheepSource.pitch = pitch;
+				sheepSource.Play ();
+			}
+		} else if (source == 5) {
+			if (!bearSource.isPlaying) {
+				int clipIndex = Random.Range (0, clip.Length);
+				float pitch = Random.Range (0.95f, 1.05f);
+				bearSource.clip = clip[clipIndex];
+				bearSource.pitch = pitch;
+				bearSource.Play ();
 			}
 		}
 	}

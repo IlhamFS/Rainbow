@@ -41,7 +41,7 @@ public class GameController : MonoBehaviour {
 				float result = 10 * multiplier;
 				score += result;
 
-				es.destroyEnemy (scorePlusText, result, UIScript.instance.getMultiplierColor());
+				es.destroyEnemy (scorePlusText, result);
 			}
 		}
 		UIScript.instance.UpdateScore ();
@@ -68,7 +68,7 @@ public class GameController : MonoBehaviour {
 			float result = 10 * multiplier;
 			score += result;
 
-			es.destroyEnemy (scorePlusText, result, UIScript.instance.getMultiplierColor());
+			es.destroyEnemy (scorePlusText, result);
 		}
 		UIScript.instance.UpdateScore ();
 	}

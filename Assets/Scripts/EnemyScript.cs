@@ -56,7 +56,7 @@ public class EnemyScript : MonoBehaviour {
 		}
 	}
 
-	public void destroyEnemy(Text scorePlusText, float result, Color mulColor) {
+	public void destroyEnemy(Text scorePlusText, float result) {
 		float itemRand = Random.Range (0.0f, 1.0f);
 		Destroy (gameObject);
 
@@ -74,10 +74,41 @@ public class EnemyScript : MonoBehaviour {
 		tempTextBox.transform.SetParent(renderCanvas.transform, false);
 		//Set the text box's text element to the current textToDisplay:
 		tempTextBox.text = "+" + result;
-		tempTextBox.color = mulColor;
-
+		tempTextBox.color = getHexColor ();
 		adjustTextPosition (tempTextBox, renderCanvas);
 
+	}
+
+	Color getHexColor() {
+		switch (colorName) {
+		case "white":
+			return new Color (1.0f, 1.0f, 1.0f);
+			break;
+		case "blue":
+			return new Color (0.30196078431f, 0.7294117647f, 0.7294117647f);
+			break;
+		case "pink":
+			return new Color (0.95686274509f, 0.65882352941f, 0.70196078431f);
+			break;
+		case "yellow":
+			return new Color (1.0f, 0.89019607843f, 0.23137254902f);
+			break;
+		case "purple":
+			return new Color (0.89411764705f, 0.54117647058f, 0.97647058823f);
+			break;
+		case "green":
+			return new Color (0.63137254902f, 0.91764705882f, 0.32549019607f);
+			break;
+		case "orange":
+			return new Color (1.0f, 0.72156862745f, 0.22352941176f);
+			break;
+		case "brown":
+			return new Color (0.34901960784f, 0.17647058823f, 0.09019607843f);
+			break;
+		default:
+			return new Color (0.0f, 0.0f ,0.0f);
+			break;
+		}
 	}
 
 	void adjustTextPosition(Text t, Canvas c) {
@@ -101,7 +132,7 @@ public class EnemyScript : MonoBehaviour {
 
 	IEnumerator playSound(float wait) {
 		while (true) {
-			yield return new WaitForSeconds (Random.Range(wait / 2, wait));
+			yield return new WaitForSeconds (wait);
 
 			SoundManagerScript.instance.playRandom (1, enemyClip);
 		}

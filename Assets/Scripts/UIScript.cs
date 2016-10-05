@@ -81,10 +81,6 @@ public class UIScript : MonoBehaviour {
 		}
 	}
 
-	public Color getMultiplierColor(){
-		return multiplierText.color;
-	}
-
 	public void Pause(){
 		pauseScene.SetActive (true);
 		Time.timeScale = 0.0f;

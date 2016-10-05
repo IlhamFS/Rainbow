@@ -29,6 +29,9 @@ public class OnboardingScript : MonoBehaviour {
 	public Sprite colorOrange;
 	public Sprite colorGreen;
 
+	public Sprite[] baseColors;
+	public Image theGesture;
+
 	public AudioClip nextPhaseClip;
 	public AudioClip wrongClip;
 	public GameObject tangan;
@@ -150,7 +153,7 @@ public class OnboardingScript : MonoBehaviour {
 
 	IEnumerator CheckSwipe(string enColor) {
 		tangan.SetActive (true);
-		color.sprite = imageColor (enColor);
+		color.sprite = baseColor (enColor);
 		swipeText.SetActive (true);
 
 		while (gs.colorName != enColor) {
@@ -209,6 +212,27 @@ public class OnboardingScript : MonoBehaviour {
 		attackText.SetActive (true);
 		tangan2.SetActive (true);
 		yield return StartCoroutine (CheckAttack (actualColor));
+	}
+
+	Sprite baseColor(string color) {
+		Sprite theColor = null;
+
+		switch(color){
+		case "blue":
+			theColor = baseColors [0];
+			theGesture.sprite = gs.getGesture (0);
+			break;
+		case "pink":
+			theColor = baseColors[1];
+			theGesture.sprite = gs.getGesture (1);
+			break;
+		case "yellow":
+			theColor = baseColors[2];
+			theGesture.sprite = gs.getGesture (2);
+			break;
+		}
+
+		return theColor;
 	}
 
 	Sprite imageColor(string color){

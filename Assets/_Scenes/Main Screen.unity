@@ -2033,6 +2033,14 @@ Prefab:
       propertyPath: soundToggle
       value: 
       objectReference: {fileID: 764890227}
+    - target: {fileID: 8256852, guid: 03de0cb76906e004eb2d1fb480a4e0ea, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bde26040671e111439130541512db626, type: 3}
+    - target: {fileID: 8298458, guid: 03de0cb76906e004eb2d1fb480a4e0ea, type: 2}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03de0cb76906e004eb2d1fb480a4e0ea, type: 2}
   m_IsPrefabParent: 0
