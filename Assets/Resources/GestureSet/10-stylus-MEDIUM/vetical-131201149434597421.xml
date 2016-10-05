@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Gesture Name = "vetical">
+	<Stroke>
+		<Point X = "201.5759" Y = "-239.5704" T = "0" Pressure = "0" />
+		<Point X = "200.0758" Y = "-227.0161" T = "0" Pressure = "0" />
+		<Point X = "200.0758" Y = "-227.0161" T = "0" Pressure = "0" />
+		<Point X = "200.0758" Y = "-227.0161" T = "0" Pressure = "0" />
+		<Point X = "199.8137" Y = "-213.0446" T = "0" Pressure = "0" />
+		<Point X = "199.2946" Y = "-194.2828" T = "0" Pressure = "0" />
+		<Point X = "198.6578" Y = "-174.9417" T = "0" Pressure = "0" />
+		<Point X = "197.8594" Y = "-156.7397" T = "0" Pressure = "0" />
+		<Point X = "197.8594" Y = "-156.7397" T = "0" Pressure = "0" />
+		<Point X = "196.8394" Y = "-137.6761" T = "0" Pressure = "0" />
+		<Point X = "195.7443" Y = "-113.4654" T = "0" Pressure = "0" />
+		<Point X = "195.7443" Y = "-113.4654" T = "0" Pressure = "0" />
+		<Point X = "195.3281" Y = "-104.2559" T = "0" Pressure = "0" />
+		<Point X = "194.7535" Y = "-96.43655" T = "0" Pressure = "0" />
+	</Stroke>
+</Gesture>
