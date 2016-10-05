@@ -810,7 +810,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
       propertyPath: gestureArr.Array.size
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 411630, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
       propertyPath: m_LocalPosition.x
@@ -871,13 +871,11 @@ Prefab:
     - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
       propertyPath: gestureArr.Array.data[8]
       value: 
-      objectReference: {fileID: 21300000, guid: 1ea80edcb60cf1345b765f1f8189090e,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
       propertyPath: gestureArr.Array.data[9]
       value: 
-      objectReference: {fileID: 21300000, guid: 6037484c986dcc34cb7a06e14d626c39,
-        type: 3}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
   m_IsPrefabParent: 0
