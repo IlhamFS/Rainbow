@@ -54,25 +54,25 @@ public class UIScript : MonoBehaviour {
 
 			switch (gm.multiplier % 8) {
 			case 0:
-				multiplierText.color = new Color (1.0f, 1.0f, 1.0f);
+				multiplierText.color = new Color (0.30196078431f, 0.7294117647f, 0.7294117647f);
 				break;
 			case 1:
-				multiplierText.color = new Color (1.0f, 1.0f, 0.0f);
+				multiplierText.color = new Color (0.95686274509f, 0.65882352941f, 0.70196078431f);
 				break;
 			case 2:
-				multiplierText.color = new Color (1.0f, 0.0f, 1.0f);
+				multiplierText.color = new Color (1.0f, 0.89019607843f, 0.23137254902f);
 				break;
 			case 3:
-				multiplierText.color = new Color (0.0f, 1.0f, 1.0f);
+				multiplierText.color = new Color (0.89411764705f, 0.54117647058f, 0.97647058823f);
 				break;
 			case 4:
-				multiplierText.color = new Color (1.0f, 0.0f, 0.0f);
+				multiplierText.color = new Color (0.63137254902f, 0.91764705882f, 0.32549019607f);
 				break;
 			case 5:
-				multiplierText.color = new Color (0.0f, 1.0f, 0.0f);
+				multiplierText.color = new Color (1.0f, 0.72156862745f, 0.22352941176f);
 				break;
 			case 6:
-				multiplierText.color = new Color (0.0f, 0.0f, 1.0f);
+				multiplierText.color = new Color (0.34901960784f, 0.17647058823f, 0.09019607843f);
 				break;
 			case 7:
 				multiplierText.color = new Color (0.0f, 0.0f, 0.0f);
