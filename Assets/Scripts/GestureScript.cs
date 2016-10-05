@@ -305,6 +305,7 @@ public class GestureScript : MonoBehaviour {
 			colorArray = new int[3];
 			colorName = "white";
 			RenderGesture ();
+
 			return;
 		}
 			
@@ -317,6 +318,7 @@ public class GestureScript : MonoBehaviour {
 		//player attack
 		colorArray = new int[3];
 		colorName = "white";
+		RenderGesture ();
 	}
 	public void SpecialRainbowAttack(){
 		//player animation Special Rainbow
