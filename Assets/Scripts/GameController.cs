@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 	public float score = 0;
@@ -12,6 +13,8 @@ public class GameController : MonoBehaviour {
 	public GameObject smoke;
 
 	public bool gameOver = false;
+
+	public Text scorePlusText;
 
 	void Start(){
 		enemyLimit = 5 * multiplier;
@@ -34,13 +37,14 @@ public class GameController : MonoBehaviour {
 				}
 
 				Instantiate (smoke, enemy.transform.position, Quaternion.identity);
-				es.destroyEnemy ();
 
 				float result = 10 * multiplier;
 				score += result;
-				UIScript.instance.UpdateScore ();
+
+				es.destroyEnemy (scorePlusText, result, UIScript.instance.getMultiplierColor());
 			}
 		}
+		UIScript.instance.UpdateScore ();
 	}
 
 	public void rainbowSpecial(){
@@ -60,12 +64,13 @@ public class GameController : MonoBehaviour {
 
 			EnemyScript es = enemy.GetComponent<EnemyScript> ();
 			Instantiate (smoke, enemy.transform.position, Quaternion.identity);
-			es.destroyEnemy ();
 
 			float result = 10 * multiplier;
 			score += result;
-			UIScript.instance.UpdateScore ();
+
+			es.destroyEnemy (scorePlusText, result, UIScript.instance.getMultiplierColor());
 		}
+		UIScript.instance.UpdateScore ();
 	}
 
 	public void timeSpecial(){

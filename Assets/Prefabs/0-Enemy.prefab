@@ -29,7 +29,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 492452}
   - 212: {fileID: 21203244}
-  - 95: {fileID: 9545192}
+  - 95: {fileID: 9598388}
   m_Layer: 0
   m_Name: mata_kanan
   m_TagString: Untagged
@@ -46,7 +46,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 472134}
   - 212: {fileID: 21212026}
-  - 95: {fileID: 9572672}
+  - 95: {fileID: 9504506}
   m_Layer: 0
   m_Name: mata_kiri
   m_TagString: Untagged
@@ -156,6 +156,23 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 3.51, y: 3.98}
+--- !u!95 &9504506
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149972}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5e3585d8804e7c4aadf647e3a9370bb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9541372
 Animator:
   serializedVersion: 3
@@ -173,7 +190,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &9545192
+--- !u!95 &9598388
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -183,23 +200,6 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 8ff27341ae20d3c409933c58ef585566, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &9572672
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 149972}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c5e3585d8804e7c4aadf647e3a9370bb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -345,7 +345,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: dc10940d29a2d7e45a70fbebc9abefad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
