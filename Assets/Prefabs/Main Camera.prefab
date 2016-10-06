@@ -63,6 +63,7 @@ GameObject:
   - 114: {fileID: 11443302}
   - 114: {fileID: 11471222}
   - 114: {fileID: 11495804}
+  - 132: {fileID: 13291752}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -294,7 +295,7 @@ MonoBehaviour:
   stickAnimator: {fileID: 0}
   chipmunkAnimator: {fileID: 0}
   hentakan: {fileID: 106652, guid: bdb983b2213d94d438ef6d754960d735, type: 2}
-  randomGestureIndex: 
+  randomGestureIndex: 000000000000000000000000
   colorName: white
   onboardingAction: 0
   gestureOnScreenPrefab: {fileID: 400000, guid: 971129baafd304455a111daa5207b8a1,
@@ -343,6 +344,29 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151802}
   m_Enabled: 1
+--- !u!132 &13291752
+GUIText:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151802}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!212 &21233774
 SpriteRenderer:
   m_ObjectHideFlags: 1

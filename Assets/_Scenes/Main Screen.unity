@@ -501,7 +501,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 499374, guid: 1b59410d5084b474eaa6888d4088f3d3, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1b59410d5084b474eaa6888d4088f3d3, type: 2}
@@ -664,7 +664,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452290, guid: 16693cd4a27957849bb763064fee9dc8, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16693cd4a27957849bb763064fee9dc8, type: 2}
@@ -808,10 +808,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
-      propertyPath: gestureArr.Array.size
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 411630, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -868,14 +864,6 @@ Prefab:
       propertyPath: chipmunkAnimator
       value: 
       objectReference: {fileID: 1646456559}
-    - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
-      propertyPath: gestureArr.Array.data[8]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11443302, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
-      propertyPath: gestureArr.Array.data[9]
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
   m_IsPrefabParent: 0
@@ -1138,7 +1126,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 482338, guid: 608fe106b72401f4c9ea6c981fb2c779, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 11480896, guid: 608fe106b72401f4c9ea6c981fb2c779, type: 2}
       propertyPath: smoke
@@ -1580,7 +1568,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490558, guid: da80ae76c5f527840876e0fc6d48bbdc, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da80ae76c5f527840876e0fc6d48bbdc, type: 2}
@@ -1622,7 +1610,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 445508, guid: 4c6e8b3212cdc444496e0b9c5e94437b, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c6e8b3212cdc444496e0b9c5e94437b, type: 2}
@@ -1827,7 +1815,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 414594, guid: c8cb873726c53fe47b3380a0434e9154, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8cb873726c53fe47b3380a0434e9154, type: 2}
@@ -2015,7 +2003,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 417238, guid: 03de0cb76906e004eb2d1fb480a4e0ea, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8298458, guid: 03de0cb76906e004eb2d1fb480a4e0ea, type: 2}
       propertyPath: spreadCustomCurve.m_RotationOrder
@@ -2152,33 +2140,6 @@ Camera:
   m_PrefabParentObject: {fileID: 2067578, guid: 09a48dfac4d85704db221d37231340e5,
     type: 2}
   m_PrefabInternal: {fileID: 595075940}
---- !u!1 &1985326584 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 151802, guid: 09a48dfac4d85704db221d37231340e5, type: 2}
-  m_PrefabInternal: {fileID: 595075940}
---- !u!132 &1985326591
-GUIText:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1985326584}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Text: 
-  m_Anchor: 0
-  m_Alignment: 0
-  m_PixelOffset: {x: 0, y: 0}
-  m_LineSpacing: 1
-  m_TabSize: 4
-  m_Font: {fileID: 0}
-  m_Material: {fileID: 0}
-  m_FontSize: 0
-  m_FontStyle: 0
-  m_Color:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_PixelCorrect: 1
-  m_RichText: 1
 --- !u!95 &1998051951 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9501028, guid: da80ae76c5f527840876e0fc6d48bbdc,

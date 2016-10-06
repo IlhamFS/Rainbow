@@ -250,7 +250,6 @@ public class GestureScript : MonoBehaviour {
 	//membuat list random gesture
 	List<Sprite> GetRandomGesture (){
 		List<Sprite> result = new List<Sprite>();
-		randomGestureIndex = new List<int> ();
 		bool full = false;
 		int i = 0;
 
@@ -261,14 +260,16 @@ public class GestureScript : MonoBehaviour {
 			if (SceneManager.GetActiveScene ().buildIndex == 2) {
 				index = UnityEngine.Random.Range (0, 6);
 			} else {
-				index = UnityEngine.Random.Range (0, gestureArr.Length);
+				do {
+					index = UnityEngine.Random.Range (0, gestureArr.Length);
+				} while (index == randomGestureIndex [i]);
 			}
 
 			Sprite rand = gestureArr[index];
 
 			if(!result.Exists(element => element == rand )){
 				result.Add(rand);
-				randomGestureIndex.Add (index);
+				randomGestureIndex [i] = index;
 				i++;
 			}
 			if(i == 3){
