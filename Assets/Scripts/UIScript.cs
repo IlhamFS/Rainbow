@@ -36,8 +36,8 @@ public class UIScript : MonoBehaviour {
 	}
 
 	public void Restart() {
-		Time.timeScale = 1.0f;
 		AutoFade.LoadLevel (SceneManager.GetActiveScene().buildIndex, 0.5f, 0.5f, Color.black);
+		Time.timeScale = 1.0f;
 	}
 
 	public void MainMenu() {
