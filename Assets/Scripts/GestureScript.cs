@@ -64,7 +64,7 @@ public class GestureScript : MonoBehaviour {
 	void Start () {
 
 		platform = Application.platform;
-		drawArea = new Rect(150, 0, Screen.width-150, Screen.height);
+		drawArea = new Rect(300, 0, Screen.width-300, Screen.height);
 
 		TextAsset[] gesturesXml = Resources.LoadAll<TextAsset>("GestureSet");
 		foreach (TextAsset gestureXml in gesturesXml) {
@@ -297,14 +297,13 @@ public class GestureScript : MonoBehaviour {
 			if (onboardingAction) {
 				//player animation attak
 				gameController.killEnemies (colorName);
-				stickAnimator.SetTrigger ("Attack");
 				chipmunkAnimator.SetTrigger ("Attack");
 			}
+			colorName = "white";
 
 			stickAnimator.SetTrigger ("Attack");
 			//player attack
 			colorArray = new int[3];
-			colorName = "white";
 			RenderGesture ();
 
 			return;

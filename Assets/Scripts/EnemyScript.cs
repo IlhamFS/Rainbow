@@ -62,10 +62,10 @@ public class EnemyScript : MonoBehaviour {
 
 		if (SceneManager.GetActiveScene ().buildIndex == 2)
 			return;
-
-		if (itemRand >= 0.95f)
+		
+		if (itemRand >= 0.75f)
 			Instantiate (item[0],transform.position,Quaternion.identity);
-		else if (itemRand >= 0.9f)
+		else if (itemRand >= 0.5f)
 			Instantiate (item[1],transform.position,Quaternion.identity);
 
 		Canvas renderCanvas = GameObject.Find("HUD").GetComponent<Canvas>();

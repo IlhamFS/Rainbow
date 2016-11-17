@@ -69,9 +69,9 @@ public class OnboardingScript : MonoBehaviour {
 
 	IEnumerator Fading(Text aText, float duration){
 		aText.CrossFadeAlpha(255, duration, false);
-		yield return new WaitForSeconds (1);
+		yield return new WaitForSeconds (duration);
 		aText.CrossFadeAlpha(1, duration, false);
-		yield return new WaitForSeconds (1);
+		yield return new WaitForSeconds (duration);
 	}
 
 	IEnumerator BackToMainMenu(){
@@ -174,6 +174,7 @@ public class OnboardingScript : MonoBehaviour {
 		attackText.SetActive (true);
 		tangan2.SetActive (true);
 		yield return StartCoroutine (CheckAttack (enColor));
+		yield break;
 	}
 
 	IEnumerator CheckSwipe2(string enColor){
@@ -212,6 +213,7 @@ public class OnboardingScript : MonoBehaviour {
 		attackText.SetActive (true);
 		tangan2.SetActive (true);
 		yield return StartCoroutine (CheckAttack (actualColor));
+		yield break;
 	}
 
 	Sprite baseColor(string color) {
@@ -291,9 +293,11 @@ public class OnboardingScript : MonoBehaviour {
 		attackText.SetActive (false);
 		tangan2.SetActive (true);
 
+		wrongText.CrossFadeAlpha (255, 0.25f, false);
 		while (gs.colorName != "white") {
-			yield return StartCoroutine (Fading(wrongText, 0.5f));
+			yield return null;	
 		}
+		wrongText.CrossFadeAlpha (1, 0.25f, false);
 
 		tangan2.SetActive (false);
 		if (state == 1)
@@ -302,6 +306,8 @@ public class OnboardingScript : MonoBehaviour {
 			state = 2;
 			yield return StartCoroutine (Combining());
 		}
+
+		yield break;
 	}
 
 	void setTangan(string colorName){
